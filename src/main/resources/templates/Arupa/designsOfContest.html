@@ -1,0 +1,251 @@
+<!Doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viwport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/Arupa/user_designs_style.css">
+    <style>
+        .grid-container {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+            grid-gap: 20px; /* Adjust the gap between grid items */
+        }
+        .grid-item {
+            width: 100%;
+        }
+        .card {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+        }
+        .card:hover {
+            border: 1px solid #967d00;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .card h3:first-child{
+            cursor: pointer;
+        }
+        h3{
+            color: black;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 50px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            opacity: 0; /* Initially set opacity to 0 */
+            transition: opacity 0.3s ease; /* Apply transition effect */
+        }
+
+        .modal.show {
+            opacity: 1; /* Set opacity to 1 when modal is shown */
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 90%;
+            opacity: 0; /* Initially set opacity to 0 */
+            transition: opacity 0.3s ease; /* Apply transition effect */
+        }
+
+        .modal-content.show {
+            opacity: 1; /* Set opacity to 1 when modal content is shown */
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .likes{
+            margin-top: -5px;
+            display: flex;
+            gap: 15px;
+        }
+        .like-button {
+            margin-top: 17px;
+        }
+        .fa-heart {
+            color: #d50d0d; /* Or specify the color you want */
+        }
+
+        @keyframes heartBeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        .heart-beat {
+            animation: heartBeat 0.5s ease-in-out;
+        }
+        .msg{
+            margin: 100px 150px;
+            padding-inline: 40px;
+            padding-top: 40px;
+        }
+        .msg p{
+            color: grey;
+            font-size: 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="class1">
+    <div class="backgroundimg">
+        <div class="menubar">
+            <img src="/Arupa/logovs.jpg" class="logo">
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a th:href="@{'/designer_list/' + ${user.id}}">Designers</a></li>
+                <li><a href="/Rashu/homepage_Designs.html">Designs</a></li>
+                <li><a href="/home">Log out</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <h2 th:text="${user.name != null ? user.name : ''}"></h2>
+            <h4 th:text="'ID: ' + ${user.id}" style="color: #484747; text-align: center; margin-bottom: 10px"></h4>
+            <ul>
+                <li><a th:href="@{'/UserProfile/' + ${user.id}}">My profile</a></li>
+                <li><a th:href="@{'/completedOrders/' + ${user.id}}">My orders</a></li>
+                <li class="active"><a th:href="@{'/runningContest/' + ${user.id}}">My contests</a></li>
+                <li><a th:href="@{'/requestdetails/' + ${user.id}}">My requests</a></li>
+                <li ><a th:href="@{'/placeOrder/' + ${user.id}}">Place a new order</a></li>
+                <li><a th:href="@{'/contest/' + ${user.id}}">Request for a contest</a></li>
+                <li><a th:href="@{'/password/' + ${user.id}}">Password settings</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div th:if="${message}" class="msg">
+                <p th:text="${message}"></p>
+            </div>
+            <div th:if="${alldesigns}" class="grid-container">
+                <tr th:each="ad: ${alldesigns}" class="grid-item">
+                    <div class="card">
+                        <img th:if="${content[ad.design_code] != null}" th:src="@{'data:image/' + ${content[ad.design_code].format} + ';base64,' + ${content[ad.design_code].base64}}" onclick="showImageFullScreen(this)">
+                        <a th:href="@{'/uDesignerProfile/' + ${ad.designer_id} + '/' + ${user.id}}" style="text-decoration: none">
+                            <h3 style="cursor: pointer; margin-top: 10px;" th:text="'Designer: ' + ${designerName[ad.design_code]}"></h3>
+                        </a>
+                        <div class="likes">
+                            <a th:href="@{'/contestLike/'+ ${ad.design_code} + '/' + ${user.id} + '/' + ${contestId}}" onclick="toggleHeartAnimation(event)">
+                                <div class="like-button">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                            </a>
+                            <h3 style="margin-top: 15px; margin-left: -10px" th:text="${ad.rating}"></h3>
+                        </div>
+                    </div>
+                </tr>
+            </div>
+            <div id="imageModal" class="modal">
+                <span class="close" onclick="closeImageFullScreen()">&times;</span>
+                <img class="modal-content" id="fullScreenImg">
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container_ftr">
+        <div class="row">
+            <div class="footer-col">
+                <ul>
+                    <li>&copy; COPYRIGHT Reserved by</li>
+                    <li>Digital Art Design </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <div class="contact">
+                        <li>Contact Information:</li>
+                        <li>Address: Chittagong ,Bangladesh</li>
+                        <li>Phone: <a href="tel:+15551234567">(555) 123-4567</a></li>
+                        <li>Email: <a href="mailto:info@example.com">info@example.com</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script>
+    function toggleHeartAnimation(event) {
+        var heartIcon = event.currentTarget.querySelector('.fa-heart');
+        heartIcon.classList.add('heart-beat'); // Add the animation class
+        setTimeout(function() {
+            heartIcon.classList.remove('heart-beat'); // Remove the animation class after a short delay
+        }, 500); // Adjust the duration of the animation accordingly
+    }
+
+    function showImageFullScreen(imgElement) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("fullScreenImg");
+        modal.style.display = "block";
+        setTimeout(function() {
+            modal.classList.add("show");
+            modalImg.classList.add("show");
+        }, 50); // Delay added to ensure smooth transition
+        modalImg.src = imgElement.src;
+    }
+
+    function closeImageFullScreen() {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("fullScreenImg");
+        modal.classList.remove("show");
+        modalImg.classList.remove("show");
+        setTimeout(function() {
+            modal.style.display = "none";
+        }, 300); // Wait for transition to complete before hiding modal
+    }
+</script>
+</body>
+</html>

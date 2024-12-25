@@ -1,0 +1,191 @@
+<html lang="en">
+<head>
+    <title>Sign in</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Admin_profile_body_background.css">
+    <link rel="stylesheet" href="Sign_in.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+<header>
+    <div class="backgroundimg">
+        <div class="menubar">
+            <img src="design_logo_02.jpg" alt="Logo" class="logo">
+
+
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href ="homepage_Designs.html">Designs</a></li>
+                <li style="color: #967d00"><a href="">Sign in</a></li>
+                <li><a href="Sign_Up.html">Sign up</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div class="Form-Box">
+    <div class="button-box">
+        <h1>SIGN IN</h1>
+    </div>
+    <form class="input-group" id="signInForm" action="/signin" method="post">
+        <input type="text" class="input-field" name="id" pattern="[0-9]*" placeholder="User Id" required title="Please enter a numeric User Id">
+        <input type="password" class="input-field" name="password" placeholder="Enter Password" required>
+        <button type="button" class="submit-btn" onclick="signIn()">Sign In</button>
+        <button class="forget">
+            <a href="" class="no-underline"></a>
+        </button>
+        <button class="NAC" style="text-align: center; margin-left: 35%;">
+            <a href="Sign_Up.html" class="no-underline">Create New Account</a>
+        </button>
+    </form>
+    <div class="popup" id="successPopup">
+        <img src="tick01.png">
+        <h2 style="color: #4CAF50">Success</h2>
+        <p>You Have logged in successfully.</p>
+        <button type="button" onclick="closeSuccessPopup()">OK</button>
+    </div>
+    <div class="popup" id="errorPopup">
+        <h2 style="color:red;">Error</h2>
+        <p id="errorText"></p>
+        <button type="button" onclick="closeErrorPopup()">OK</button>
+    </div>
+</div>
+</div>
+</div>
+
+
+<script>
+    let popup = document.getElementById("successPopup")
+    let errorPopup = document.getElementById("errorPopup");
+    let errorText = document.getElementById("errorText");
+    let url;
+    function openSuccessPopup() {
+        popup.classList.add("open-popup");
+    }
+
+    function closeSuccessPopup() {
+        popup.classList.remove("open-popup");
+        window.location.href = url;
+    }
+
+    function openErrorPopup(errorMessage) {
+        errorText.textContent = errorMessage;
+        errorPopup.classList.add("open-popup");
+    }
+
+    function closeErrorPopup() {
+        errorPopup.classList.remove("open-popup");
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const signInForm = document.getElementById("signInForm");
+
+        signInForm.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevents the default form submission behavior
+            signIn();
+        });
+    });
+    function signIn() {
+        const signInForm = document.getElementById("signInForm");
+        const userIdInput = signInForm.querySelector('input[name="id"]');
+        const userId = userIdInput.value;
+
+
+        if (/^[0-9]+$/.test(userId)) {
+
+            const formData = new FormData(signInForm);
+
+            fetch('/Rashu_signin', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: new URLSearchParams(formData).toString(),
+            })
+                .then((response) => {
+                    if (response.status === 200) {
+                        response.json().then(function (data) {
+                            if (data.role === "admin") {
+                                console.log(data)
+                                sessionStorage.setItem("Admin_id", data.id);
+
+                                url="Admin_profile_my_profile.html";
+                                openSuccessPopup();
+
+                            } else if (data.role === "designer") {
+                                console.log(data)
+                                sessionStorage.setItem("id", data.id);
+                                url= `/Raisa/html/Designer_Designer_Portfolio.html`;
+                                openSuccessPopup();
+                            } else if (data.role === "user") {
+                                sessionStorage.setItem("id", data.id);
+                                url= `/UserProfile/${data.id}`;
+                                openSuccessPopup();
+                            } else if (data.error === "Wrong Password") {
+                                openErrorPopup(data.error);
+                            } else if (data.error === "Wrong User ID") {
+                                openErrorPopup(data.error);
+                            } else {
+                                openErrorPopup("Unknown Error");
+                            }
+                        });
+                    } else if (response.status === 401) {
+                        response.text().then(function (data) {
+                            openErrorPopup(data);
+                        });
+                    } else {
+                        openErrorPopup("Error: " + response.status);
+                    }
+                })
+                .catch((error) => {
+                    openErrorPopup("Error: " + error.message);
+                });
+        } else {
+            openErrorPopup("Please enter a numeric User ID");
+        }
+    }
+
+</script>
+
+<footer class="footer">
+    <div class="container_ftr">
+        <div class="row">
+            <div class="footer-col">
+                <ul>
+                    <li>&copy; COPYRIGHT Reserved by</li>
+                    <li>Digital Art Design </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <div class="contact">
+                        <li>Contact Information:</li>
+                        <li>Address: Chittagong ,Bangladesh</li>
+                        <li>Phone: <a href="tel:+15551234567">(555) 123-4567</a></li>
+                        <li>Email: <a href="mailto:info@example.com">info@example.com</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="Admin_profile_About_Us.html">about us</a></li>
+                    <li><a href="Admin_profile_Our_Services.html">our services</a></li>
+                    <li><a href="Admin_profile_FAQ.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a ><i class="fab fa-facebook-f"></i></a>
+                    <a ><i class="fab fa-twitter"></i></a>
+                    <a ><i class="fab fa-instagram"></i></a>
+                    <a ><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

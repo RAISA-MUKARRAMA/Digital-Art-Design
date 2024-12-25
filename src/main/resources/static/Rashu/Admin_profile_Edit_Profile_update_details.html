@@ -1,0 +1,346 @@
+<html lang="en">
+    <head>
+        <title>
+            Update Profile
+        </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Admin_profile_body_background.css">
+        <link rel="stylesheet" href="Admin_profile_menu-bar.css">
+        <link rel="stylesheet" href="Admin_profile_main-content.css">
+        <link rel="stylesheet" href="Admin_profile_form.css">
+        <link rel="stylesheet" href="Admin_profile_display_table.css">
+        <link rel="stylesheet" href="Admin_profile_header_search_bar.css">
+        <link rel="stylesheet" href="Admin_profile_footer.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="backgrounding">
+                <div class="menubar">
+                    <img src="design_logo_02.jpg" class="logo">
+
+                    <ul style="color:white; padding: 5px;" >
+
+                        <li><i class="fas fa-user-circle" style="color: white;"></i><span style="color:white; padding: 5px" id="adminName"> </span></li>
+                    </ul>
+                </div>
+            </div>
+         </header>
+
+    <main class="content_main">
+        <div class="menu-bar">
+        <ul>
+            <li><a href="/home"><i class="fa fa-home "></i> Home</a></li>
+            <li><a href="Admin_profile_my_profile.html"><i class="fa fa-user "></i> My profile</a></li>
+            <li><a href="Admin_profile_Designs.html"><i class="fas fa-list-ul "></i> Designs</a>
+
+            </li>
+            
+            <li><a href="Admin_profile_Designers.html"><i class="fa fa-users"></i> Designers</a></li>
+            <li ><a href="Admin_profile_Users.html"><i class="fa fa-users"></i> Users</a></li>
+            <li><a href="Admin_profile_Admins.html"><i class="fa fa-users"></i> Admins</a></li>
+            <li><a href="#"><i class="fas fa-trophy contest-icon "></i> My contest</a>
+                <div class="sub-menu-2">
+                    <ul>
+                        <li><a href="Admin_profile_Mycontest_contest_request.html">Contest Requests</a></li>
+                        <li><a href="Admin_profile_Mycontest_previous_contest.html">Previous Contest</a></li>
+                        <li><a href="Admin_profile_Mycontest_Set_A_Contest.html">Set A Contest</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="Admin_profile_Inbox.html"><i class="fas fa-inbox inbox-icon"></i> Inbox</a></li>
+            <li ><a href="#"><i class="fas fa-bullhorn announcement-icon "></i> Announcements</a>
+                <div class="sub-menu-2">
+                    <ul>
+                        <li><a href="Admin_profile_Announcement_previous_announcement.html">Previous Announcement</a></li>
+                        <li><a href="Admin_profile_Announcement_Set_an__announcement.html">Set An Announcement</a></li>
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="active"><a href="#"><i class="fas fa-cog profile-settings-icon "></i> Profile Setting</a>
+                <div class="sub-menu-2">
+                    <ul>
+                        <li><a >Update Details</a></li>
+                        <li><a href="Admin_profile_Edit_Profile_Change_password.html">Change Password</a></li>
+
+                    </ul>
+                </div>
+            </li>
+            <li onclick="logout()"><a href="" ><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+
+        </ul>
+        </div>
+            <div class="container">
+
+                <h2 style="color:#967d00;text-align: center;">Edit Profile</h2>
+                <form id="profileForm" action="#" method="post">
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirmation Password</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Name</label>
+                        <input type="text" id="username" name="username" >
+                    </div>
+                    <div class="form-group">
+                        <label for="emails">Email</label>
+                        <input type="email" id="emails" name="emails" >
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob">
+                    </div>
+                    <div class="form-group">
+                        <label for="contactNumber">Contact Number</label>
+                        <input type="tel" id="contactNumber" name="contactNumber">
+                    </div>
+                    <div class="form-group">
+                        <label for="bio">Bio</label>
+                        <textarea  id="bio" name="bio" rows="4"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address">
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn" id="submitBtn">Submit</button>
+
+
+                    </div>
+                    </form>
+                <div class="popup" id="successPopup">
+                    <img src="tick01.png">
+                    <h2>Thank you</h2>
+                    <p>Your details has been successfully updated</p>
+                    <button type="button" onclick=closeSuccessPopup() >OK</button>
+                </div>
+                <div class="popup" id="errorPopup">
+                    <h2>Error</h2>
+                    <p id="errorText"></p>
+                    <button type="button" onclick="closeErrorPopup()">OK</button>
+                </div>
+            </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container_ftr">
+            <div class="row">
+                <div class="footer-col">
+                    <ul>
+                        <li>&copy; COPYRIGHT Reserved by</li>
+                        <li>Digital Art Design </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                    <div class="contact">
+                        <li>Contact Information:</li>
+                        <li>Address: Chittagong ,Bangladesh</li>
+                        <li>Phone: <a href="tel:+15551234567">(555) 123-4567</a></li>
+                        <li>Email: <a href="mailto:info@example.com">info@example.com</a></li>
+                    </div>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="Admin_profile_About_Us.html">about us</a></li>
+                        <li><a href="Admin_profile_Our_Services.html">our services</a></li>
+                        <li><a href="Admin_profile_FAQ.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a ><i class="fab fa-facebook-f"></i></a>
+                        <a ><i class="fab fa-twitter"></i></a>
+                        <a ><i class="fab fa-instagram"></i></a>
+                        <a><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+        <script>
+            function logout() {
+                sessionStorage.removeItem("Admin_id"); // Remove the Admin_id from session storage
+                window.location.href = "/home";
+            }
+            function checkAdminId() {
+                let id = sessionStorage.getItem("Admin_id");
+                if (id === null) {
+                    window.location.href = "/home";
+                    return null; // Return null if Admin_id is null
+                }
+                return id; // Return Admin_id if it exists
+            }
+            // Check if Admin_id is null on page load
+            document.addEventListener("DOMContentLoaded", function () {
+                checkAdminId();
+            });
+            window.addEventListener("beforeunload", function(event) {
+                const id = sessionStorage.getItem("Admin_id");
+                if (id === null) {
+                    sessionStorage.removeItem("Admin_id");
+                }
+            });
+            const admin_nameContainer = document.getElementById("adminName");
+
+            const Admin_Name = sessionStorage.getItem('Admin_Name');
+            console.log(Admin_Name);
+            admin_nameContainer.innerHTML=Admin_Name;
+            console.log("Script is running");
+            let popup = document.getElementById("successPopup");
+            let errorPopup = document.getElementById("errorPopup");
+            let errorText = document.getElementById("errorText");
+            let p=0;
+            function openSuccessPopup() {
+                popup.classList.add("open-popup");
+            }
+
+            function closeSuccessPopup() {
+
+                popup.classList.remove("open-popup");
+                location.reload();
+            }
+
+            function openErrorPopup() {
+
+                errorPopup.classList.add("open-popup");
+            }
+
+            function closeErrorPopup() {
+                errorPopup.classList.remove("open-popup");
+            }
+
+            const id = sessionStorage.getItem('Admin_id');
+
+
+            const fetchUserProfile = () => {
+                fetch(`/api/Rashu_profile/admin/${id}`)
+                    .then((response) => {
+                        if (response.ok) {
+                            console.log("Script is running 2");
+                            return response.json();
+                        }
+                        throw new Error('Failed to fetch user profile');
+                    })
+                    .then((data) => {
+                        console.log("Script is running 3");
+                        console.log("Script is running 4 "+ data.pass);
+
+                        document.getElementById('username').value = data.name;
+                        document.getElementById('emails').value = data.email;
+                        document.getElementById('dob').value = data.dob;
+                        document.getElementById('contactNumber').value = data.contact;
+                        document.getElementById('bio').value = data.bio;
+                        document.getElementById('address').value = data.adds;
+                    })
+                    .catch((error) => {
+                        console.error(error);
+                    });
+            };
+
+
+            const updateProfile = () => {
+                console.log('Profile updated successfully ' + document.getElementById('username').value);
+                const updatedProfile = {
+
+                    name: document.getElementById('username').value,
+                    email: document.getElementById('emails').value,
+                    dob: document.getElementById('dob').value,
+                    contactNumber: document.getElementById('contactNumber').value,
+                    address: document.getElementById('address').value,
+                    bio: document.getElementById('bio').value,
+                    pass: document.getElementById("confirmPassword").value,
+
+                };
+
+                function validateAndSubmit() {
+                    const name = document.getElementById('username').value;
+                    const  email = document.getElementById('emails').value;
+                    const    dob = document.getElementById('dob').value;
+                    const    contactNumber= document.getElementById('contactNumber').value;
+                    const    address= document.getElementById('address').value;
+                    const    bio= document.getElementById('bio').value;
+                    const    pass= document.getElementById("confirmPassword").value;
+
+
+                    if (name.length>50 ) {
+                        errorText.textContent = `Too long name input (Name can be of max 50 character )`;
+                        openErrorPopup();
+                    } else if (address.length >150 ) {
+                        errorText.textContent = `Too long address input ( Address can be of max 150 character )`;
+                        openErrorPopup()
+                    } else if (bio.length >150) {
+                        errorText.textContent = `Too long bio input ( Bio can be of max 150 character )`;
+                        openErrorPopup();
+                    } else if (email.length) {
+                        errorText.textContent = `Too long Email input ( Email can be of max 320 character )`;
+                        openErrorPopup();
+                    }else if (contactNumber.length) {
+                        errorText.textContent = `Too long Contact No input ( Contact can be of max 20 character )`;
+                        openErrorPopup();
+                    } else {
+
+                        errorText.textContent = "";
+                        submitForm();
+                    }
+                }
+
+
+                function submitForm() {
+
+                    fetch(`/api/Rashu_profile/admin/${id}`, {
+                        method: 'PUT',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(updatedProfile),
+                    })
+                        .then((response) => {
+                            if (response.ok) {
+
+                                openSuccessPopup();
+                                console.log('Profile updated successfully');
+                            } else if (response.status === 401) {
+                                // Unauthorized (wrong password) error
+                                errorText.textContent = 'Wrong Password';
+                                openErrorPopup();
+
+                            } else {
+                                // Handle other errors
+                                errorText.textContent = 'Failed to update user profile';
+                                openErrorPopup();
+
+                            }
+                        })
+                        .catch((error) => {
+                            console.error(error);
+                            errorText.textContent = 'Failed to update user profile';
+                            openErrorPopup();
+
+                        });
+
+                }
+                validateAndSubmit();
+            }
+
+            document.addEventListener('DOMContentLoaded', () => {
+                if(checkAdminId()===null)
+                    return;
+                fetchUserProfile();
+
+            });
+
+            document.getElementById('profileForm').addEventListener('submit', (event) => {
+                event.preventDefault();
+                updateProfile();
+            });
+        </script>
+
+    </body>
+</html>

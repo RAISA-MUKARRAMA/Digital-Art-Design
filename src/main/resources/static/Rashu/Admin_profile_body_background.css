@@ -1,0 +1,78 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    box-sizing: border-box;
+    background-color: #f6f1f1;
+}
+.backgrounding{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)),url(newbackgroundvs.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 175px;
+}
+.menubar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menubar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    padding: 3px;
+    color: #ffffff;
+}
+.menubar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: large;
+}
+.menubar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #967d00;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.menubar ul li:hover::after{
+    width: 100%;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.imgallign{
+    margin: 50px 1000px;
+    width: auto;
+} 
+.image{
+    width: 500px;
+    height: 450px;
+}
+.container {
+    position: relative; /* Container for content and footer */
+}
+
+.content {
+    padding: 20px; /* Add spacing around your content */
+}
+
+.user-profile {
+    color: white;
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Align items vertically in the center */
+}
+
+.user-profile i {
+    padding: 3px;
+    margin-right: 10px; /* Adjust margin between icon and text */
+}

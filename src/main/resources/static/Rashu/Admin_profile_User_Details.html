@@ -1,0 +1,414 @@
+<html lang="en">
+<head>
+    <title>
+        User Details
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Admin_profile_body_background.css">
+    <link rel="stylesheet" href="Admin_profile_menu-bar.css">
+    <link rel="stylesheet" href="Admin_profile_main-content.css">
+    <link rel="stylesheet" href="Admin_profile_form.css">
+    <link rel="stylesheet" href="Pagination.css">
+    <link rel="stylesheet" href="Admin_profile_display_table.css">
+    <link rel="stylesheet" href="Admin_profile_footer.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <style>
+
+        .profile {
+            text-align: left;
+            padding: 20px;
+            padding-left: 15%;
+            padding-right: 15%;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: fit-content;
+            max-width: 550px;
+            margin: 5px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: #f9f9f9;
+            color:#333;
+        }
+
+
+        .profile p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .ID{
+            color:#967d00;
+            font-style:italic;
+        }
+        .profile p:first-child {
+            font-weight: bold;
+            color: #333;
+        }
+        .profile p:not(:first-child) {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="backgrounding">
+        <div class="menubar">
+            <img src="design_logo_02.jpg" class="logo">
+            <ul style="color:white; padding: 5px;" >
+
+                <li><i class="fas fa-user-circle" style="color: white;"></i><span style="color:white; padding: 5px" id="adminName"> </span></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<main class="content_main">
+    <div class="menu-bar">
+        <ul>
+            <li><a href="/home"><i class="fa fa-home "></i> Home</a></li>
+            <li c><a href="Admin_profile_my_profile.html"><i class="fa fa-user "></i> My profile</a></li>
+            <li><a href="Admin_profile_Designs.html"><i class="fas fa-list-ul "></i>Designs</a></li>
+
+
+            <li><a href="Admin_profile_Designers.html"><i class="fa fa-users"></i> Designers</a></li>
+            <li class="active" ><a ><i class="fa fa-users"></i> Users</a></li>
+            <li><a href="Admin_profile_Admins.html"><i class="fa fa-users"></i> Admins</a></li>
+            <li><a href="#"><i class="fas fa-trophy contest-icon "></i> My contest</a>
+                <div class="sub-menu-2">
+                    <ul>
+                        <li><a href="Admin_profile_Mycontest_contest_request.html">Contest Requests</a></li>
+                        <li><a href="Admin_profile_Mycontest_previous_contest.html">Previous Contest</a></li>
+                        <li><a href="Admin_profile_Mycontest_Set_A_Contest.html">Set A Contest</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="Admin_profile_Inbox.html"><i class="fas fa-inbox inbox-icon"></i> Inbox</a></li>
+            <li ><a href="#"><i class="fas fa-bullhorn announcement-icon "></i> Announcements</a>
+                <div class="sub-menu-2">
+                    <ul>
+                        <li><a href="Admin_profile_Announcement_previous_announcement.html">Previous Announcement</a></li>
+                        <li><a href="Admin_profile_Announcement_Set_an__announcement.html">Set An Announcement</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li><a href="#"><i class="fas fa-cog profile-settings-icon "></i> Profile Setting</a>
+                <div class="sub-menu-2">
+                    <ul>
+                        <li><a href="Admin_profile_Edit_Profile_update_details.html">Update Details</a></li>
+                        <li><a href="Admin_profile_Edit_Profile_Change_password.html">Change Password</a></li>
+
+                    </ul>
+                </div>
+            </li>
+            <li onclick="logout()"><a href=""><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h3>User Information</h3>
+        <div class="profile" id="userProfile">
+
+        </div>
+        <div id="orderList">
+            <h1>Order List</h1>
+            <table>
+                <tr>
+                    <th>Designer Name</th>
+                    <th>Design Title</th>
+                    <th>Description</th>
+                    <th>Category</th>
+                    <th>preview</th>
+                </tr>
+            </table>
+            <div id="pagination">
+                <button id="prevButton">Previous</button>
+                <button id="nextButton">Next</button>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <div class="container_ftr">
+        <div class="row">
+            <div class="footer-col">
+                <ul>
+                    <li>&copy; COPYRIGHT Reserved by</li>
+                    <li>Digital Art Design </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <div class="contact">
+                        <li>Contact Information:</li>
+                        <li>Address: Chittagong ,Bangladesh</li>
+                        <li>Phone: <a href="tel:+15551234567">(555) 123-4567</a></li>
+                        <li>Email: <a href="mailto:info@example.com">info@example.com</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="Admin_profile_About_Us.html">about us</a></li>
+                    <li><a href="Admin_profile_Our_Services.html">our services</a></li>
+                    <li><a href="Admin_profile_FAQ.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a ><i class="fab fa-facebook-f"></i></a>
+                    <a ><i class="fab fa-twitter"></i></a>
+                    <a ><i class="fab fa-instagram"></i></a>
+                    <a ><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+
+    function logout() {
+        sessionStorage.removeItem("Admin_id"); // Remove the Admin_id from session storage
+        window.location.href = "/home";
+    }
+    function checkAdminId() {
+        let id = sessionStorage.getItem("Admin_id");
+        if (id === null) {
+            window.location.href = "/home";
+            return null; // Return null if Admin_id is null
+        }
+        return id; // Return Admin_id if it exists
+    }
+    window.addEventListener("beforeunload", function(event) {
+        const id = sessionStorage.getItem("Admin_id");
+        if (id === null) {
+            sessionStorage.removeItem("Admin_id");
+        }
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        if(checkAdminId()===null)
+        return;
+        checkAdminId();
+        var id = sessionStorage.getItem("Admin_id");
+        sessionStorage.setItem("Admin_id", id);
+        const admin_nameContainer = document.getElementById("adminName");
+
+        const Admin_Name = sessionStorage.getItem('Admin_Name');
+        console.log(Admin_Name);
+        admin_nameContainer.innerHTML=Admin_Name;
+        const z = sessionStorage.getItem("user_id");
+        const user_id= BigInt(z);
+        const userProfileContainer = document.getElementById("userProfile");
+
+        const itemsPerPage = 7;
+        let currentPage = 1;
+        let orders;
+        const designList = document.getElementById("orderList");
+        const table = designList.querySelector("table");
+
+        console.log(typeof user_id);
+        fetch(`/Rashu_designs/orders/${user_id}`)
+                .then(response => {
+                    if (response.status === 200) {
+                        return response.json();
+                    } else if (response.status === 204) {
+
+                        console.log('No content found for the specified category.');
+                        return [];
+                    } else {
+                        throw new Error(`Unexpected response status: ${response.status}`);
+                    }
+                })
+                .then(data => {
+                    orders = data;
+                    console.log("2");
+                    displayDesigns(data, currentPage);
+                })
+                .catch(error => console.error('Error fetching design data:', error));
+
+
+
+
+        function displayDesigns(orders, page) {
+            while (table.rows.length > 1) {
+                table.deleteRow(1);
+            }
+
+            const startIndex = (page - 1) * itemsPerPage;
+            const endIndex = page * itemsPerPage;
+            if (orders.length === 0) {
+                const noDesignsRow = table.insertRow();
+                const noDesignsCell = noDesignsRow.insertCell(0);
+                noDesignsCell.colSpan = 5;
+                noDesignsCell.innerHTML = 'No order found for the this user.';
+                return;
+            }
+            for (let i = startIndex; i < endIndex && i < orders.length; i++) {
+                const order = orders[i];
+                const row = table.insertRow();
+                const cell1 = row.insertCell(0);
+                const cell2 = row.insertCell(1);
+                const cell3 = row.insertCell(2);
+                const cell4 = row.insertCell(3);
+                const cell5 = row.insertCell(4);
+
+                let ratings=order.design.rating;
+                if(ratings === null)
+                {   ratings=0; }
+
+                const likes = `<p>${order.design.title}</p><br><i class="fas fa-heart" style="color :red; font-size: 20px"></i> ${ratings}`;
+
+                console.log(order);
+
+                cell1.innerHTML = order.design.designer.name;
+                cell2.innerHTML = likes;
+                cell3.innerHTML= order.design.description;
+                cell4.innerHTML = order.design.category.ctgr_Title;
+                console.log('Type of design.content:', order.design.category.ctgr_Title);
+                console.log('Length of design.content:', order.design.content);
+
+                const previewImage = document.createElement("img");
+                console.log("3  " + order.design.content);
+
+                const binaryString = atob(order.design.content);
+                const contentArray = new Uint8Array(binaryString.length);
+                for (let i = 0; i < binaryString.length; i++) {
+                    contentArray[i] = binaryString.charCodeAt(i);
+                }
+
+                const blob = new Blob([contentArray]);
+
+                const fileReader = new FileReader();
+                fileReader.onload = function (event) {
+                    const arrayBuffer = event.target.result;
+                    const uint8Array = new Uint8Array(arrayBuffer);
+
+                    const detectedType = getImageType(uint8Array);
+
+                    if (detectedType) {
+                        const blob = new Blob([contentArray], {type: detectedType.mime});
+                        const dataUrl = URL.createObjectURL(blob);
+
+                        previewImage.src = dataUrl;
+                        previewImage.width = 300;
+                        previewImage.height = 260;
+
+                        cell5.appendChild(previewImage);
+                    } else {
+                        console.error('Unable to determine image type.');
+                    }
+                };
+
+                fileReader.readAsArrayBuffer(blob);
+            }
+        }
+
+        function getImageType(uint8Array) {
+            const headerBytes = uint8Array.subarray(0, 4);
+
+            if (headerBytes[0] === 0xFF && headerBytes[1] === 0xD8 && headerBytes[2] === 0xFF && headerBytes[3] === 0xE0) {
+                return {mime: 'image/jpeg'};
+            }
+
+            if (headerBytes[0] === 0x89 && headerBytes[1] === 0x50 && headerBytes[2] === 0x4E && headerBytes[3] === 0x47) {
+                return {mime: 'image/png'};
+            }
+
+            if (headerBytes[0] === 0x47 && headerBytes[1] === 0x49 && headerBytes[2] === 0x46 && headerBytes[3] === 0x38) {
+                return {mime: 'image/gif'};
+            }
+
+            if (headerBytes[0] === 0xFF && headerBytes[1] === 0xD8 && headerBytes[2] === 0xFF && headerBytes[3] === 0xDB) {
+                return {mime: 'image/jpeg'};
+            }
+
+            if (headerBytes[0] === 0xFF && headerBytes[1] === 0xD8 && headerBytes[2] === 0xFF && headerBytes[3] === 0xE1) {
+                return {mime: 'image/jpeg'};
+            }
+
+            if (headerBytes[0] === 0x52 && headerBytes[1] === 0x49 && headerBytes[2] === 0x46 && headerBytes[3] === 0x46) {
+                return { mime: 'image/webp' };
+            }
+            return null;
+        }
+
+
+
+        document.getElementById("nextButton").addEventListener("click", function () {
+            if (orders && currentPage < Math.ceil(orders.length / itemsPerPage)) {
+                currentPage++;
+                displayDesigns(orders, currentPage);
+            }
+        });
+
+        document.getElementById("prevButton").addEventListener("click", function () {
+            if (orders && currentPage > 1) {
+                currentPage--;
+                displayDesigns(orders, currentPage);
+            }
+        });
+
+
+
+        const p = `/Rashu_user/profile?user_id=${user_id}`;
+
+
+        fetch(p, {
+            method: 'GET',
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+            .then((response) => {
+                if (response.status === 200) {
+                    return response.json();
+                } else {
+
+                    console.error(`Error: Response status ${response.status}`);
+                    return Promise.reject('Request failed');
+                }
+            })
+            .then((userData) => {
+                // Calculate age from date of birth if it exists
+                const dob = userData.dob ? new Date(userData.dob) : "";
+                const today = new Date();
+                const age = dob ? today.getFullYear() - dob.getFullYear() : "";
+                const email = userData.email || "";
+                const Bio =userData.bio || "";
+                const Address = userData.adds || "";
+                const Contact = userData.contact || "";
+
+                let htmlContent = `
+    <p><i class="fas fa-user"></i> Name: ${userData.name}</p>
+     <p style="text-align: left;color:#967d00;
+            font-style:italic;"><i class="fas fa-id-card"></i> ID: ${userData.id}</p>
+    <p><i class="fas fa-envelope"></i> Email: ${email}</p>
+    <p><i class="fas fa-phone"></i> Contact: ${Contact}</p>
+    <p><i class="fas fa-map-marker-alt"></i> Address: ${Address}</p>
+    <p><i class="fas fa-info-circle"></i> Bio: ${Bio}</p>`;
+
+
+                // Include Date of Birth and Age only if Date of Birth exists
+                if (dob) {
+                    htmlContent += `<p>Date of birth: ${userData.dob} (Age: ${age})</p>`;
+                }
+
+
+
+                // Set the innerHTML of the container
+                userProfileContainer.innerHTML = htmlContent;
+            })
+            .catch((error) => {
+
+                console.error("Error: " + error);
+                userProfileContainer.innerHTML = '<p>Failed to load admin profile.</p>';
+            });
+    });
+</script>
+
+
+</body>
+</html>

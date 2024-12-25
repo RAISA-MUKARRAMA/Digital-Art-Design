@@ -1,0 +1,362 @@
+<html lang="en">
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Admin_profile_body_background.css">
+    <link rel="stylesheet" href="Sign_in.css">
+
+    <link rel="stylesheet" href="Admin_profile_body_background.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        .form-box {
+            width: 380px;
+            height: 600px;
+        }
+        .footer{
+            top:1000px;
+            background-color: #24262b;
+            padding: 70px 0;
+            bottom:0;
+        }
+
+        .footer-col{
+            width: 25%;
+            flex:1;
+            margin-right: 20px;
+            padding: 0 15px;
+            align-items: center;
+        }
+        .footer-col h4{
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+        }
+        .footer-col h4::before{
+            content: '';
+            position: absolute;
+            left:0;
+
+            bottom: -10px;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+        .footer-col ul li:not(:last-child){
+            margin-bottom: 10px;
+        }
+        .footer-col ul li a{
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+
+            display: block;
+            transition: all 0.3s ease;
+        }
+        .footer-col ul li a:hover{
+            color: #ffffff;
+            padding-left: 8px;
+        }
+        .footer-col .social-links a{
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255,255,255,0.2);
+            margin:0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ffffff;
+            transition: all 0.5s ease;
+        }
+        .footer-col .social-links a:hover{
+            color: #24262b;
+            background-color: #ffffff;
+        }
+        .content a {
+            text-decoration: none;
+            color: #000000;
+        }
+        /*responsive*/
+        @media(max-width: 767px){
+            .footer-col{
+                width: 50%;
+                margin-bottom: 30px;
+            }
+        }
+        @media(max-width: 574px){
+            .footer-col{
+                width: 100%;
+            }
+        }
+
+
+        /* Style the navigation links */
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Style the "Contact Information" section in the footer */
+        .contact p {
+            margin: 5px 0;
+        }
+
+        .contact a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Style the copyright notice */
+        .copyright {
+            margin-top: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="backgroundimg">
+        <div class="menubar">
+            <img src="design_logo_02.jpg" alt="Logo" class="logo">
+
+
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href ="homepage_Designs.html">Designs</a></li>
+                <li><a href="Sign_in.html">Sign in</a></li>
+                <li style="color: #967d00"><a href="">Sign up</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div class="Form-Box">
+    <div class="button-box">
+        <h1>SIGN UP</h1>
+    </div>
+
+    <form class="input-group"  id="signupForm" action="/api/signup" method="post">
+
+        <input type="text" class="input-field" id="name" name="name" placeholder="Name " required>
+        <input type="tel" class="input-field" id="phone" name="phone" pattern="[0-9+#]*" placeholder="Contact No" required>
+        <input type="email" class="input-field" id="email" name="email" placeholder="Email Address" required>
+
+        <input type="text" class="input-field" id="password" name="password" placeholder="Enter Password (at least 8 character)" pattern=".{8,}" required>
+        <input type="text" class="input-field" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" pattern=".{8,}" required>
+
+        <input type="text" class="input-field" id="signupAs" name="signupAs" list="signUpAsList" placeholder="Sign Up As" required>
+        <datalist id="signUpAsList">
+            <option value="Designer">Designer</option>
+            <option value="User">User</option>
+        </datalist>
+
+
+
+        <button type="button" class="submit-btn" onclick="validateAndSubmit()">Submit</button>
+    </form>
+
+    <div class="popup" id="confirmationPopup">
+        <img src="tick01.png" alt="Tick">
+        <h2>Thank you</h2>
+        <p>Your details have been submitted successfully. <span id="userID"></span></p>
+        <button type="button" onclick="closeConfirmationPopup()">OK</button>
+    </div>
+
+    <div class="error-popup" id="errorPopup">
+        <h2 >Error</h2>
+        <p id="errorText"></p>
+        <button type="button" onclick="closeErrorPopup()">OK</button>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container_ftr">
+        <div class="row">
+            <div class="footer-col">
+                <ul>
+                    <li>&copy; COPYRIGHT Reserved by</li>
+                    <li>Digital Art Design </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <div class="contact">
+                        <li>Contact Information:</li>
+                        <li>Address: Chittagong ,Bangladesh</li>
+                        <li>Phone: <a href="tel:+15551234567">(555) 123-4567</a></li>
+                        <li>Email: <a href="mailto:info@example.com">info@example.com</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="Admin_profile_About_Us.html">about us</a></li>
+                    <li><a href="Admin_profile_Our_Services.html">our services</a></li>
+                    <li><a href="Admin_profile_FAQ.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a ><i class="fab fa-facebook-f"></i></a>
+                    <a ><i class="fab fa-twitter"></i></a>
+                    <a ><i class="fab fa-instagram"></i></a>
+                    <a ><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    let popup = document.getElementById("confirmationPopup");
+    let errorPopup = document.getElementById("errorPopup");
+    let errorText = document.getElementById("errorText");
+
+    function openConfirmationPopup() {
+        popup.classList.add("open-popup");
+    }
+
+    function closeConfirmationPopup() {
+        popup.classList.remove("open-popup");
+    }
+    function openPopup() {
+        popup.classList.add("open-popup");
+    }
+
+    function closePopup() {
+        popup.classList.remove("open-popup");
+        location.reload();
+    }
+
+    function openErrorPopup() {
+        errorPopup.classList.add("open-popup");
+    }
+
+    function closeErrorPopup() {
+        errorPopup.classList.remove("open-popup");
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+        const signupForm = document.getElementById("signupForm");
+
+        signupForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+            validateAndSubmit();
+        });
+    });
+    function validateAndSubmit() {
+        const name = document.getElementById('name').value;
+        const phone = document.getElementById('phone').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirmPassword').value;
+        const signupAs = document.getElementById('signupAs').value;
+
+        const phoneNumberPattern = /^[\+0-9]+$/;
+
+        if (!name || !phone || !email || !password || !confirmPassword || !signupAs) {
+            errorText.textContent = "Error: Please fill in all required fields.";
+            openErrorPopup();
+        }
+        else if(!phoneNumberPattern.test(phone)){
+            errorText.textContent = "Error: Please fill in contact no field with a valid phone number..";
+            openErrorPopup();
+        }
+        else if (password.length < 8) {
+            errorText.textContent = "Error: Password must be at least 8 characters long.";
+            openErrorPopup();
+        }else if (password.length > 50) {
+            errorText.textContent = `Too long Password input ( Name can be of max 50 character )`;
+            openErrorPopup();
+        }else if (password !== confirmPassword) {
+            errorText.textContent = "Error: Password and Confirm Password do not match.";
+            openErrorPopup();
+        }else if (signupAs !== "User" && signupAs !== "Designer") {
+            errorText.textContent = "Error: Please select a valid Sign Up As option (User or Designer).";
+            openErrorPopup();
+        }else if (name.length > 50) {
+            errorText.textContent =`Too long Name input ( Name can be of max 50 character )`;
+            openErrorPopup();
+        } else if (email.length>320) {
+            errorText.textContent = `Too long Email input ( Email can be of max 320 character )`;
+            openErrorPopup();
+        }else if (phone.length>50) {
+            errorText.textContent = `Too long Contact No input ( Contact can be of max 20 character )`;
+            openErrorPopup();
+        }
+        else {
+
+            errorText.textContent = "";
+            submitForm();
+        }
+    }
+
+    function submitForm() {
+        const name = document.getElementById('name').value;
+        const phone = document.getElementById('phone').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirmPassword').value;
+        const signupAs = document.getElementById('signupAs').value;
+
+        const data = {
+            name,
+            phone,
+            email,
+            password,
+            confirmPassword,
+            signupAs,
+        };
+
+        fetch('/api/Rashu_signup', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        })
+            .then((response) => {
+                if (response.status === 200) {
+                    return response.text();
+                } else {
+                    return Promise.reject(response.text());
+                }
+            })
+            .then((data) => {
+
+                const userIDElement = document.getElementById('userID');
+                userIDElement.textContent = data;
+                openConfirmationPopup();
+
+                incrementCounter(signupAs);
+            })
+            .catch((error) => {
+
+                errorText.textContent = "Error: " + error;
+                openErrorPopup();
+            });
+    }
+
+    function incrementCounter(signupAs) {
+
+        console.log(`Incrementing ${signupAs} counter`);
+    }
+</script>
+</body>
+</html>

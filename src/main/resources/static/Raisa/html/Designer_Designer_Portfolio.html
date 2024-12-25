@@ -1,0 +1,546 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Designer Profile</title>
+    <!--    <link href="designerProfile.css" rel="stylesheet">-->
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" type="image/jpg" href="/Raisa/logovs.jpg">
+    <style>
+        *{
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: 0;
+            margin-right: 0;
+            font-family: Arial;
+            padding: 0;
+        }
+        .BCG{
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("/Raisa/newbackgroundvs.jpg");
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+        }
+        .upbox-logo{
+            background-color: transparent;
+            height: 180px;
+            width: 200px;
+        }
+        .logo{
+            width: 120px;
+            margin-left: 50px;
+            margin-top: 30px;
+        }
+        .upbox-other{
+            background-color: transparent;
+            height: 180px;
+            width: 800px;
+            margin-left: 200px;
+            margin-top: -180px;
+        }
+        .search-box{
+            height: 30px;
+            width: 600px;
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-left: 90px;
+            border-width: 2px;
+            border-color: #967d00;
+            padding-left: 12px;
+        }
+        .press-search{
+            height: 30px;
+            padding-left: 10px;
+            padding-right: 10px;
+            height: 35px;
+            cursor: pointer;
+            background-color: #967d00;
+            color: white;
+            border-radius: 10px;
+        }
+        .press-search:active{
+            background-color: white;
+            color: #967d00;
+        }
+        .buttons{
+            height: 80px;
+            margin-left: 30px;
+            margin-top: 60px;
+            align-content: center;
+            /*backdrop-filter: blur(10px);*/
+        }
+        .but{
+            border-radius: 20px;
+            height: 30px;
+            width: 150px;
+            color: white;
+            font-weight: 100;
+            background-color: transparent;
+            border: none;
+            transition: .15s;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        .but:hover{
+            background-color: #967d00;
+            font-size: 18px;
+        }
+        .name-div{
+            background-color: transparent;
+            height: 80px;
+            margin-left: 1000px;
+            margin-top: -180px;
+            /*backdrop-filter: blur(10px);*/
+            text-align: center;
+            align-content: center;
+        }
+        .user-name{
+            border-radius: 20px;
+            color: white;
+            background-color: transparent;
+            border: none;
+            transition: .15s;
+            cursor: pointer;
+            font-size: 15px;
+            text-align: center;
+            justify-content: center;
+            padding: 5px;
+        }
+        .user-name:hover{
+            background-color: #967d00;
+            font-size: 18px;
+        }
+        .lower-box{
+            margin-top: 50px;
+            height: 1000px;
+            background-color: white;
+            border-bottom: 1px solid black;
+        }
+        .option-box{
+            height: 900px;
+            width: 230px;
+            margin-top: 15px;
+            background-color: #525151;
+            opacity: 0.85;
+            margin-right: 0;
+            border-right: 3px solid black;
+            border-top: 3px solid black;
+        }
+        .option{
+            width: 230px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-top: 30px;
+            border-radius: 2px;
+            cursor: pointer;
+            font-size: 15px;
+            color: white;
+            background-color: transparent;
+            border: none;
+            transition: .15s;
+        }
+        .active, .option:hover{
+            background-color: #967d00;
+        }
+        .dash{
+            height: 900px;
+            width: 1050px;
+            background-color: transparent;
+            margin-left: 233px;
+            margin-top: -900px;
+            padding-top: 50px;
+            padding-left: 50px;
+        }
+        .information{
+            margin-top: 30px;
+            border-radius: 10px;
+            border: 3px solid #967d00;
+            width: 600px;
+            height: 400px;
+            background-color: whitesmoke;
+            box-shadow: 20px 5px 20px #525151; /* Box shadow */
+            margin-left: 20px;
+            text-align: center;
+            justify-content: center;
+            color: #2e2d2d;
+            padding: 5px 5px 5px 5px;
+            overflow: auto;
+        }
+        .img{
+            background-color: white;
+            height: 270px;
+            width: 270px;
+            border: 3px solid #967d00;
+            box-shadow: 10px 2px 10px #525151;
+            border-radius: 150px;
+            margin-left: 680px;
+            text-align: center;
+            margin-top: -330px;
+            color: black;
+            font-size: 20px;
+        }
+        .imgcont{
+            width:270px;
+            height:270px;
+            border-radius: 150px;
+        }
+        .update-div{
+            justify-content: center;
+            /*margin-top: 250px;*/
+        }
+        .upprof{
+            margin-left: 220px;
+            margin-top: 100px;
+            width: 200px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: transparent;
+            color: black;
+            border-width: 2px;
+            box-shadow: 10px 2px 10px #525151;
+            border-color: #967d00;
+            border-radius: 10px;
+            font-size: 18px;
+            transition: .15s;
+            cursor: pointer;
+            color: black;
+            font-weight: 500;
+        }
+        .upprof:hover{
+            background-color: #967d00;
+            color: white;
+        }
+        .signout{
+            margin-left: 720px;
+            margin-top: -150px;
+            width: 200px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: transparent;
+            color: black;
+            border-width: 2px;
+            box-shadow: 10px 2px 10px #525151;
+            border-color: #967d00;
+            border-radius: 10px;
+            font-size: 18px;
+            transition: .15s;
+            cursor: pointer;
+            color: black;
+            font-weight: 500;
+        }
+        .signout:hover{
+            background-color: #967d00;
+            color: white;
+        }
+        .upProfPopup {
+            display: none;
+            position: fixed; /* Set position to fixed */
+            top: 50%; /* Center vertically */
+            left: 50%; /* Center horizontally */
+            transform: translate(-50%, -50%); /* Center the popup */
+            z-index: 9999; /* Set a high z-index to ensure it's above other elements */
+            background-color: white;
+            transition: transform 0.4s, top 0.4s;
+            padding: 20px;
+            width: 600px;
+            height: 300px;
+            border: 5px solid #967d00;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            color: #525151;
+            border-radius: 10px;
+            animation: fadeIn 500ms ease forwards;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: .9;
+            }
+        }
+        .givenPass{
+            width: 20rem;
+            height: 30px;
+            text-align: center;
+            font-size: 25px;
+        }
+        .go{
+            width: 200px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: transparent;
+            color: black;
+            border-width: 2px;
+            box-shadow: 10px 2px 10px #525151;
+            border-color: #967d00;
+            border-radius: 10px;
+            font-size: 18px;
+            transition: .15s;
+            cursor: pointer;
+            color: black;
+            font-weight: 500;
+            background-color: white;
+        }
+        .go:hover{
+            background-color: #967d00;
+            color: white;
+        }
+        .cancel{
+            padding: 5px 5px;
+            font-size: 20px;
+            color: red;
+            border: 2px solid #967d00;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .cancel:active{
+            color: white;
+        }
+        footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: fit-content;
+            margin-bottom: 0px;
+            background-color: #333; /* Footer background color */
+            color: #fff; /* Footer text color */
+            padding: 15px; /* Add padding as needed */
+            text-align: center;
+            font-family: sans-serif;
+        }
+        .container_ftr{
+            top: 1000px;
+            max-width: 1170px;
+            margin:auto;
+            bottom: 0px;
+            height: fit-content;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        ul{
+            list-style: none;
+        }
+        .footer{
+            top:1100px;
+            background-color: #24262b;
+            padding: 70px 0;
+            bottom:0px;
+        }
+
+        .footer-col{
+            width: 25%;
+            flex:1;
+            margin-right: 20px;
+            padding: 0 15px;
+            align-items: center;
+        }
+
+        .footer-col h4{
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+        }
+        .footer-col h4::before{
+            content: '';
+            position: absolute;
+            left:0;
+            bottom: -10px;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+        .footer-col ul li:not(:last-child){
+            margin-bottom: 10px;
+        }
+        .footer-col ul li a{
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            color: #bbbbbb;
+            display: block;
+            transition: all 0.3s ease;
+        }
+        .footer-col ul li a:hover{
+            color: #ffffff;
+            padding-left: 8px;
+        }
+        .footer-col .social-links a i {
+            font-size: 90%; /* Adjust the size as needed */
+            line-height: 40px; /* Match line-height with container height */
+            vertical-align: middle;
+        }
+
+        .footer-col .social-links a{
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255,255,255,0.2);
+            margin:0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ffffff;
+            transition: all 0.5s ease;
+        }
+        .footer-col .social-links a:hover{
+            color: #24262b;
+            background-color: #ffffff;
+        }
+
+        /*responsive*/
+        @media(max-width: 767px){
+            .footer-col{
+                width: 50%;
+                margin-bottom: 30px;
+            }
+        }
+        @media(max-width: 574px){
+            .footer-col{
+                width: 100%;
+            }
+        }
+
+
+        /* Style the navigation links */
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Style the "Contact Information" section in the footer */
+        .contact p {
+            margin: 5px 0;
+        }
+
+        .contact a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Style the copyright notice */
+        .copyright {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="BCG">
+    <div class="upbox-logo">
+        <img src="/Raisa/logovs.jpg" class="logo">
+    </div>
+    <div class="upbox-other">
+        <div class="buttons">
+            <a href="/home"> <button class="but">Home</button> </a>
+            <a href="Designer_All_Designs.html"><button class="but">Designs</button></a>
+            <a href="Designer_See_Designers.html"><button class="but">Designer</button></a>
+            <a href="Designer_Participate_In_Contest.html"><button class="but">Contest</button></a>
+            <a href="Designer_Announcement.html"><button class="but"> Announcement</button></a>
+        </div>
+    </div>
+    <div class="name-div">
+        <a href="Designer_Designer_Portfolio.html"><button class="user-name"></button></a>
+    </div>
+    <div class="lower-box">
+        <div class="option-box">
+            <a href="Designer_Designer_Portfolio.html"><button class="option active">Dashboard</button> </a>
+            <a href="Designer_My_Designs.html"><button class="option">My Designs</button> </a>
+            <a href="Designer_Upload_Design.html"> <button class="option">Design Upload</button></a>
+            <a href="Designer_Participate_In_Contest.html"> <button class="option">Participate</button></a>
+            <a href="Designer_My_Orders.html"> <button class="option">Orders</button></a>
+            <a href="Designer_See_Admins.html"> <button class="option">See Admins</button></a>
+            <a href="Designer_See_Users.html"> <button class="option">See Users</button></a>
+            <a href="Designer_Messages.html"> <button class="option">Message</button></a>
+        </div>
+        <div class="dash">
+            <div class="information"></div>
+            <div class="img">
+                <img class="imgcont">
+            </div>
+            <div class="update-div">
+                <button class="upprof">Update Profile</button><br><br>
+                <button class="signout">Sign Out</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="upProfPopup">
+        <form class="matchPass">
+            <h3>Please provide Password to update:</h3><br>
+            <input class="givenPass" type="password"><br><br>
+            <button type="submit" class="go">Go</button><br><br>
+        </form>
+        <button class="cancel"><i class="fa fa-close"></i></button>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container_ftr">
+        <div class="row">
+            <div class="footer-col">
+                <ul>
+                    <li>&copy; COPYRIGHT Reserved by</li>
+                    <li>Digital Art Design </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <div class="contact">
+                        <li>Contact Information:</li>
+                        <li>Address: Chittagong ,Bangladesh</li>
+                        <li>Phone: <a href="tel:+15551234567">(555) 123-4567</a></li>
+                        <li>Email: <a href="mailto:info@example.com">info@example.com</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"
+        integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/Raisa/js/Designer_Designer_Portfolio.js">
+</script>
+</body>
+</html>

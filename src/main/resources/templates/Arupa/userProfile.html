@@ -1,0 +1,146 @@
+<!Doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viwport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/Arupa/user_updated_profile_style.css">
+    <style>
+        .user_updated_info{
+            width: 60%;
+            text-align: center;
+            padding: 20px;
+            margin: 20px 260px;
+            display: flex;
+            gap: 50px;
+            position: relative;
+        }
+        .info{
+            position: relative;
+        }
+        .info h3:first-child{
+            font-size: 30px;
+            margin: 10px 0;
+            color: #8b7401;
+        }
+        .info h3:last-child{
+            font-size: 25px;
+            margin: 10px 0;
+            color: #24262b;
+        }
+    </style>
+</head>
+<body>
+<div class="class1">
+    <div class="backgroundimg">
+        <div class="menubar">
+            <img src="/Rashu/design_logo_02.jpg" class="logo">
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a th:href="@{'/designer_list/' + ${user.id}}">Designers</a></li>
+                <li><a href="/home">Log out</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <h2 th:text="${user.name != null ? user.name : ''}"></h2>
+            <h4 th:text="'ID: ' + ${user.id}" style="color: #484747; text-align: center; margin-bottom: 10px"></h4>
+            <ul>
+                <li class="active"><a th:href="@{'/UserProfile/' + ${user.id}}">My profile</a></li>
+                <li><a th:href="@{'/completedOrders/' + ${user.id}}">My orders</a></li>
+                <li><a th:href="@{'/runningContest/' + ${user.id}}">My contests</a></li>
+                <li><a th:href="@{'/requestdetails/' + ${user.id}}">My requests</a></li>
+                <li ><a th:href="@{'/placeOrder/' + ${user.id}}">Place a new order</a></li>
+                <li><a th:href="@{'/contest/' + ${user.id}}">Request for a contest</a></li>
+                <li><a th:href="@{'/password/' + ${user.id}}">Password settings</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <a th:href="@{'/editProfile/' + ${user.id}}"><button type="button" class="edit">Edit Profile</button></a>
+            <div class="user_updated_info">
+                <div class="info">
+                    <h3 th:text="${orders}"></h3>
+                    <h3>Total orders placed</h3>
+                </div>
+                <div class="info">
+                    <h3 th:text="${contests}"></h3>
+                    <h3>Total contests hold</h3>
+                </div>
+            </div>
+            <div class="text">
+                <h3>Hire your favorite designer to get your design needs done or request to admin for a contest.</h3>
+                <a th:href="@{'/placeOrder/' + ${user.id}}" style="text-decoration: none">
+                    <button class="order-btn"><span>Place a new Order</span> <span>&rarr;</span></button>
+                </a>
+                <a th:href="@{'/contest/' + ${user.id}}" style="text-decoration: none">
+                    <button class="order-btn"><span>Request for a contest</span> <span>&rarr;</span></button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container_ftr">
+        <div class="row">
+            <div class="footer-col">
+                <ul>
+                    <li>&copy; COPYRIGHT Reserved by</li>
+                    <li>Digital Art Design </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <div class="contact">
+                        <li>Contact Information:</li>
+                        <li>Address: Chittagong ,Bangladesh</li>
+                        <li>Phone: <a href="tel:+15551234567">(555) 123-4567</a></li>
+                        <li>Email: <a href="mailto:info@example.com">info@example.com</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+    let id = sessionStorage.getItem("id");
+    console.log(id);
+    const sr = ScrollReveal({
+        origin: 'top',
+        distance: '100px',
+        duration: 2000,
+        reset: true
+    })
+    sr.reveal('.info',{delay: 200})
+
+    const srLeft = ScrollReveal({
+        origin: 'left',
+        distance: '40px',
+        duration: 2000,
+        reset: true
+    })
+
+    srLeft.reveal('.edit',{delay: 200})
+    srLeft.reveal('.text',{delay: 200})
+
+</script>
+</body>
+</html>

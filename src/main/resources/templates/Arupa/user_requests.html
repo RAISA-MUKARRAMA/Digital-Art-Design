@@ -1,0 +1,254 @@
+<!Doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viwport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/Arupa/categories_designer_style.css">
+    <style>
+        .msg{
+            margin: 80px 100px;
+            padding-inline: 40px;
+            padding-top: 40px;
+        }
+        .msg p{
+            color: grey;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="class1">
+    <div class="backgroundimg">
+        <div class="menubar">
+            <img src="/Rashu/design_logo_02.jpg" class="logo">
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a th:href="@{'/designer_list/' + ${user.id}}">Designers</a></li>
+                <li><a href="/home">Log out</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <h2 th:text="${user.name != null ? user.name : ''}"></h2>
+            <h4 th:text="'ID: ' + ${user.id}" style="color: #484747; text-align: center; margin-bottom: 10px"></h4>
+            <ul>
+                <li><a th:href="@{'/UserProfile/' + ${user.id}}">My profile</a></li>
+                <li><a th:href="@{'/completedOrders/' + ${user.id}}">My orders</a></li>
+                <li><a th:href="@{'/runningContest/' + ${user.id}}">My contests</a></li>
+                <li class="active"><a th:href="@{'/requestdetails/' + ${user.id}}">My requests</a></li>
+                <li ><a th:href="@{'/placeOrder/' + ${user.id}}">Place a new order</a></li>
+                <li><a th:href="@{'/contest/' + ${user.id}}">Request for a contest</a></li>
+                <li><a th:href="@{'/password/' + ${user.id}}">Password settings</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div th:if="${message}" class="msg">
+                <p th:text="${message}"></p>
+            </div>
+            <main th:if="${requests}">
+                <section class="header">
+                    <div class="items-controller">
+                        <h4>Show</h4>
+                        <select name="" id="itemperpage">
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="08" selected>08</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                        </select>
+                        <h4>Per Page</h4>
+                    </div>
+                    <div class="search">
+                        <h4>Search</h4>
+                        <input type="text" name="" id="search" placeholder="Admin Id">
+                    </div>
+                </section>
+                <section class="field">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Admin Id </th>
+                            <th style="width: 25%">Date </th>
+                            <th>Description </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr th:each="request: ${requests}">
+                            <td th:text="${request.adminId}"></td>
+                            <td th:text="${request.date}"></td>
+                            <td th:text="${request.description}"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="bottom-field">
+                        <ul class="pagination">
+                            <li class="prev"><a href="#" id="prev">&#139;</a></li>
+                            <!-- page number here -->
+                            <li class="next"><a href="#" id="next">&#155;</a></li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container_ftr">
+        <div class="row">
+            <div class="footer-col">
+                <ul>
+                    <li>&copy; COPYRIGHT Reserved by</li>
+                    <li>Digital Art Design </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <div class="contact">
+                        <li>Contact Information:</li>
+                        <li>Address: Chittagong ,Bangladesh</li>
+                        <li>Phone: <a href="tel:+15551234567">(555) 123-4567</a></li>
+                        <li>Email: <a href="mailto:info@example.com">info@example.com</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    var tbody = document.querySelector("tbody");
+    var pageUl = document.querySelector(".pagination");
+    var itemShow = document.querySelector("#itemperpage");
+    var tr = tbody.querySelectorAll("tr");
+    var emptyBox = [];
+    var index = 1;
+    var itemPerPage = 8;
+
+    var search = document.getElementById("search");
+    search.onkeyup = e=>{
+        const text = e.target.value;
+        for(let i=0; i<tr.length; i++){
+            const matchText = tr[i].querySelectorAll("td")[0].innerText;
+            if(matchText.toLowerCase().indexOf(text.toLowerCase()) > -1){
+                tr[i].style.visibility = "visible";
+            }
+            else{
+                tr[i].style.visibility= "collapse";
+            }
+        }
+    }
+
+    for(let i=0; i<tr.length; i++){ emptyBox.push(tr[i]);}
+
+    itemShow.onchange = giveTrPerPage;
+    function giveTrPerPage(){
+        itemPerPage = Number(this.value);
+        // console.log(itemPerPage);
+        displayPage(itemPerPage);
+        pageGenerator(itemPerPage);
+        getpagElement(itemPerPage);
+    }
+
+    function displayPage(limit){
+        tbody.innerHTML = '';
+        for(let i=0; i<limit; i++){
+            tbody.appendChild(emptyBox[i]);
+        }
+        const  pageNum = pageUl.querySelectorAll('.list');
+        pageNum.forEach(n => n.remove());
+    }
+    displayPage(itemPerPage);
+
+    function pageGenerator(getem){
+        const num_of_tr = emptyBox.length;
+        if(num_of_tr <= getem){
+            pageUl.style.display = 'none';
+        }else{
+            pageUl.style.display = 'flex';
+            const num_Of_Page = Math.ceil(num_of_tr/getem);
+            for(i=1; i<=num_Of_Page; i++){
+                const li = document.createElement('li'); li.className = 'list';
+                const a =document.createElement('a'); a.href = '#'; a.innerText = i;
+                a.setAttribute('data-page', i);
+                li.appendChild(a);
+                pageUl.insertBefore(li,pageUl.querySelector('.next'));
+            }
+        }
+    }
+    pageGenerator(itemPerPage);
+    let pageLink = pageUl.querySelectorAll("a");
+    let lastPage =  pageLink.length - 2;
+
+    function pageRunner(page, items, lastPage, active){
+        for(button of page){
+            button.onclick = e=>{
+                const page_num = e.target.getAttribute('data-page');
+                const page_mover = e.target.getAttribute('id');
+                if(page_num != null){
+                    index = page_num;
+
+                }else{
+                    if(page_mover === "next"){
+                        index++;
+                        if(index >= lastPage){
+                            index = lastPage;
+                        }
+                    }else{
+                        index--;
+                        if(index <= 1){
+                            index = 1;
+                        }
+                    }
+                }
+                pageMaker(index, items, active);
+            }
+        }
+
+    }
+    var pageLi = pageUl.querySelectorAll('.list'); pageLi[0].classList.add("active");
+    pageRunner(pageLink, itemPerPage, lastPage, pageLi);
+
+    function getpagElement(val){
+        let pagelink = pageUl.querySelectorAll("a");
+        let lastpage =  pagelink.length - 2;
+        let pageli = pageUl.querySelectorAll('.list');
+        pageli[0].classList.add("active");
+        pageRunner(pagelink, val, lastpage, pageli);
+
+    }
+
+    function pageMaker(index, item_per_page, activePage){
+        const start = item_per_page * index;
+        const end  = start + item_per_page;
+        const current_page =  emptyBox.slice((start - item_per_page), (end-item_per_page));
+        tbody.innerHTML = "";
+        for(let j=0; j<current_page.length; j++){
+            let item = current_page[j];
+            tbody.appendChild(item);
+        }
+        Array.from(activePage).forEach((e)=>{e.classList.remove("active");});
+        activePage[index-1].classList.add("active");
+    }
+
+
+</script>
+</body>
+</html>

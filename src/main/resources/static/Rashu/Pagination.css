@@ -1,0 +1,87 @@
+/* CSS for Pagination Buttons */
+#pagination {
+    text-align: left;
+    margin-left: 110px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#prevButton, #nextButton {
+    background-color: #967d00;
+    color: #0F0E0E;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    width: 80px;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+
+
+}
+/* Hover effect */
+#prevButton:hover, #nextButton:hover {
+    background-color: #625007;
+    color: #fff;
+}
+
+/* Style for the "Select" button */
+button.select {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    max-width: 100px;
+    border: 1px solid #4caf50; /* Green border for "Select" button */
+    border-radius: 4px;
+    background-color: #4caf50; /* Green background for "Select" button */
+    color: #fff; /* White text color for "Select" button */
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+/* Hover effect for the "Select" button */
+button.select:hover {
+    background-color: #025205; /* Darker green background on hover */
+}
+
+/* Style for the "Unselect" button */
+button.unselect {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid #f44336; /* Red border for "Unselect" button */
+    border-radius: 4px;
+    max-width: 100px;
+    background-color: #f44336; /* Red background for "Unselect" button */
+    color: #fff; /* White text color for "Unselect" button */
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+/* Hover effect for the "Unselect" button */
+button.unselect:hover {
+    background-color: #9f1212; /* Darker red background on hover */
+}
+
+/* Style for the "Unselect" button */
+button.pending {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid  #007bff; /* Red border for "Unselect" button */
+    border-radius: 4px;
+    max-width: 100px;
+    background-color: #007bff; /* Red background for "Unselect" button */
+    color: #fff; /* White text color for "Unselect" button */
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+/* Hover effect for the "Unselect" button */
+button.pending:hover {
+    background-color: #0f3a69; /* Darker red background on hover */
+}

@@ -1,0 +1,187 @@
+<!Doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viwport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/Arupa/user_edit_profile_style.css">
+    <style>
+        .success-message button {
+            color: black;
+            padding: 10px 10px;
+            cursor: pointer;
+            margin-top:10px;
+            left: 30%;
+            width: 100px;
+            text-align: center;
+            font-size: medium;
+            font-weight: bold;
+            border-radius: 25px;
+            border: 1px solid #967d00;
+            background: #967d00;
+            position: relative;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div class="class1">
+    <div class="backgroundimg">
+        <div class="menubar">
+            <img src="/Rashu/design_logo_02.jpg" class="logo">
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a th:href="@{'/designer_list/' + ${user.id}}">Designers</a></li>
+                <li><a href="/home">Log out</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="sidebar">
+        <h2 th:text="${user.name != null ? user.name : ''}"></h2>
+        <h4 th:text="'ID: ' + ${user.id}" style="color: #484747; text-align: center; margin-bottom: 10px"></h4>
+        <ul>
+            <li class="active"><a th:href="@{'/UserProfile/' + ${user.id}}">My profile</a></li>
+            <li><a th:href="@{'/completedOrders/' + ${user.id}}">My orders</a></li>
+            <li><a th:href="@{'/runningContest/' + ${user.id}}">My contests</a></li>
+            <li><a th:href="@{'/requestdetails/' + ${user.id}}">My requests</a></li>
+            <li ><a th:href="@{'/placeOrder/' + ${user.id}}">Place a new order</a></li>
+            <li><a th:href="@{'/contest/' + ${user.id}}">Request for a contest</a></li>
+            <li><a th:href="@{'/password/' + ${user.id}}">Password settings</a></li>
+        </ul>
+    </div>
+    <div class="text">
+        <h2>Edit Information</h2>
+    </div>
+    <div class="content">
+        <form id="edit-form" th:action="@{'/userEditProfile/' + ${user.id}}" method="POST">
+            <div class="main-user-info">
+
+                <div class="user-input-box">
+                    <label for="name">User Name</label>
+                    <input type="text"
+                           id="name"
+                           name="name"
+                           th:placeholder="${user.name}"/>
+                </div>
+                <div class="user-input-box">
+                    <label for="contact">Phone Number</label>
+                    <input type="text"
+                           id="contact"
+                           name="contact"
+                           th:placeholder="${user.contact}"/>
+                </div>
+                <div class="user-input-box">
+                    <label for="email">Email Address</label>
+                    <input type="text"
+                           id="email"
+                           name="email"
+                           th:placeholder="${user.email}"/>
+                </div>
+                <div class="user-input-box">
+                    <label for="dob">Date of birth</label>
+                    <input type="date"
+                           id="dob"
+                           name="dob"
+                           th:placeholder="${user.dob}"/>
+                </div>
+                <div class="user-input-box2">
+                    <label for="adds">Address</label>
+                    <textarea id="adds" name="adds" th:placeholder="${user.adds}"></textarea>
+                </div>
+                <div class="user-input-box2">
+                    <label for="bio">Biography</label>
+                    <textarea id="bio" name="bio" th:placeholder="${user.bio}"></textarea>
+                </div>
+            </div>
+            <div class="form-submit-btn">
+                <button type="submit" class="update-button">Update Profile</button>
+            </div>
+        </form>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container_ftr">
+        <div class="row">
+            <div class="footer-col">
+                <ul>
+                    <li>&copy; COPYRIGHT Reserved by</li>
+                    <li>Digital Art Design </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <div class="contact">
+                        <li>Contact Information:</li>
+                        <li>Address: Chittagong ,Bangladesh</li>
+                        <li>Phone: <a href="tel:+15551234567">(555) 123-4567</a></li>
+                        <li>Email: <a href="mailto:info@example.com">info@example.com</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var editForm = document.getElementById('edit-form');
+        var update = document.querySelector('.update-button');
+
+        editForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+        })
+
+        update.addEventListener('click', function (event){
+            showSuccessMessage();
+        })
+    });
+
+    function showSuccessMessage() {
+        var messageBox = document.createElement('div');
+        messageBox.className = 'success-message';
+        var text = document.createElement('h3');
+        text.textContent = 'Your profile has been updated!';
+
+        // Style the message box
+        messageBox.style.position = 'fixed';
+        messageBox.style.top = '50%';
+        messageBox.style.left = '50%';
+        messageBox.style.transform = 'translate(-50%, -50%)';
+        messageBox.style.transition = 'transform 1s ,top 1s';
+        messageBox.style.backgroundColor = '#fff';
+        messageBox.style.padding = '20px';
+        messageBox.style.border = '1px solid #967d00';
+        messageBox.style.borderRadius = '5px';
+        messageBox.style.zIndex = '9999';
+
+        var closeButton = document.createElement('button');
+        closeButton.textContent = 'Okay';
+        messageBox.appendChild(text);
+        messageBox.appendChild(closeButton);
+        closeButton.addEventListener('click', function () {
+            messageBox.remove();
+            var editForm = document.getElementById('edit-form');
+            editForm.submit();// Remove the message box when the Okay button is clicked
+        });
+
+        document.body.appendChild(messageBox);
+    }
+</script>
+</body>
+</html>

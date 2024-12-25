@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            pou_up_design
+        </title>
+        <link rel="stylesheet" href="popup_for_sign_up.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    </head>
+    <body>
+        <div class="container">
+            <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+            <div class="popup" id="popup">
+                <img src="tick.png">
+                <h2>Thank you</h2>
+                <p>Your details has been successfully submitted</p>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
+        </div>
+        <script>
+            let popup= document.getElementById("popup");
+            function openPopup()
+            {
+                popup.classList.add("open-popup");
+
+            }
+
+            function closePopup()
+            {
+                popup.classList.remove("open-popup");
+                
+            }
+        </script>
+        
+
+    </body>
+</html>

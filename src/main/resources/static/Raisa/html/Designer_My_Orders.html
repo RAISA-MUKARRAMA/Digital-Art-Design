@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>My orders</title>
+    <link rel="stylesheet" href="/Raisa/css/Designer_My_Orders.css">
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" type="image/jpg" href="/Raisa/logovs.jpg">
+</head>
+<body>
+<div class="BCG">
+    <div class="upbox-logo">
+        <img src="/Raisa/logovs.jpg" class="logo">
+    </div>
+    <div class="upbox-other">
+        <div class="buttons">
+            <a href="/home"> <button class="but">Home</button> </a>
+            <a href="Designer_All_Designs.html"><button class="but">Designs</button></a>
+            <a href="Designer_See_Designers.html"><button class="but">Designer</button></a>
+            <a href="Designer_Participate_In_Contest.html"><button class="but">Contest</button></a>
+            <a href="Designer_Announcement.html"><button class="but"> Announcement</button></a>
+        </div>
+    </div>
+    <div class="name-div">
+        <a href="Designer_Designer_Portfolio.html"><button class="user-name"></button></a>
+    </div>
+    <div class="lower-box">
+        <div class="option-box">
+            <a href="Designer_Designer_Portfolio.html"><button class="option">Dashboard</button> </a>
+            <a href="Designer_My_Designs.html"><button class="option">My Designs</button> </a>
+            <a href="Designer_Upload_Design.html"> <button class="option">Design Upload</button></a>
+            <a href="Designer_Participate_In_Contest.html"> <button class="option">Participate</button></a>
+            <a href="Designer_My_Orders.html"> <button class="option active">Orders</button></a>
+            <a href="Designer_See_Admins.html"> <button class="option">See Admins</button></a>
+            <a href="Designer_See_Users.html"> <button class="option">See Users</button></a>
+            <a href="Designer_Messages.html"> <button class="option">Message</button></a>
+        </div>
+        <div class="part">
+            <button id="past" class="contestOption">Pending</button>
+            <button id="running" class="contestOption">Accepted</button>
+            <button id="coming" class="contestOption">Completed</button>
+            <div class="search-field">
+                <input type="text" class="search-box" placeholder="Search...">
+                <button class="press-search"><i class="fa fa-search"></i></button>
+            </div>
+            <table class="contestTable">
+                <tr>
+                    <th>Order-ID</th>
+                    <th>Order Title</th>
+                    <th>Ordered by</th>
+                    <th>Ordered on</th>
+                    <th>Details</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="one-contest"></div>
+    <div class="one-contest-designs"></div>
+    <div class="one-design"></div>
+    <div class="successPopup"></div>
+</div>
+
+
+<footer class="footer">
+    <div class="container_ftr">
+        <div class="row">
+            <div class="footer-col">
+                <ul>
+                    <li>&copy; COPYRIGHT Reserved by</li>
+                    <li>Digital Art Design </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <div class="contact">
+                        <li>Contact Information:</li>
+                        <li>Address: Chittagong ,Bangladesh</li>
+                        <li>Phone: <a href="tel:+15551234567">(555) 123-4567</a></li>
+                        <li>Email: <a href="mailto:info@example.com">info@example.com</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"
+        integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" integrity="sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAOnx5S09ydFYWWNSfcEqDTTHgtNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/Raisa/js/Designer_My_Orders.js">
+</script>
+</body>
+</html>

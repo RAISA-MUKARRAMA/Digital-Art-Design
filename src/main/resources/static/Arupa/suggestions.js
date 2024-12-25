@@ -1,0 +1,1 @@
+let suggestions = ["Logo", "Business Card", "Website Design", "App Design", "Book cover/Magazine/Brochure", "Flyer / Poster", "Packaging & Label", "Clothing", "Concept Art", "Character Design", "Digital Art", "Animation"];

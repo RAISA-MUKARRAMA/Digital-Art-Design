@@ -1,0 +1,46 @@
+.search-container {
+    display: flex;
+    background-color: transparent; /* Set the background to transparent */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    top:20px;
+    height: 40px;
+    overflow: hidden;
+    align-items:center;
+    margin: 10px; /* Add margin for spacing */
+    width: 500px; /* Adjust the width as needed */
+}
+
+/* Style for the search input with a transparent background and increased width */
+.search-container input[type="text"] {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: transparent; /* Set the background to transparent */
+    width: 100%; /* Expand the input to fill the container */
+}
+
+/* Style for the search button */
+.search-container button[type="submit"] {
+    background-color: transparent;
+    border:none;
+    margin-right: 0px;
+    color: #fff;
+    cursor: pointer;
+    align-items:last baseline;
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+}
+
+/* Style for the search button icon */
+.search-container button[type="submit"] i {
+    font-size: 16px;
+}
+.search-container button[type="submit"] i.fa-search {
+    font-size: 16px;
+    color: #fff; /* Change the color to red or any color you prefer */
+}
+

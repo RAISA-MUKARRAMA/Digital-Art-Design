@@ -1,0 +1,105 @@
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .menubar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .menubar ul {
+        margin-top: 20px;
+    }
+    .menubar ul li {
+        margin: 10px 0;
+    }
+    .imgallign {
+        margin: 20px auto;
+    }
+
+   
+    table {
+        width: 100%;
+    }
+    th, td {
+        display: block;
+        width: 100%;
+    }
+    th {
+        text-align: left;
+    }
+    
+    .search-container {
+        width: 100%; /* Expand to full width on mobile */
+    }
+
+    /* Mobile styles */
+    .main-content {
+        margin: 10px; /* Adjust the margin as needed */
+        font-size: 18px; /* Adjust the font size for mobile */
+    }
+
+    .main-content h1 {
+        font-size: 24px; /* Adjust the font size for mobile */
+    }
+
+    .main-container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .main-container h1 {
+        font-size: 24px;
+    }
+
+    .menubar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menubar ul li {
+        margin: 10px 0;
+    }
+
+    .content {
+        margin: 0 10px; /* Adjust the margin as needed for smaller screens */
+    }
+
+    .content h1 {
+        font-size: 30px; /* Reduce the font size for smaller screens */
+    }
+
+    .content p {
+        font-size: 14px; /* Reduce the font size for smaller screens */
+        line-height: 18px; /* Adjust the line height for smaller screens */
+    }
+
+    .menu-bar {
+        text-align: left; /* Left-align the menu items */
+        padding: 10px; /* Add padding for better touch interaction */
+    }
+
+    .menu-bar ul {
+        display: block; /* Display menu items as a list for mobile */
+    }
+
+    .menu-bar ul li {
+        margin: 5px 0; /* Add vertical spacing for mobile */
+        position: static; /* Remove absolute positioning */
+    }
+
+    /* Display sub-menus on hover for mobile */
+    .menu-bar ul li:hover .sub-menu-1, .menu-bar ul li:hover .sub-menu-2, .hover-me:hover .sub-menu-3 {
+        display: block;
+        position: static;
+        background: #967d00;
+    }
+}
+@media (min-width: 768px) {
+    /* Desktop styles */
+    .footer-col {
+        width: 25%;
+        flex: 1;
+        margin-right: 20px;
+        padding: 0 15px;
+        align-items: center;
+    }
+}

@@ -1,0 +1,394 @@
+<html lang="en">
+<head>
+    <title>
+        Designs
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Admin_profile_body_background.css">
+    <link rel="stylesheet" href="Admin_profile_menu-bar.css">
+    <link rel="stylesheet" href="Admin_profile_main-content.css">
+    <link rel="stylesheet" href="Admin_profile_form.css">
+    <link rel="stylesheet" href="Pagination.css">
+    <link rel="stylesheet" href="Admin_profile_display_table.css">
+    <link rel="stylesheet" href="Admin_profile_footer.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        .ID{
+            color:#967d00;
+            font-style:italic;
+            font-size:18px ;
+        }
+        .FONT
+        {
+            font-size:14px ;
+        }
+        #category {
+
+            max-width: 500px;
+            padding: 8px;
+
+
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 20px;
+            cursor: pointer;
+            font-family: 'Arial', sans-serif;
+
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+
+            background-position: right 8px center;
+            background-repeat: no-repeat;
+        }
+
+
+        #category option {
+            font-size: 16px;
+            background-color: #fff;
+            max-width: 300px;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+        }
+
+         #designList div {
+             margin-bottom: 20px;
+         }
+
+        #searchInput {
+            padding: 8px;
+            width: 300px;
+        }
+
+        #searchButton, #resetButton {
+            padding: 8px 12px;
+            margin-left: 10px;
+            cursor: pointer;
+            font-size: 14px;
+            border: #7e6a05;
+        }
+
+
+        #searchButton {
+            background-color: transparent;
+            max-width: fit-content;
+            color: #000333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        #resetButton {
+            background-color: transparent;
+            max-width: fit-content;
+            color: #000333;
+        }
+    </style>
+
+</head>
+<body>
+<header>
+    <div class="backgrounding">
+        <div class="menubar">
+            <img src="design_logo_02.jpg" class="logo">
+            <ul>
+            <li><a href ="/home">Home</a></li>
+            <li style="color: #967d00"><a >Designs</a></li>
+            <li><a href="Sign_in.html">Sign in</a></li>
+            <li><a href="Sign_Up.html">Sign up</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+
+<main class="content_main">
+
+
+    <div class="main-content">
+        <select id="category" name="category" required></select>
+
+        <div class="FONT" id="designList">
+            <h1>Design List</h1>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search by Designer Name or Design Title">
+                <button id="searchButton"><i class="fas fa-search"></i></button>
+                <button id="resetButton"><i class="fas fa-redo"></i></button>
+            </div>
+
+            <table>
+                <tr>
+                    <th>Designer Name</th>
+                    <th>Design Title</th>
+                    <th>Design Description</th>
+                    <th>Category</th>
+                    <th>preview</th>
+                </tr>
+            </table>
+            <div id="pagination">
+                <button id="prevButton">Previous</button>
+                <button id="nextButton">Next</button>
+            </div>
+        </div>
+
+    </div>
+
+</main>
+
+<footer class="footer">
+    <div class="container_ftr">
+        <div class="row">
+            <div class="footer-col">
+                <ul>
+                    <li>&copy; COPYRIGHT Reserved by</li>
+                    <li>Digital Art Design </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <div class="contact">
+                        <li>Contact Information:</li>
+                        <li>Address: Chittagong ,Bangladesh</li>
+                        <li>Phone: <a href="tel:+15551234567">(555) 123-4567</a></li>
+                        <li>Email: <a href="mailto:info@example.com">info@example.com</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="Admin_profile_About_Us.html">about us</a></li>
+                    <li><a href="Admin_profile_Our_Services.html">our services</a></li>
+                    <li><a href="Admin_profile_FAQ.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a><i class="fab fa-facebook-f"></i></a>
+                    <a ><i class="fab fa-twitter"></i></a>
+                    <a ><i class="fab fa-instagram"></i></a>
+                    <a ><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+
+        const categorySelect = document.getElementById('category');
+
+        const searchInput = document.getElementById("searchInput");
+        const searchButton = document.getElementById("searchButton");
+        const resetButton = document.getElementById("resetButton");
+
+
+        searchButton.addEventListener("click", function () {
+            const searchTerm = searchInput.value.trim().toLowerCase();
+            const filteredDesigns = filterDesigns(designs, searchTerm);
+            displayDesigns(filteredDesigns, 1);
+        });
+
+
+        resetButton.addEventListener("click", function () {
+            searchInput.value = "";
+            displayDesigns(designs, currentPage);
+        });
+
+
+        function filterDesigns(designs, searchTerm) {
+            if (!searchTerm) {
+                return designs;
+            }
+
+            return designs.filter(design => {
+
+                return design.designer.name.toLowerCase().includes(searchTerm) ||
+                    design.title.toLowerCase().includes(searchTerm);
+            });
+        }
+        categorySelect.addEventListener('change', function () {
+            const selectedCategory = categorySelect.value;
+
+            if (selectedCategory === 'All') {
+                fetchDesignData('/Rashu_designs/list/all');
+            } else {
+                const encodedCategory = encodeURIComponent(selectedCategory);
+                fetchDesignData(`/Rashu_designs/list/categories/${encodedCategory}`);
+            }
+        });
+
+        fetch('/Rashu_designs/showlist')
+            .then(response => response.json())
+            .then(categories => {
+                categorySelect.innerHTML = '';
+
+                const defaultOption = document.createElement('option');
+                defaultOption.value = 'All';
+                defaultOption.text = 'All Designs';
+                categorySelect.appendChild(defaultOption);
+
+                categories.forEach(category => {
+                    const option = document.createElement('option');
+                    option.value = category.ctgr_Title;
+                    option.text = category.ctgr_Title;
+                    categorySelect.appendChild(option);
+                });
+            })
+            .catch(error => console.error('Error fetching categories:', error));
+
+        const itemsPerPage = 9;
+        let currentPage = 1;
+        let designs;
+        const designList = document.getElementById("designList");
+        const table = designList.querySelector("table");
+
+        function fetchDesignData(url) {
+            console.log('Fetch URL:', url);
+
+            fetch(url)
+                .then(response => {
+                    if (response.status === 200) {
+                        return response.json();
+                    } else if (response.status === 204) {
+
+                        console.log('No content found for the specified category.');
+                        return [];
+                    } else {
+                        throw new Error(`Unexpected response status: ${response.status}`);
+                    }
+                })
+                .then(data => {
+                    designs = data;
+                    console.log("2");
+                    displayDesigns(data, currentPage);
+                })
+                .catch(error => console.error('Error fetching design data:', error));
+        }
+
+
+        function displayDesigns(designs, page) {
+            while (table.rows.length > 1) {
+                table.deleteRow(1);
+            }
+
+            const startIndex = (page - 1) * itemsPerPage;
+            const endIndex = page * itemsPerPage;
+            if (designs.length === 0) {
+                const noDesignsRow = table.insertRow();
+                const noDesignsCell = noDesignsRow.insertCell(0);
+                noDesignsCell.colSpan = 5; // Span across all columns
+                noDesignsCell.innerHTML = 'No designs found for the specified category.';
+                return;
+            }
+            for (let i = startIndex; i < endIndex && i < designs.length; i++) {
+                const design = designs[i];
+                const row = table.insertRow();
+                const cell1 = row.insertCell(0);
+                const cell2 = row.insertCell(1);
+                const cell3 = row.insertCell(2);
+                const cell4 = row.insertCell(3);
+                const cell5 = row.insertCell(4);
+
+                const designerInfo = `<div class="ID">${design.designer.name}</div><br>ID : ${design.designer.id} `;
+                console.log(design.title);
+                cell1.innerHTML = designerInfo;
+                cell2.innerHTML = design.title;
+                cell3.innerHTML = design.description;
+                cell4.innerHTML = design.category.ctgr_Title;
+                console.log('Type of design.content:', design.category.ctgr_Title);
+                console.log('Length of design.content:', design.content.length);
+
+                const previewImage = document.createElement("img");
+                console.log("3  " + design.content);
+
+                const binaryString = atob(design.content);
+                const contentArray = new Uint8Array(binaryString.length);
+                for (let i = 0; i < binaryString.length; i++) {
+                    contentArray[i] = binaryString.charCodeAt(i);
+                }
+
+                const blob = new Blob([contentArray]);
+
+                const fileReader = new FileReader();
+                fileReader.onload = function (event) {
+                    const arrayBuffer = event.target.result;
+                    const uint8Array = new Uint8Array(arrayBuffer);
+
+                    const detectedType = getImageType(uint8Array);
+
+                    if (detectedType) {
+                        const blob = new Blob([contentArray], {type: detectedType.mime});
+                        const dataUrl = URL.createObjectURL(blob);
+
+                        previewImage.src = dataUrl;
+                        previewImage.width = 300;
+                        previewImage.height = 260;
+
+                        cell5.appendChild(previewImage);
+                    } else {
+                        console.error('Unable to determine image type.');
+                    }
+                };
+
+                fileReader.readAsArrayBuffer(blob);
+            }
+        }
+
+        function getImageType(uint8Array) {
+            const headerBytes = uint8Array.subarray(0, 4);
+
+            if (headerBytes[0] === 0xFF && headerBytes[1] === 0xD8 && headerBytes[2] === 0xFF && headerBytes[3] === 0xE0) {
+                return {mime: 'image/jpeg'};
+            }
+
+            if (headerBytes[0] === 0x89 && headerBytes[1] === 0x50 && headerBytes[2] === 0x4E && headerBytes[3] === 0x47) {
+                return {mime: 'image/png'};
+            }
+
+            if (headerBytes[0] === 0x47 && headerBytes[1] === 0x49 && headerBytes[2] === 0x46 && headerBytes[3] === 0x38) {
+                return {mime: 'image/gif'};
+            }
+
+            if (headerBytes[0] === 0xFF && headerBytes[1] === 0xD8 && headerBytes[2] === 0xFF && headerBytes[3] === 0xDB) {
+                return {mime: 'image/jpeg'};
+            }
+
+            if (headerBytes[0] === 0xFF && headerBytes[1] === 0xD8 && headerBytes[2] === 0xFF && headerBytes[3] === 0xE1) {
+                return {mime: 'image/jpeg'};
+            }
+
+            if (headerBytes[0] === 0x52 && headerBytes[1] === 0x49 && headerBytes[2] === 0x46 && headerBytes[3] === 0x46) {
+                return { mime: 'image/webp' };
+            }
+            return null;
+        }
+
+        fetchDesignData('/Rashu_designs/list/all');
+
+        document.getElementById("nextButton").addEventListener("click", function () {
+            if (designs && currentPage < Math.ceil(designs.length / itemsPerPage)) {
+                currentPage++;
+                displayDesigns(designs, currentPage);
+            }
+        });
+
+        document.getElementById("prevButton").addEventListener("click", function () {
+            if (designs && currentPage > 1) {
+                currentPage--;
+                displayDesigns(designs, currentPage);
+            }
+        });
+    });
+
+</script>
+</body>
+</html>

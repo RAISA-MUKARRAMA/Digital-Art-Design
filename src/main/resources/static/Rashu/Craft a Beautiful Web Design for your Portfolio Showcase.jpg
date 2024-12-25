@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<!-- saved from url=(0101)https://www.solodev.com/blog/web-design/craft-a-beautiful-web-design-for-your-portfolio-showcase.stml -->
+<html class="no-js" lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="origin-trial" content="Az520Inasey3TAyqLyojQa8MnmCALSEU29yQFW8dePZ7xQTvSt73pHazLFTK5f7SyLUJSo2uKLesEtEa9aUYcgMAAACPeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0">
+<meta name="format-detection" content="telephone=no">
+<meta content="" property="og:image">
+<meta property="og:image:type" content="image/jpg">
+<meta property="og:image:width" content="500">
+<meta property="og:image:height" content="auto">
+<meta name="twitter:image" content="">
+<link rel="shortcut icon" href="https://www.solodev.com/favicon.ico">
+<link rel="stylesheet" href="./Craft a Beautiful Web Design for your Portfolio Showcase_files/app.css">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<title>Craft a Beautiful Web Design for your Portfolio Showcase</title>
+<meta name="keywords" content="portfolio,item,title,design,showcase,web,code,craft,images,page">
+<meta content="Solodev" name="author">
+<meta name="description" content="Craft a Beautiful Web Design for your Portfolio Showcase">
+<meta name="title" content="Craft a Beautiful Web Design for your Portfolio Showcase">
+<meta name="https" content="1">
+<meta name="DC.Date" content="2021-08-02T16:56:10-04:00">
+<link rel="canonical" href="https://www.solodev.com/blog/web-design/craft-a-beautiful-web-design-for-your-portfolio-showcase.stml">
+<meta property="og:url" content="https://www.solodev.com/blog/web-design/craft-a-beautiful-web-design-for-your-portfolio-showcase.stml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Craft a Beautiful Web Design for your Portfolio Showcase">
+<meta property="og:description" content="Craft a Beautiful Web Design for your Portfolio Showcase">
+<meta property="og:site_name" content="www.solodev.com">
+<meta property="og:image" content="https://www.solodev.com/core/fileparse.php/131/urlt/craft-beautiful-webdesign-image-1.jpg">
+<meta name="twitter:site" content="@solodev">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Craft a Beautiful Web Design for your Portfolio Showcase">
+<meta name="twitter:description" content="Craft a Beautiful Web Design for your Portfolio Showcase">
+<meta property="twitter:image" content="https://www.solodev.com/core/fileparse.php/131/urlt/craft-beautiful-webdesign-image-1.jpg">
+<style>/*!
+ * Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Copyright 2022 Fonticons, Inc.
+ */:root,:host{--fa-style-family-classic: "Font Awesome 6 Free";--fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free"}@font-face{font-family:"Font Awesome 6 Free";font-style:normal;font-weight:900;font-display:block;src:url(https://s3.amazonaws.com/helpwidget.ocoa.com/lib/umd/fonts/fa-solid-900.woff2) format("woff2"),url(https://s3.amazonaws.com/helpwidget.ocoa.com/lib/umd/fonts/fa-solid-900.ttf) format("truetype")}.fas,.fa-solid{font-weight:900}/*!
+ * Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Copyright 2022 Fonticons, Inc.
+ */:root,:host{--fa-style-family-classic: "Font Awesome 6 Free";--fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free"}@font-face{font-family:"Font Awesome 6 Free";font-style:normal;font-weight:400;font-display:block;src:url(https://s3.amazonaws.com/helpwidget.ocoa.com/lib/umd/fonts/fa-regular-400.woff2) format("woff2"),url(https://s3.amazonaws.com/helpwidget.ocoa.com/lib/umd/fonts/fa-regular-400.ttf) format("truetype")}.far,.fa-regular{font-weight:400}.help-widget{/*!
+ * Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Copyright 2022 Fonticons, Inc.
+ */}.help-widget .fa{font-family:var(--fa-style-family, "Font Awesome 6 Free");font-weight:var(--fa-style, 900)}.help-widget .fa,.help-widget .fa-classic,.help-widget .fa-sharp,.help-widget .fas,.help-widget .fa-solid,.help-widget .far,.help-widget .fa-regular,.help-widget .fab,.help-widget .fa-brands{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:var(--fa-display, inline-block);font-style:normal;font-variant:normal;line-height:1;text-rendering:auto}.help-widget .fas,.help-widget .fa-classic,.help-widget .fa-solid,.help-widget .far,.help-widget .fa-regular{font-family:"Font Awesome 6 Free"}.help-widget .fab,.help-widget .fa-brands{font-family:"Font Awesome 6 Brands"}.help-widget .fa-1x{font-size:1em}.help-widget .fa-2x{font-size:2em}.help-widget .fa-3x{font-size:3em}.help-widget .fa-4x{font-size:4em}.help-widget .fa-5x{font-size:5em}.help-widget .fa-6x{font-size:6em}.help-widget .fa-7x{font-size:7em}.help-widget .fa-8x{font-size:8em}.help-widget .fa-9x{font-size:9em}.help-widget .fa-10x{font-size:10em}.help-widget .fa-2xs{font-size:.625em;line-height:.1em;vertical-align:.225em}.help-widget .fa-xs{font-size:.75em;line-height:.0833333337em;vertical-align:.125em}.help-widget .fa-sm{font-size:.875em;line-height:.0714285718em;vertical-align:.0535714295em}.help-widget .fa-lg{font-size:1.25em;line-height:.05em;vertical-align:-.075em}.help-widget .fa-xl{font-size:1.5em;line-height:.0416666682em;vertical-align:-0.125em}.help-widget .fa-2xl{font-size:2em;line-height:.03125em;vertical-align:-0.1875em}.help-widget .fa-fw{text-align:center;width:1.25em}.help-widget .fa-ul{list-style-type:none;margin-left:var(--fa-li-margin, 2.5em);padding-left:0}.help-widget .fa-ul>li{position:relative}.help-widget .fa-li{left:calc(var(--fa-li-width, 2em)*-1);position:absolute;text-align:center;width:var(--fa-li-width, 2em);line-height:inherit}.help-widget .fa-border{border-color:var(--fa-border-color, #eee);border-radius:var(--fa-border-radius, 0.1em);border-style:var(--fa-border-style, solid);border-width:var(--fa-border-width, 0.08em);padding:var(--fa-border-padding, 0.2em 0.25em 0.15em)}.help-widget .fa-pull-left{float:left;margin-right:var(--fa-pull-margin, 0.3em)}.help-widget .fa-pull-right{float:right;margin-left:var(--fa-pull-margin, 0.3em)}.help-widget .fa-beat{animation-name:fa-beat;animation-delay:var(--fa-animation-delay, 0s);animation-direction:var(--fa-animation-direction, normal);animation-duration:var(--fa-animation-duration, 1s);animation-iteration-count:var(--fa-animation-iteration-count, infinite);animation-timing-function:var(--fa-animation-timing, ease-in-out)}.help-widget .fa-bounce{animation-name:fa-bounce;animation-delay:var(--fa-animation-delay, 0s);animation-direction:var(--fa-animation-direction, normal);animation-duration:var(--fa-animation-duration, 1s);animation-iteration-count:var(--fa-animation-iteration-count, infinite);animation-timing-function:var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1))}.help-widget .fa-fade{animation-name:fa-fade;animation-delay:var(--fa-animation-delay, 0s);animation-direction:var(--fa-animation-direction, normal);animation-duration:var(--fa-animation-duration, 1s);animation-iteration-count:var(--fa-animation-iteration-count, infinite);animation-timing-function:var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1))}.help-widget .fa-beat-fade{animation-name:fa-beat-fade;animation-delay:var(--fa-animation-delay, 0s);animation-direction:var(--fa-animation-direction, normal);animation-duration:var(--fa-animation-duration, 1s);animation-iteration-count:var(--fa-animation-iteration-count, infinite);animation-timing-function:var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1))}.help-widget .fa-flip{animation-name:fa-flip;animation-delay:var(--fa-animation-delay, 0s);animation-direction:var(--fa-animation-direction, normal);animation-duration:var(--fa-animation-duration, 1s);animation-iteration-count:var(--fa-animation-iteration-count, infinite);animation-timing-function:var(--fa-animation-timing, ease-in-out)}.help-widget .fa-shake{animation-name:fa-shake;animation-delay:var(--fa-animation-delay, 0s);animation-direction:var(--fa-animation-direction, normal);animation-duration:var(--fa-animation-duration, 1s);animation-iteration-count:var(--fa-animation-iteration-count, infinite);animation-timing-function:var(--fa-animation-timing, linear)}.help-widget .fa-spin{animation-name:fa-spin;animation-delay:var(--fa-animation-delay, 0s);animation-direction:var(--fa-animation-direction, normal);animation-duration:var(--fa-animation-duration, 2s);animation-iteration-count:var(--fa-animation-iteration-count, infinite);animation-timing-function:var(--fa-animation-timing, linear)}.help-widget .fa-spin-reverse{--fa-animation-direction: reverse}.help-widget .fa-pulse,.help-widget .fa-spin-pulse{animation-name:fa-spin;animation-direction:var(--fa-animation-direction, normal);animation-duration:var(--fa-animation-duration, 1s);animation-iteration-count:var(--fa-animation-iteration-count, infinite);animation-timing-function:var(--fa-animation-timing, steps(8))}@media(prefers-reduced-motion: reduce){.help-widget .fa-beat,.help-widget .fa-bounce,.help-widget .fa-fade,.help-widget .fa-beat-fade,.help-widget .fa-flip,.help-widget .fa-pulse,.help-widget .fa-shake,.help-widget .fa-spin,.help-widget .fa-spin-pulse{animation-delay:-1ms;animation-duration:1ms;animation-iteration-count:1;transition-delay:0s;transition-duration:0s}}@keyframes fa-beat{0%,90%{transform:scale(1)}45%{transform:scale(var(--fa-beat-scale, 1.25))}}@keyframes fa-bounce{0%{transform:scale(1, 1) translateY(0)}10%{transform:scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0)}30%{transform:scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em))}50%{transform:scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0)}57%{transform:scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em))}64%{transform:scale(1, 1) translateY(0)}100%{transform:scale(1, 1) translateY(0)}}@keyframes fa-fade{50%{opacity:var(--fa-fade-opacity, 0.4)}}@keyframes fa-beat-fade{0%,100%{opacity:var(--fa-beat-fade-opacity, 0.4);transform:scale(1)}50%{opacity:1;transform:scale(var(--fa-beat-fade-scale, 1.125))}}@keyframes fa-flip{50%{transform:rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg))}}@keyframes fa-shake{0%{transform:rotate(-15deg)}4%{transform:rotate(15deg)}8%,24%{transform:rotate(-18deg)}12%,28%{transform:rotate(18deg)}16%{transform:rotate(-22deg)}20%{transform:rotate(22deg)}32%{transform:rotate(-12deg)}36%{transform:rotate(12deg)}40%,100%{transform:rotate(0deg)}}@keyframes fa-spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}.help-widget .fa-rotate-90{transform:rotate(90deg)}.help-widget .fa-rotate-180{transform:rotate(180deg)}.help-widget .fa-rotate-270{transform:rotate(270deg)}.help-widget .fa-flip-horizontal{transform:scale(-1, 1)}.help-widget .fa-flip-vertical{transform:scale(1, -1)}.help-widget .fa-flip-both,.help-widget .fa-flip-horizontal.fa-flip-vertical{transform:scale(-1, -1)}.help-widget .fa-rotate-by{transform:rotate(var(--fa-rotate-angle, none))}.help-widget .fa-stack{display:inline-block;height:2em;line-height:2em;position:relative;vertical-align:middle;width:2.5em}.help-widget .fa-stack-1x,.help-widget .fa-stack-2x{left:0;position:absolute;text-align:center;width:100%;z-index:var(--fa-stack-z-index, auto)}.help-widget .fa-stack-1x{line-height:inherit}.help-widget .fa-stack-2x{font-size:2em}.help-widget .fa-inverse{color:var(--fa-inverse, #fff)}.help-widget .fa-0::before{content:"\30 "}.help-widget .fa-1::before{content:"\31 "}.help-widget .fa-2::before{content:"\32 "}.help-widget .fa-3::before{content:"\33 "}.help-widget .fa-4::before{content:"\34 "}.help-widget .fa-5::before{content:"\35 "}.help-widget .fa-6::before{content:"\36 "}.help-widget .fa-7::before{content:"\37 "}.help-widget .fa-8::before{content:"\38 "}.help-widget .fa-9::before{content:"\39 "}.help-widget .fa-fill-drip::before{content:""}.help-widget .fa-arrows-to-circle::before{content:""}.help-widget .fa-circle-chevron-right::before{content:""}.help-widget .fa-chevron-circle-right::before{content:""}.help-widget .fa-at::before{content:"\@"}.help-widget .fa-trash-can::before{content:""}.help-widget .fa-trash-alt::before{content:""}.help-widget .fa-text-height::before{content:""}.help-widget .fa-user-xmark::before{content:""}.help-widget .fa-user-times::before{content:""}.help-widget .fa-stethoscope::before{content:""}.help-widget .fa-message::before{content:""}.help-widget .fa-comment-alt::before{content:""}.help-widget .fa-info::before{content:""}.help-widget .fa-down-left-and-up-right-to-center::before{content:""}.help-widget .fa-compress-alt::before{content:""}.help-widget .fa-explosion::before{content:""}.help-widget .fa-file-lines::before{content:""}.help-widget .fa-file-alt::before{content:""}.help-widget .fa-file-text::before{content:""}.help-widget .fa-wave-square::before{content:""}.help-widget .fa-ring::before{content:""}.help-widget .fa-building-un::before{content:""}.help-widget .fa-dice-three::before{content:""}.help-widget .fa-calendar-days::before{content:""}.help-widget .fa-calendar-alt::before{content:""}.help-widget .fa-anchor-circle-check::before{content:""}.help-widget .fa-building-circle-arrow-right::before{content:""}.help-widget .fa-volleyball::before{content:""}.help-widget .fa-volleyball-ball::before{content:""}.help-widget .fa-arrows-up-to-line::before{content:""}.help-widget .fa-sort-down::before{content:""}.help-widget .fa-sort-desc::before{content:""}.help-widget .fa-circle-minus::before{content:""}.help-widget .fa-minus-circle::before{content:""}.help-widget .fa-door-open::before{content:""}.help-widget .fa-right-from-bracket::before{content:""}.help-widget .fa-sign-out-alt::before{content:""}.help-widget .fa-atom::before{content:""}.help-widget .fa-soap::before{content:""}.help-widget .fa-icons::before{content:""}.help-widget .fa-heart-music-camera-bolt::before{content:""}.help-widget .fa-microphone-lines-slash::before{content:""}.help-widget .fa-microphone-alt-slash::before{content:""}.help-widget .fa-bridge-circle-check::before{content:""}.help-widget .fa-pump-medical::before{content:""}.help-widget .fa-fingerprint::before{content:""}.help-widget .fa-hand-point-right::before{content:""}.help-widget .fa-magnifying-glass-location::before{content:""}.help-widget .fa-search-location::before{content:""}.help-widget .fa-forward-step::before{content:""}.help-widget .fa-step-forward::before{content:""}.help-widget .fa-face-smile-beam::before{content:""}.help-widget .fa-smile-beam::before{content:""}.help-widget .fa-flag-checkered::before{content:""}.help-widget .fa-football::before{content:""}.help-widget .fa-football-ball::before{content:""}.help-widget .fa-school-circle-exclamation::before{content:""}.help-widget .fa-crop::before{content:""}.help-widget .fa-angles-down::before{content:""}.help-widget .fa-angle-double-down::before{content:""}.help-widget .fa-users-rectangle::before{content:""}.help-widget .fa-people-roof::before{content:""}.help-widget .fa-people-line::before{content:""}.help-widget .fa-beer-mug-empty::before{content:""}.help-widget .fa-beer::before{content:""}.help-widget .fa-diagram-predecessor::before{content:""}.help-widget .fa-arrow-up-long::before{content:""}.help-widget .fa-long-arrow-up::before{content:""}.help-widget .fa-fire-flame-simple::before{content:""}.help-widget .fa-burn::before{content:""}.help-widget .fa-person::before{content:""}.help-widget .fa-male::before{content:""}.help-widget .fa-laptop::before{content:""}.help-widget .fa-file-csv::before{content:""}.help-widget .fa-menorah::before{content:""}.help-widget .fa-truck-plane::before{content:""}.help-widget .fa-record-vinyl::before{content:""}.help-widget .fa-face-grin-stars::before{content:""}.help-widget .fa-grin-stars::before{content:""}.help-widget .fa-bong::before{content:""}.help-widget .fa-spaghetti-monster-flying::before{content:""}.help-widget .fa-pastafarianism::before{content:""}.help-widget .fa-arrow-down-up-across-line::before{content:""}.help-widget .fa-spoon::before{content:""}.help-widget .fa-utensil-spoon::before{content:""}.help-widget .fa-jar-wheat::before{content:""}.help-widget .fa-envelopes-bulk::before{content:""}.help-widget .fa-mail-bulk::before{content:""}.help-widget .fa-file-circle-exclamation::before{content:""}.help-widget .fa-circle-h::before{content:""}.help-widget .fa-hospital-symbol::before{content:""}.help-widget .fa-pager::before{content:""}.help-widget .fa-address-book::before{content:""}.help-widget .fa-contact-book::before{content:""}.help-widget .fa-strikethrough::before{content:""}.help-widget .fa-k::before{content:"K"}.help-widget .fa-landmark-flag::before{content:""}.help-widget .fa-pencil::before{content:""}.help-widget .fa-pencil-alt::before{content:""}.help-widget .fa-backward::before{content:""}.help-widget .fa-caret-right::before{content:""}.help-widget .fa-comments::before{content:""}.help-widget .fa-paste::before{content:""}.help-widget .fa-file-clipboard::before{content:""}.help-widget .fa-code-pull-request::before{content:""}.help-widget .fa-clipboard-list::before{content:""}.help-widget .fa-truck-ramp-box::before{content:""}.help-widget .fa-truck-loading::before{content:""}.help-widget .fa-user-check::before{content:""}.help-widget .fa-vial-virus::before{content:""}.help-widget .fa-sheet-plastic::before{content:""}.help-widget .fa-blog::before{content:""}.help-widget .fa-user-ninja::before{content:""}.help-widget .fa-person-arrow-up-from-line::before{content:""}.help-widget .fa-scroll-torah::before{content:""}.help-widget .fa-torah::before{content:""}.help-widget .fa-broom-ball::before{content:""}.help-widget .fa-quidditch::before{content:""}.help-widget .fa-quidditch-broom-ball::before{content:""}.help-widget .fa-toggle-off::before{content:""}.help-widget .fa-box-archive::before{content:""}.help-widget .fa-archive::before{content:""}.help-widget .fa-person-drowning::before{content:""}.help-widget .fa-arrow-down-9-1::before{content:""}.help-widget .fa-sort-numeric-desc::before{content:""}.help-widget .fa-sort-numeric-down-alt::before{content:""}.help-widget .fa-face-grin-tongue-squint::before{content:""}.help-widget .fa-grin-tongue-squint::before{content:""}.help-widget .fa-spray-can::before{content:""}.help-widget .fa-truck-monster::before{content:""}.help-widget .fa-w::before{content:"W"}.help-widget .fa-earth-africa::before{content:""}.help-widget .fa-globe-africa::before{content:""}.help-widget .fa-rainbow::before{content:""}.help-widget .fa-circle-notch::before{content:""}.help-widget .fa-tablet-screen-button::before{content:""}.help-widget .fa-tablet-alt::before{content:""}.help-widget .fa-paw::before{content:""}.help-widget .fa-cloud::before{content:""}.help-widget .fa-trowel-bricks::before{content:""}.help-widget .fa-face-flushed::before{content:""}.help-widget .fa-flushed::before{content:""}.help-widget .fa-hospital-user::before{content:""}.help-widget .fa-tent-arrow-left-right::before{content:""}.help-widget .fa-gavel::before{content:""}.help-widget .fa-legal::before{content:""}.help-widget .fa-binoculars::before{content:""}.help-widget .fa-microphone-slash::before{content:""}.help-widget .fa-box-tissue::before{content:""}.help-widget .fa-motorcycle::before{content:""}.help-widget .fa-bell-concierge::before{content:""}.help-widget .fa-concierge-bell::before{content:""}.help-widget .fa-pen-ruler::before{content:""}.help-widget .fa-pencil-ruler::before{content:""}.help-widget .fa-people-arrows::before{content:""}.help-widget .fa-people-arrows-left-right::before{content:""}.help-widget .fa-mars-and-venus-burst::before{content:""}.help-widget .fa-square-caret-right::before{content:""}.help-widget .fa-caret-square-right::before{content:""}.help-widget .fa-scissors::before{content:""}.help-widget .fa-cut::before{content:""}.help-widget .fa-sun-plant-wilt::before{content:""}.help-widget .fa-toilets-portable::before{content:""}.help-widget .fa-hockey-puck::before{content:""}.help-widget .fa-table::before{content:""}.help-widget .fa-magnifying-glass-arrow-right::before{content:""}.help-widget .fa-tachograph-digital::before{content:""}.help-widget .fa-digital-tachograph::before{content:""}.help-widget .fa-users-slash::before{content:""}.help-widget .fa-clover::before{content:""}.help-widget .fa-reply::before{content:""}.help-widget .fa-mail-reply::before{content:""}.help-widget .fa-star-and-crescent::before{content:""}.help-widget .fa-house-fire::before{content:""}.help-widget .fa-square-minus::before{content:""}.help-widget .fa-minus-square::before{content:""}.help-widget .fa-helicopter::before{content:""}.help-widget .fa-compass::before{content:""}.help-widget .fa-square-caret-down::before{content:""}.help-widget .fa-caret-square-down::before{content:""}.help-widget .fa-file-circle-question::before{content:""}.help-widget .fa-laptop-code::before{content:""}.help-widget .fa-swatchbook::before{content:""}.help-widget .fa-prescription-bottle::before{content:""}.help-widget .fa-bars::before{content:""}.help-widget .fa-navicon::before{content:""}.help-widget .fa-people-group::before{content:""}.help-widget .fa-hourglass-end::before{content:""}.help-widget .fa-hourglass-3::before{content:""}.help-widget .fa-heart-crack::before{content:""}.help-widget .fa-heart-broken::before{content:""}.help-widget .fa-square-up-right::before{content:""}.help-widget .fa-external-link-square-alt::before{content:""}.help-widget .fa-face-kiss-beam::before{content:""}.help-widget .fa-kiss-beam::before{content:""}.help-widget .fa-film::before{content:""}.help-widget .fa-ruler-horizontal::before{content:""}.help-widget .fa-people-robbery::before{content:""}.help-widget .fa-lightbulb::before{content:""}.help-widget .fa-caret-left::before{content:""}.help-widget .fa-circle-exclamation::before{content:""}.help-widget .fa-exclamation-circle::before{content:""}.help-widget .fa-school-circle-xmark::before{content:""}.help-widget .fa-arrow-right-from-bracket::before{content:""}.help-widget .fa-sign-out::before{content:""}.help-widget .fa-circle-chevron-down::before{content:""}.help-widget .fa-chevron-circle-down::before{content:""}.help-widget .fa-unlock-keyhole::before{content:""}.help-widget .fa-unlock-alt::before{content:""}.help-widget .fa-cloud-showers-heavy::before{content:""}.help-widget .fa-headphones-simple::before{content:""}.help-widget .fa-headphones-alt::before{content:""}.help-widget .fa-sitemap::before{content:""}.help-widget .fa-circle-dollar-to-slot::before{content:""}.help-widget .fa-donate::before{content:""}.help-widget .fa-memory::before{content:""}.help-widget .fa-road-spikes::before{content:""}.help-widget .fa-fire-burner::before{content:""}.help-widget .fa-flag::before{content:""}.help-widget .fa-hanukiah::before{content:""}.help-widget .fa-feather::before{content:""}.help-widget .fa-volume-low::before{content:""}.help-widget .fa-volume-down::before{content:""}.help-widget .fa-comment-slash::before{content:""}.help-widget .fa-cloud-sun-rain::before{content:""}.help-widget .fa-compress::before{content:""}.help-widget .fa-wheat-awn::before{content:""}.help-widget .fa-wheat-alt::before{content:""}.help-widget .fa-ankh::before{content:""}.help-widget .fa-hands-holding-child::before{content:""}.help-widget .fa-asterisk::before{content:"\*"}.help-widget .fa-square-check::before{content:""}.help-widget .fa-check-square::before{content:""}.help-widget .fa-peseta-sign::before{content:""}.help-widget .fa-heading::before{content:""}.help-widget .fa-header::before{content:""}.help-widget .fa-ghost::before{content:""}.help-widget .fa-list::before{content:""}.help-widget .fa-list-squares::before{content:""}.help-widget .fa-square-phone-flip::before{content:""}.help-widget .fa-phone-square-alt::before{content:""}.help-widget .fa-cart-plus::before{content:""}.help-widget .fa-gamepad::before{content:""}.help-widget .fa-circle-dot::before{content:""}.help-widget .fa-dot-circle::before{content:""}.help-widget .fa-face-dizzy::before{content:""}.help-widget .fa-dizzy::before{content:""}.help-widget .fa-egg::before{content:""}.help-widget .fa-house-medical-circle-xmark::before{content:""}.help-widget .fa-campground::before{content:""}.help-widget .fa-folder-plus::before{content:""}.help-widget .fa-futbol::before{content:""}.help-widget .fa-futbol-ball::before{content:""}.help-widget .fa-soccer-ball::before{content:""}.help-widget .fa-paintbrush::before{content:""}.help-widget .fa-paint-brush::before{content:""}.help-widget .fa-lock::before{content:""}.help-widget .fa-gas-pump::before{content:""}.help-widget .fa-hot-tub-person::before{content:""}.help-widget .fa-hot-tub::before{content:""}.help-widget .fa-map-location::before{content:""}.help-widget .fa-map-marked::before{content:""}.help-widget .fa-house-flood-water::before{content:""}.help-widget .fa-tree::before{content:""}.help-widget .fa-bridge-lock::before{content:""}.help-widget .fa-sack-dollar::before{content:""}.help-widget .fa-pen-to-square::before{content:""}.help-widget .fa-edit::before{content:""}.help-widget .fa-car-side::before{content:""}.help-widget .fa-share-nodes::before{content:""}.help-widget .fa-share-alt::before{content:""}.help-widget .fa-heart-circle-minus::before{content:""}.help-widget .fa-hourglass-half::before{content:""}.help-widget .fa-hourglass-2::before{content:""}.help-widget .fa-microscope::before{content:""}.help-widget .fa-sink::before{content:""}.help-widget .fa-bag-shopping::before{content:""}.help-widget .fa-shopping-bag::before{content:""}.help-widget .fa-arrow-down-z-a::before{content:""}.help-widget .fa-sort-alpha-desc::before{content:""}.help-widget .fa-sort-alpha-down-alt::before{content:""}.help-widget .fa-mitten::before{content:""}.help-widget .fa-person-rays::before{content:""}.help-widget .fa-users::before{content:""}.help-widget .fa-eye-slash::before{content:""}.help-widget .fa-flask-vial::before{content:""}.help-widget .fa-hand::before{content:""}.help-widget .fa-hand-paper::before{content:""}.help-widget .fa-om::before{content:""}.help-widget .fa-worm::before{content:""}.help-widget .fa-house-circle-xmark::before{content:""}.help-widget .fa-plug::before{content:""}.help-widget .fa-chevron-up::before{content:""}.help-widget .fa-hand-spock::before{content:""}.help-widget .fa-stopwatch::before{content:""}.help-widget .fa-face-kiss::before{content:""}.help-widget .fa-kiss::before{content:""}.help-widget .fa-bridge-circle-xmark::before{content:""}.help-widget .fa-face-grin-tongue::before{content:""}.help-widget .fa-grin-tongue::before{content:""}.help-widget .fa-chess-bishop::before{content:""}.help-widget .fa-face-grin-wink::before{content:""}.help-widget .fa-grin-wink::before{content:""}.help-widget .fa-ear-deaf::before{content:""}.help-widget .fa-deaf::before{content:""}.help-widget .fa-deafness::before{content:""}.help-widget .fa-hard-of-hearing::before{content:""}.help-widget .fa-road-circle-check::before{content:""}.help-widget .fa-dice-five::before{content:""}.help-widget .fa-square-rss::before{content:""}.help-widget .fa-rss-square::before{content:""}.help-widget .fa-land-mine-on::before{content:""}.help-widget .fa-i-cursor::before{content:""}.help-widget .fa-stamp::before{content:""}.help-widget .fa-stairs::before{content:""}.help-widget .fa-i::before{content:"I"}.help-widget .fa-hryvnia-sign::before{content:""}.help-widget .fa-hryvnia::before{content:""}.help-widget .fa-pills::before{content:""}.help-widget .fa-face-grin-wide::before{content:""}.help-widget .fa-grin-alt::before{content:""}.help-widget .fa-tooth::before{content:""}.help-widget .fa-v::before{content:"V"}.help-widget .fa-bangladeshi-taka-sign::before{content:""}.help-widget .fa-bicycle::before{content:""}.help-widget .fa-staff-snake::before{content:""}.help-widget .fa-rod-asclepius::before{content:""}.help-widget .fa-rod-snake::before{content:""}.help-widget .fa-staff-aesculapius::before{content:""}.help-widget .fa-head-side-cough-slash::before{content:""}.help-widget .fa-truck-medical::before{content:""}.help-widget .fa-ambulance::before{content:""}.help-widget .fa-wheat-awn-circle-exclamation::before{content:""}.help-widget .fa-snowman::before{content:""}.help-widget .fa-mortar-pestle::before{content:""}.help-widget .fa-road-barrier::before{content:""}.help-widget .fa-school::before{content:""}.help-widget .fa-igloo::before{content:""}.help-widget .fa-joint::before{content:""}.help-widget .fa-angle-right::before{content:""}.help-widget .fa-horse::before{content:""}.help-widget .fa-q::before{content:"Q"}.help-widget .fa-g::before{content:"G"}.help-widget .fa-notes-medical::before{content:""}.help-widget .fa-temperature-half::before{content:""}.help-widget .fa-temperature-2::before{content:""}.help-widget .fa-thermometer-2::before{content:""}.help-widget .fa-thermometer-half::before{content:""}.help-widget .fa-dong-sign::before{content:""}.help-widget .fa-capsules::before{content:""}.help-widget .fa-poo-storm::before{content:""}.help-widget .fa-poo-bolt::before{content:""}.help-widget .fa-face-frown-open::before{content:""}.help-widget .fa-frown-open::before{content:""}.help-widget .fa-hand-point-up::before{content:""}.help-widget .fa-money-bill::before{content:""}.help-widget .fa-bookmark::before{content:""}.help-widget .fa-align-justify::before{content:""}.help-widget .fa-umbrella-beach::before{content:""}.help-widget .fa-helmet-un::before{content:""}.help-widget .fa-bullseye::before{content:""}.help-widget .fa-bacon::before{content:""}.help-widget .fa-hand-point-down::before{content:""}.help-widget .fa-arrow-up-from-bracket::before{content:""}.help-widget .fa-folder::before{content:""}.help-widget .fa-folder-blank::before{content:""}.help-widget .fa-file-waveform::before{content:""}.help-widget .fa-file-medical-alt::before{content:""}.help-widget .fa-radiation::before{content:""}.help-widget .fa-chart-simple::before{content:""}.help-widget .fa-mars-stroke::before{content:""}.help-widget .fa-vial::before{content:""}.help-widget .fa-gauge::before{content:""}.help-widget .fa-dashboard::before{content:""}.help-widget .fa-gauge-med::before{content:""}.help-widget .fa-tachometer-alt-average::before{content:""}.help-widget .fa-wand-magic-sparkles::before{content:""}.help-widget .fa-magic-wand-sparkles::before{content:""}.help-widget .fa-e::before{content:"E"}.help-widget .fa-pen-clip::before{content:""}.help-widget .fa-pen-alt::before{content:""}.help-widget .fa-bridge-circle-exclamation::before{content:""}.help-widget .fa-user::before{content:""}.help-widget .fa-school-circle-check::before{content:""}.help-widget .fa-dumpster::before{content:""}.help-widget .fa-van-shuttle::before{content:""}.help-widget .fa-shuttle-van::before{content:""}.help-widget .fa-building-user::before{content:""}.help-widget .fa-square-caret-left::before{content:""}.help-widget .fa-caret-square-left::before{content:""}.help-widget .fa-highlighter::before{content:""}.help-widget .fa-key::before{content:""}.help-widget .fa-bullhorn::before{content:""}.help-widget .fa-globe::before{content:""}.help-widget .fa-synagogue::before{content:""}.help-widget .fa-person-half-dress::before{content:""}.help-widget .fa-road-bridge::before{content:""}.help-widget .fa-location-arrow::before{content:""}.help-widget .fa-c::before{content:"C"}.help-widget .fa-tablet-button::before{content:""}.help-widget .fa-building-lock::before{content:""}.help-widget .fa-pizza-slice::before{content:""}.help-widget .fa-money-bill-wave::before{content:""}.help-widget .fa-chart-area::before{content:""}.help-widget .fa-area-chart::before{content:""}.help-widget .fa-house-flag::before{content:""}.help-widget .fa-person-circle-minus::before{content:""}.help-widget .fa-ban::before{content:""}.help-widget .fa-cancel::before{content:""}.help-widget .fa-camera-rotate::before{content:""}.help-widget .fa-spray-can-sparkles::before{content:""}.help-widget .fa-air-freshener::before{content:""}.help-widget .fa-star::before{content:""}.help-widget .fa-repeat::before{content:""}.help-widget .fa-cross::before{content:""}.help-widget .fa-box::before{content:""}.help-widget .fa-venus-mars::before{content:""}.help-widget .fa-arrow-pointer::before{content:""}.help-widget .fa-mouse-pointer::before{content:""}.help-widget .fa-maximize::before{content:""}.help-widget .fa-expand-arrows-alt::before{content:""}.help-widget .fa-charging-station::before{content:""}.help-widget .fa-shapes::before{content:""}.help-widget .fa-triangle-circle-square::before{content:""}.help-widget .fa-shuffle::before{content:""}.help-widget .fa-random::before{content:""}.help-widget .fa-person-running::before{content:""}.help-widget .fa-running::before{content:""}.help-widget .fa-mobile-retro::before{content:""}.help-widget .fa-grip-lines-vertical::before{content:""}.help-widget .fa-spider::before{content:""}.help-widget .fa-hands-bound::before{content:""}.help-widget .fa-file-invoice-dollar::before{content:""}.help-widget .fa-plane-circle-exclamation::before{content:""}.help-widget .fa-x-ray::before{content:""}.help-widget .fa-spell-check::before{content:""}.help-widget .fa-slash::before{content:""}.help-widget .fa-computer-mouse::before{content:""}.help-widget .fa-mouse::before{content:""}.help-widget .fa-arrow-right-to-bracket::before{content:""}.help-widget .fa-sign-in::before{content:""}.help-widget .fa-shop-slash::before{content:""}.help-widget .fa-store-alt-slash::before{content:""}.help-widget .fa-server::before{content:""}.help-widget .fa-virus-covid-slash::before{content:""}.help-widget .fa-shop-lock::before{content:""}.help-widget .fa-hourglass-start::before{content:""}.help-widget .fa-hourglass-1::before{content:""}.help-widget .fa-blender-phone::before{content:""}.help-widget .fa-building-wheat::before{content:""}.help-widget .fa-person-breastfeeding::before{content:""}.help-widget .fa-right-to-bracket::before{content:""}.help-widget .fa-sign-in-alt::before{content:""}.help-widget .fa-venus::before{content:""}.help-widget .fa-passport::before{content:""}.help-widget .fa-heart-pulse::before{content:""}.help-widget .fa-heartbeat::before{content:""}.help-widget .fa-people-carry-box::before{content:""}.help-widget .fa-people-carry::before{content:""}.help-widget .fa-temperature-high::before{content:""}.help-widget .fa-microchip::before{content:""}.help-widget .fa-crown::before{content:""}.help-widget .fa-weight-hanging::before{content:""}.help-widget .fa-xmarks-lines::before{content:""}.help-widget .fa-file-prescription::before{content:""}.help-widget .fa-weight-scale::before{content:""}.help-widget .fa-weight::before{content:""}.help-widget .fa-user-group::before{content:""}.help-widget .fa-user-friends::before{content:""}.help-widget .fa-arrow-up-a-z::before{content:""}.help-widget .fa-sort-alpha-up::before{content:""}.help-widget .fa-chess-knight::before{content:""}.help-widget .fa-face-laugh-squint::before{content:""}.help-widget .fa-laugh-squint::before{content:""}.help-widget .fa-wheelchair::before{content:""}.help-widget .fa-circle-arrow-up::before{content:""}.help-widget .fa-arrow-circle-up::before{content:""}.help-widget .fa-toggle-on::before{content:""}.help-widget .fa-person-walking::before{content:""}.help-widget .fa-walking::before{content:""}.help-widget .fa-l::before{content:"L"}.help-widget .fa-fire::before{content:""}.help-widget .fa-bed-pulse::before{content:""}.help-widget .fa-procedures::before{content:""}.help-widget .fa-shuttle-space::before{content:""}.help-widget .fa-space-shuttle::before{content:""}.help-widget .fa-face-laugh::before{content:""}.help-widget .fa-laugh::before{content:""}.help-widget .fa-folder-open::before{content:""}.help-widget .fa-heart-circle-plus::before{content:""}.help-widget .fa-code-fork::before{content:""}.help-widget .fa-city::before{content:""}.help-widget .fa-microphone-lines::before{content:""}.help-widget .fa-microphone-alt::before{content:""}.help-widget .fa-pepper-hot::before{content:""}.help-widget .fa-unlock::before{content:""}.help-widget .fa-colon-sign::before{content:""}.help-widget .fa-headset::before{content:""}.help-widget .fa-store-slash::before{content:""}.help-widget .fa-road-circle-xmark::before{content:""}.help-widget .fa-user-minus::before{content:""}.help-widget .fa-mars-stroke-up::before{content:""}.help-widget .fa-mars-stroke-v::before{content:""}.help-widget .fa-champagne-glasses::before{content:""}.help-widget .fa-glass-cheers::before{content:""}.help-widget .fa-clipboard::before{content:""}.help-widget .fa-house-circle-exclamation::before{content:""}.help-widget .fa-file-arrow-up::before{content:""}.help-widget .fa-file-upload::before{content:""}.help-widget .fa-wifi::before{content:""}.help-widget .fa-wifi-3::before{content:""}.help-widget .fa-wifi-strong::before{content:""}.help-widget .fa-bath::before{content:""}.help-widget .fa-bathtub::before{content:""}.help-widget .fa-underline::before{content:""}.help-widget .fa-user-pen::before{content:""}.help-widget .fa-user-edit::before{content:""}.help-widget .fa-signature::before{content:""}.help-widget .fa-stroopwafel::before{content:""}.help-widget .fa-bold::before{content:""}.help-widget .fa-anchor-lock::before{content:""}.help-widget .fa-building-ngo::before{content:""}.help-widget .fa-manat-sign::before{content:""}.help-widget .fa-not-equal::before{content:""}.help-widget .fa-border-top-left::before{content:""}.help-widget .fa-border-style::before{content:""}.help-widget .fa-map-location-dot::before{content:""}.help-widget .fa-map-marked-alt::before{content:""}.help-widget .fa-jedi::before{content:""}.help-widget .fa-square-poll-vertical::before{content:""}.help-widget .fa-poll::before{content:""}.help-widget .fa-mug-hot::before{content:""}.help-widget .fa-car-battery::before{content:""}.help-widget .fa-battery-car::before{content:""}.help-widget .fa-gift::before{content:""}.help-widget .fa-dice-two::before{content:""}.help-widget .fa-chess-queen::before{content:""}.help-widget .fa-glasses::before{content:""}.help-widget .fa-chess-board::before{content:""}.help-widget .fa-building-circle-check::before{content:""}.help-widget .fa-person-chalkboard::before{content:""}.help-widget .fa-mars-stroke-right::before{content:""}.help-widget .fa-mars-stroke-h::before{content:""}.help-widget .fa-hand-back-fist::before{content:""}.help-widget .fa-hand-rock::before{content:""}.help-widget .fa-square-caret-up::before{content:""}.help-widget .fa-caret-square-up::before{content:""}.help-widget .fa-cloud-showers-water::before{content:""}.help-widget .fa-chart-bar::before{content:""}.help-widget .fa-bar-chart::before{content:""}.help-widget .fa-hands-bubbles::before{content:""}.help-widget .fa-hands-wash::before{content:""}.help-widget .fa-less-than-equal::before{content:""}.help-widget .fa-train::before{content:""}.help-widget .fa-eye-low-vision::before{content:""}.help-widget .fa-low-vision::before{content:""}.help-widget .fa-crow::before{content:""}.help-widget .fa-sailboat::before{content:""}.help-widget .fa-window-restore::before{content:""}.help-widget .fa-square-plus::before{content:""}.help-widget .fa-plus-square::before{content:""}.help-widget .fa-torii-gate::before{content:""}.help-widget .fa-frog::before{content:""}.help-widget .fa-bucket::before{content:""}.help-widget .fa-image::before{content:""}.help-widget .fa-microphone::before{content:""}.help-widget .fa-cow::before{content:""}.help-widget .fa-caret-up::before{content:""}.help-widget .fa-screwdriver::before{content:""}.help-widget .fa-folder-closed::before{content:""}.help-widget .fa-house-tsunami::before{content:""}.help-widget .fa-square-nfi::before{content:""}.help-widget .fa-arrow-up-from-ground-water::before{content:""}.help-widget .fa-martini-glass::before{content:""}.help-widget .fa-glass-martini-alt::before{content:""}.help-widget .fa-rotate-left::before{content:""}.help-widget .fa-rotate-back::before{content:""}.help-widget .fa-rotate-backward::before{content:""}.help-widget .fa-undo-alt::before{content:""}.help-widget .fa-table-columns::before{content:""}.help-widget .fa-columns::before{content:""}.help-widget .fa-lemon::before{content:""}.help-widget .fa-head-side-mask::before{content:""}.help-widget .fa-handshake::before{content:""}.help-widget .fa-gem::before{content:""}.help-widget .fa-dolly::before{content:""}.help-widget .fa-dolly-box::before{content:""}.help-widget .fa-smoking::before{content:""}.help-widget .fa-minimize::before{content:""}.help-widget .fa-compress-arrows-alt::before{content:""}.help-widget .fa-monument::before{content:""}.help-widget .fa-snowplow::before{content:""}.help-widget .fa-angles-right::before{content:""}.help-widget .fa-angle-double-right::before{content:""}.help-widget .fa-cannabis::before{content:""}.help-widget .fa-circle-play::before{content:""}.help-widget .fa-play-circle::before{content:""}.help-widget .fa-tablets::before{content:""}.help-widget .fa-ethernet::before{content:""}.help-widget .fa-euro-sign::before{content:""}.help-widget .fa-eur::before{content:""}.help-widget .fa-euro::before{content:""}.help-widget .fa-chair::before{content:""}.help-widget .fa-circle-check::before{content:""}.help-widget .fa-check-circle::before{content:""}.help-widget .fa-circle-stop::before{content:""}.help-widget .fa-stop-circle::before{content:""}.help-widget .fa-compass-drafting::before{content:""}.help-widget .fa-drafting-compass::before{content:""}.help-widget .fa-plate-wheat::before{content:""}.help-widget .fa-icicles::before{content:""}.help-widget .fa-person-shelter::before{content:""}.help-widget .fa-neuter::before{content:""}.help-widget .fa-id-badge::before{content:""}.help-widget .fa-marker::before{content:""}.help-widget .fa-face-laugh-beam::before{content:""}.help-widget .fa-laugh-beam::before{content:""}.help-widget .fa-helicopter-symbol::before{content:""}.help-widget .fa-universal-access::before{content:""}.help-widget .fa-circle-chevron-up::before{content:""}.help-widget .fa-chevron-circle-up::before{content:""}.help-widget .fa-lari-sign::before{content:""}.help-widget .fa-volcano::before{content:""}.help-widget .fa-person-walking-dashed-line-arrow-right::before{content:""}.help-widget .fa-sterling-sign::before{content:""}.help-widget .fa-gbp::before{content:""}.help-widget .fa-pound-sign::before{content:""}.help-widget .fa-viruses::before{content:""}.help-widget .fa-square-person-confined::before{content:""}.help-widget .fa-user-tie::before{content:""}.help-widget .fa-arrow-down-long::before{content:""}.help-widget .fa-long-arrow-down::before{content:""}.help-widget .fa-tent-arrow-down-to-line::before{content:""}.help-widget .fa-certificate::before{content:""}.help-widget .fa-reply-all::before{content:""}.help-widget .fa-mail-reply-all::before{content:""}.help-widget .fa-suitcase::before{content:""}.help-widget .fa-person-skating::before{content:""}.help-widget .fa-skating::before{content:""}.help-widget .fa-filter-circle-dollar::before{content:""}.help-widget .fa-funnel-dollar::before{content:""}.help-widget .fa-camera-retro::before{content:""}.help-widget .fa-circle-arrow-down::before{content:""}.help-widget .fa-arrow-circle-down::before{content:""}.help-widget .fa-file-import::before{content:""}.help-widget .fa-arrow-right-to-file::before{content:""}.help-widget .fa-square-arrow-up-right::before{content:""}.help-widget .fa-external-link-square::before{content:""}.help-widget .fa-box-open::before{content:""}.help-widget .fa-scroll::before{content:""}.help-widget .fa-spa::before{content:""}.help-widget .fa-location-pin-lock::before{content:""}.help-widget .fa-pause::before{content:""}.help-widget .fa-hill-avalanche::before{content:""}.help-widget .fa-temperature-empty::before{content:""}.help-widget .fa-temperature-0::before{content:""}.help-widget .fa-thermometer-0::before{content:""}.help-widget .fa-thermometer-empty::before{content:""}.help-widget .fa-bomb::before{content:""}.help-widget .fa-registered::before{content:""}.help-widget .fa-address-card::before{content:""}.help-widget .fa-contact-card::before{content:""}.help-widget .fa-vcard::before{content:""}.help-widget .fa-scale-unbalanced-flip::before{content:""}.help-widget .fa-balance-scale-right::before{content:""}.help-widget .fa-subscript::before{content:""}.help-widget .fa-diamond-turn-right::before{content:""}.help-widget .fa-directions::before{content:""}.help-widget .fa-burst::before{content:""}.help-widget .fa-house-laptop::before{content:""}.help-widget .fa-laptop-house::before{content:""}.help-widget .fa-face-tired::before{content:""}.help-widget .fa-tired::before{content:""}.help-widget .fa-money-bills::before{content:""}.help-widget .fa-smog::before{content:""}.help-widget .fa-crutch::before{content:""}.help-widget .fa-cloud-arrow-up::before{content:""}.help-widget .fa-cloud-upload::before{content:""}.help-widget .fa-cloud-upload-alt::before{content:""}.help-widget .fa-palette::before{content:""}.help-widget .fa-arrows-turn-right::before{content:""}.help-widget .fa-vest::before{content:""}.help-widget .fa-ferry::before{content:""}.help-widget .fa-arrows-down-to-people::before{content:""}.help-widget .fa-seedling::before{content:""}.help-widget .fa-sprout::before{content:""}.help-widget .fa-left-right::before{content:""}.help-widget .fa-arrows-alt-h::before{content:""}.help-widget .fa-boxes-packing::before{content:""}.help-widget .fa-circle-arrow-left::before{content:""}.help-widget .fa-arrow-circle-left::before{content:""}.help-widget .fa-group-arrows-rotate::before{content:""}.help-widget .fa-bowl-food::before{content:""}.help-widget .fa-candy-cane::before{content:""}.help-widget .fa-arrow-down-wide-short::before{content:""}.help-widget .fa-sort-amount-asc::before{content:""}.help-widget .fa-sort-amount-down::before{content:""}.help-widget .fa-cloud-bolt::before{content:""}.help-widget .fa-thunderstorm::before{content:""}.help-widget .fa-text-slash::before{content:""}.help-widget .fa-remove-format::before{content:""}.help-widget .fa-face-smile-wink::before{content:""}.help-widget .fa-smile-wink::before{content:""}.help-widget .fa-file-word::before{content:""}.help-widget .fa-file-powerpoint::before{content:""}.help-widget .fa-arrows-left-right::before{content:""}.help-widget .fa-arrows-h::before{content:""}.help-widget .fa-house-lock::before{content:""}.help-widget .fa-cloud-arrow-down::before{content:""}.help-widget .fa-cloud-download::before{content:""}.help-widget .fa-cloud-download-alt::before{content:""}.help-widget .fa-children::before{content:""}.help-widget .fa-chalkboard::before{content:""}.help-widget .fa-blackboard::before{content:""}.help-widget .fa-user-large-slash::before{content:""}.help-widget .fa-user-alt-slash::before{content:""}.help-widget .fa-envelope-open::before{content:""}.help-widget .fa-handshake-simple-slash::before{content:""}.help-widget .fa-handshake-alt-slash::before{content:""}.help-widget .fa-mattress-pillow::before{content:""}.help-widget .fa-guarani-sign::before{content:""}.help-widget .fa-arrows-rotate::before{content:""}.help-widget .fa-refresh::before{content:""}.help-widget .fa-sync::before{content:""}.help-widget .fa-fire-extinguisher::before{content:""}.help-widget .fa-cruzeiro-sign::before{content:""}.help-widget .fa-greater-than-equal::before{content:""}.help-widget .fa-shield-halved::before{content:""}.help-widget .fa-shield-alt::before{content:""}.help-widget .fa-book-atlas::before{content:""}.help-widget .fa-atlas::before{content:""}.help-widget .fa-virus::before{content:""}.help-widget .fa-envelope-circle-check::before{content:""}.help-widget .fa-layer-group::before{content:""}.help-widget .fa-arrows-to-dot::before{content:""}.help-widget .fa-archway::before{content:""}.help-widget .fa-heart-circle-check::before{content:""}.help-widget .fa-house-chimney-crack::before{content:""}.help-widget .fa-house-damage::before{content:""}.help-widget .fa-file-zipper::before{content:""}.help-widget .fa-file-archive::before{content:""}.help-widget .fa-square::before{content:""}.help-widget .fa-martini-glass-empty::before{content:""}.help-widget .fa-glass-martini::before{content:""}.help-widget .fa-couch::before{content:""}.help-widget .fa-cedi-sign::before{content:""}.help-widget .fa-italic::before{content:""}.help-widget .fa-church::before{content:""}.help-widget .fa-comments-dollar::before{content:""}.help-widget .fa-democrat::before{content:""}.help-widget .fa-z::before{content:"Z"}.help-widget .fa-person-skiing::before{content:""}.help-widget .fa-skiing::before{content:""}.help-widget .fa-road-lock::before{content:""}.help-widget .fa-a::before{content:"A"}.help-widget .fa-temperature-arrow-down::before{content:""}.help-widget .fa-temperature-down::before{content:""}.help-widget .fa-feather-pointed::before{content:""}.help-widget .fa-feather-alt::before{content:""}.help-widget .fa-p::before{content:"P"}.help-widget .fa-snowflake::before{content:""}.help-widget .fa-newspaper::before{content:""}.help-widget .fa-rectangle-ad::before{content:""}.help-widget .fa-ad::before{content:""}.help-widget .fa-circle-arrow-right::before{content:""}.help-widget .fa-arrow-circle-right::before{content:""}.help-widget .fa-filter-circle-xmark::before{content:""}.help-widget .fa-locust::before{content:""}.help-widget .fa-sort::before{content:""}.help-widget .fa-unsorted::before{content:""}.help-widget .fa-list-ol::before{content:""}.help-widget .fa-list-1-2::before{content:""}.help-widget .fa-list-numeric::before{content:""}.help-widget .fa-person-dress-burst::before{content:""}.help-widget .fa-money-check-dollar::before{content:""}.help-widget .fa-money-check-alt::before{content:""}.help-widget .fa-vector-square::before{content:""}.help-widget .fa-bread-slice::before{content:""}.help-widget .fa-language::before{content:""}.help-widget .fa-face-kiss-wink-heart::before{content:""}.help-widget .fa-kiss-wink-heart::before{content:""}.help-widget .fa-filter::before{content:""}.help-widget .fa-question::before{content:"\?"}.help-widget .fa-file-signature::before{content:""}.help-widget .fa-up-down-left-right::before{content:""}.help-widget .fa-arrows-alt::before{content:""}.help-widget .fa-house-chimney-user::before{content:""}.help-widget .fa-hand-holding-heart::before{content:""}.help-widget .fa-puzzle-piece::before{content:""}.help-widget .fa-money-check::before{content:""}.help-widget .fa-star-half-stroke::before{content:""}.help-widget .fa-star-half-alt::before{content:""}.help-widget .fa-code::before{content:""}.help-widget .fa-whiskey-glass::before{content:""}.help-widget .fa-glass-whiskey::before{content:""}.help-widget .fa-building-circle-exclamation::before{content:""}.help-widget .fa-magnifying-glass-chart::before{content:""}.help-widget .fa-arrow-up-right-from-square::before{content:""}.help-widget .fa-external-link::before{content:""}.help-widget .fa-cubes-stacked::before{content:""}.help-widget .fa-won-sign::before{content:""}.help-widget .fa-krw::before{content:""}.help-widget .fa-won::before{content:""}.help-widget .fa-virus-covid::before{content:""}.help-widget .fa-austral-sign::before{content:""}.help-widget .fa-f::before{content:"F"}.help-widget .fa-leaf::before{content:""}.help-widget .fa-road::before{content:""}.help-widget .fa-taxi::before{content:""}.help-widget .fa-cab::before{content:""}.help-widget .fa-person-circle-plus::before{content:""}.help-widget .fa-chart-pie::before{content:""}.help-widget .fa-pie-chart::before{content:""}.help-widget .fa-bolt-lightning::before{content:""}.help-widget .fa-sack-xmark::before{content:""}.help-widget .fa-file-excel::before{content:""}.help-widget .fa-file-contract::before{content:""}.help-widget .fa-fish-fins::before{content:""}.help-widget .fa-building-flag::before{content:""}.help-widget .fa-face-grin-beam::before{content:""}.help-widget .fa-grin-beam::before{content:""}.help-widget .fa-object-ungroup::before{content:""}.help-widget .fa-poop::before{content:""}.help-widget .fa-location-pin::before{content:""}.help-widget .fa-map-marker::before{content:""}.help-widget .fa-kaaba::before{content:""}.help-widget .fa-toilet-paper::before{content:""}.help-widget .fa-helmet-safety::before{content:""}.help-widget .fa-hard-hat::before{content:""}.help-widget .fa-hat-hard::before{content:""}.help-widget .fa-eject::before{content:""}.help-widget .fa-circle-right::before{content:""}.help-widget .fa-arrow-alt-circle-right::before{content:""}.help-widget .fa-plane-circle-check::before{content:""}.help-widget .fa-face-rolling-eyes::before{content:""}.help-widget .fa-meh-rolling-eyes::before{content:""}.help-widget .fa-object-group::before{content:""}.help-widget .fa-chart-line::before{content:""}.help-widget .fa-line-chart::before{content:""}.help-widget .fa-mask-ventilator::before{content:""}.help-widget .fa-arrow-right::before{content:""}.help-widget .fa-signs-post::before{content:""}.help-widget .fa-map-signs::before{content:""}.help-widget .fa-cash-register::before{content:""}.help-widget .fa-person-circle-question::before{content:""}.help-widget .fa-h::before{content:"H"}.help-widget .fa-tarp::before{content:""}.help-widget .fa-screwdriver-wrench::before{content:""}.help-widget .fa-tools::before{content:""}.help-widget .fa-arrows-to-eye::before{content:""}.help-widget .fa-plug-circle-bolt::before{content:""}.help-widget .fa-heart::before{content:""}.help-widget .fa-mars-and-venus::before{content:""}.help-widget .fa-house-user::before{content:""}.help-widget .fa-home-user::before{content:""}.help-widget .fa-dumpster-fire::before{content:""}.help-widget .fa-house-crack::before{content:""}.help-widget .fa-martini-glass-citrus::before{content:""}.help-widget .fa-cocktail::before{content:""}.help-widget .fa-face-surprise::before{content:""}.help-widget .fa-surprise::before{content:""}.help-widget .fa-bottle-water::before{content:""}.help-widget .fa-circle-pause::before{content:""}.help-widget .fa-pause-circle::before{content:""}.help-widget .fa-toilet-paper-slash::before{content:""}.help-widget .fa-apple-whole::before{content:""}.help-widget .fa-apple-alt::before{content:""}.help-widget .fa-kitchen-set::before{content:""}.help-widget .fa-r::before{content:"R"}.help-widget .fa-temperature-quarter::before{content:""}.help-widget .fa-temperature-1::before{content:""}.help-widget .fa-thermometer-1::before{content:""}.help-widget .fa-thermometer-quarter::before{content:""}.help-widget .fa-cube::before{content:""}.help-widget .fa-bitcoin-sign::before{content:""}.help-widget .fa-shield-dog::before{content:""}.help-widget .fa-solar-panel::before{content:""}.help-widget .fa-lock-open::before{content:""}.help-widget .fa-elevator::before{content:""}.help-widget .fa-money-bill-transfer::before{content:""}.help-widget .fa-money-bill-trend-up::before{content:""}.help-widget .fa-house-flood-water-circle-arrow-right::before{content:""}.help-widget .fa-square-poll-horizontal::before{content:""}.help-widget .fa-poll-h::before{content:""}.help-widget .fa-circle::before{content:""}.help-widget .fa-backward-fast::before{content:""}.help-widget .fa-fast-backward::before{content:""}.help-widget .fa-recycle::before{content:""}.help-widget .fa-user-astronaut::before{content:""}.help-widget .fa-plane-slash::before{content:""}.help-widget .fa-trademark::before{content:""}.help-widget .fa-basketball::before{content:""}.help-widget .fa-basketball-ball::before{content:""}.help-widget .fa-satellite-dish::before{content:""}.help-widget .fa-circle-up::before{content:""}.help-widget .fa-arrow-alt-circle-up::before{content:""}.help-widget .fa-mobile-screen-button::before{content:""}.help-widget .fa-mobile-alt::before{content:""}.help-widget .fa-volume-high::before{content:""}.help-widget .fa-volume-up::before{content:""}.help-widget .fa-users-rays::before{content:""}.help-widget .fa-wallet::before{content:""}.help-widget .fa-clipboard-check::before{content:""}.help-widget .fa-file-audio::before{content:""}.help-widget .fa-burger::before{content:""}.help-widget .fa-hamburger::before{content:""}.help-widget .fa-wrench::before{content:""}.help-widget .fa-bugs::before{content:""}.help-widget .fa-rupee-sign::before{content:""}.help-widget .fa-rupee::before{content:""}.help-widget .fa-file-image::before{content:""}.help-widget .fa-circle-question::before{content:""}.help-widget .fa-question-circle::before{content:""}.help-widget .fa-plane-departure::before{content:""}.help-widget .fa-handshake-slash::before{content:""}.help-widget .fa-book-bookmark::before{content:""}.help-widget .fa-code-branch::before{content:""}.help-widget .fa-hat-cowboy::before{content:""}.help-widget .fa-bridge::before{content:""}.help-widget .fa-phone-flip::before{content:""}.help-widget .fa-phone-alt::before{content:""}.help-widget .fa-truck-front::before{content:""}.help-widget .fa-cat::before{content:""}.help-widget .fa-anchor-circle-exclamation::before{content:""}.help-widget .fa-truck-field::before{content:""}.help-widget .fa-route::before{content:""}.help-widget .fa-clipboard-question::before{content:""}.help-widget .fa-panorama::before{content:""}.help-widget .fa-comment-medical::before{content:""}.help-widget .fa-teeth-open::before{content:""}.help-widget .fa-file-circle-minus::before{content:""}.help-widget .fa-tags::before{content:""}.help-widget .fa-wine-glass::before{content:""}.help-widget .fa-forward-fast::before{content:""}.help-widget .fa-fast-forward::before{content:""}.help-widget .fa-face-meh-blank::before{content:""}.help-widget .fa-meh-blank::before{content:""}.help-widget .fa-square-parking::before{content:""}.help-widget .fa-parking::before{content:""}.help-widget .fa-house-signal::before{content:""}.help-widget .fa-bars-progress::before{content:""}.help-widget .fa-tasks-alt::before{content:""}.help-widget .fa-faucet-drip::before{content:""}.help-widget .fa-cart-flatbed::before{content:""}.help-widget .fa-dolly-flatbed::before{content:""}.help-widget .fa-ban-smoking::before{content:""}.help-widget .fa-smoking-ban::before{content:""}.help-widget .fa-terminal::before{content:""}.help-widget .fa-mobile-button::before{content:""}.help-widget .fa-house-medical-flag::before{content:""}.help-widget .fa-basket-shopping::before{content:""}.help-widget .fa-shopping-basket::before{content:""}.help-widget .fa-tape::before{content:""}.help-widget .fa-bus-simple::before{content:""}.help-widget .fa-bus-alt::before{content:""}.help-widget .fa-eye::before{content:""}.help-widget .fa-face-sad-cry::before{content:""}.help-widget .fa-sad-cry::before{content:""}.help-widget .fa-audio-description::before{content:""}.help-widget .fa-person-military-to-person::before{content:""}.help-widget .fa-file-shield::before{content:""}.help-widget .fa-user-slash::before{content:""}.help-widget .fa-pen::before{content:""}.help-widget .fa-tower-observation::before{content:""}.help-widget .fa-file-code::before{content:""}.help-widget .fa-signal::before{content:""}.help-widget .fa-signal-5::before{content:""}.help-widget .fa-signal-perfect::before{content:""}.help-widget .fa-bus::before{content:""}.help-widget .fa-heart-circle-xmark::before{content:""}.help-widget .fa-house-chimney::before{content:""}.help-widget .fa-home-lg::before{content:""}.help-widget .fa-window-maximize::before{content:""}.help-widget .fa-face-frown::before{content:""}.help-widget .fa-frown::before{content:""}.help-widget .fa-prescription::before{content:""}.help-widget .fa-shop::before{content:""}.help-widget .fa-store-alt::before{content:""}.help-widget .fa-floppy-disk::before{content:""}.help-widget .fa-save::before{content:""}.help-widget .fa-vihara::before{content:""}.help-widget .fa-scale-unbalanced::before{content:""}.help-widget .fa-balance-scale-left::before{content:""}.help-widget .fa-sort-up::before{content:""}.help-widget .fa-sort-asc::before{content:""}.help-widget .fa-comment-dots::before{content:""}.help-widget .fa-commenting::before{content:""}.help-widget .fa-plant-wilt::before{content:""}.help-widget .fa-diamond::before{content:""}.help-widget .fa-face-grin-squint::before{content:""}.help-widget .fa-grin-squint::before{content:""}.help-widget .fa-hand-holding-dollar::before{content:""}.help-widget .fa-hand-holding-usd::before{content:""}.help-widget .fa-bacterium::before{content:""}.help-widget .fa-hand-pointer::before{content:""}.help-widget .fa-drum-steelpan::before{content:""}.help-widget .fa-hand-scissors::before{content:""}.help-widget .fa-hands-praying::before{content:""}.help-widget .fa-praying-hands::before{content:""}.help-widget .fa-arrow-rotate-right::before{content:""}.help-widget .fa-arrow-right-rotate::before{content:""}.help-widget .fa-arrow-rotate-forward::before{content:""}.help-widget .fa-redo::before{content:""}.help-widget .fa-biohazard::before{content:""}.help-widget .fa-location-crosshairs::before{content:""}.help-widget .fa-location::before{content:""}.help-widget .fa-mars-double::before{content:""}.help-widget .fa-child-dress::before{content:""}.help-widget .fa-users-between-lines::before{content:""}.help-widget .fa-lungs-virus::before{content:""}.help-widget .fa-face-grin-tears::before{content:""}.help-widget .fa-grin-tears::before{content:""}.help-widget .fa-phone::before{content:""}.help-widget .fa-calendar-xmark::before{content:""}.help-widget .fa-calendar-times::before{content:""}.help-widget .fa-child-reaching::before{content:""}.help-widget .fa-head-side-virus::before{content:""}.help-widget .fa-user-gear::before{content:""}.help-widget .fa-user-cog::before{content:""}.help-widget .fa-arrow-up-1-9::before{content:""}.help-widget .fa-sort-numeric-up::before{content:""}.help-widget .fa-door-closed::before{content:""}.help-widget .fa-shield-virus::before{content:""}.help-widget .fa-dice-six::before{content:""}.help-widget .fa-mosquito-net::before{content:""}.help-widget .fa-bridge-water::before{content:""}.help-widget .fa-person-booth::before{content:""}.help-widget .fa-text-width::before{content:""}.help-widget .fa-hat-wizard::before{content:""}.help-widget .fa-pen-fancy::before{content:""}.help-widget .fa-person-digging::before{content:""}.help-widget .fa-digging::before{content:""}.help-widget .fa-trash::before{content:""}.help-widget .fa-gauge-simple::before{content:""}.help-widget .fa-gauge-simple-med::before{content:""}.help-widget .fa-tachometer-average::before{content:""}.help-widget .fa-book-medical::before{content:""}.help-widget .fa-poo::before{content:""}.help-widget .fa-quote-right::before{content:""}.help-widget .fa-quote-right-alt::before{content:""}.help-widget .fa-shirt::before{content:""}.help-widget .fa-t-shirt::before{content:""}.help-widget .fa-tshirt::before{content:""}.help-widget .fa-cubes::before{content:""}.help-widget .fa-divide::before{content:""}.help-widget .fa-tenge-sign::before{content:""}.help-widget .fa-tenge::before{content:""}.help-widget .fa-headphones::before{content:""}.help-widget .fa-hands-holding::before{content:""}.help-widget .fa-hands-clapping::before{content:""}.help-widget .fa-republican::before{content:""}.help-widget .fa-arrow-left::before{content:""}.help-widget .fa-person-circle-xmark::before{content:""}.help-widget .fa-ruler::before{content:""}.help-widget .fa-align-left::before{content:""}.help-widget .fa-dice-d6::before{content:""}.help-widget .fa-restroom::before{content:""}.help-widget .fa-j::before{content:"J"}.help-widget .fa-users-viewfinder::before{content:""}.help-widget .fa-file-video::before{content:""}.help-widget .fa-up-right-from-square::before{content:""}.help-widget .fa-external-link-alt::before{content:""}.help-widget .fa-table-cells::before{content:""}.help-widget .fa-th::before{content:""}.help-widget .fa-file-pdf::before{content:""}.help-widget .fa-book-bible::before{content:""}.help-widget .fa-bible::before{content:""}.help-widget .fa-o::before{content:"O"}.help-widget .fa-suitcase-medical::before{content:""}.help-widget .fa-medkit::before{content:""}.help-widget .fa-user-secret::before{content:""}.help-widget .fa-otter::before{content:""}.help-widget .fa-person-dress::before{content:""}.help-widget .fa-female::before{content:""}.help-widget .fa-comment-dollar::before{content:""}.help-widget .fa-business-time::before{content:""}.help-widget .fa-briefcase-clock::before{content:""}.help-widget .fa-table-cells-large::before{content:""}.help-widget .fa-th-large::before{content:""}.help-widget .fa-book-tanakh::before{content:""}.help-widget .fa-tanakh::before{content:""}.help-widget .fa-phone-volume::before{content:""}.help-widget .fa-volume-control-phone::before{content:""}.help-widget .fa-hat-cowboy-side::before{content:""}.help-widget .fa-clipboard-user::before{content:""}.help-widget .fa-child::before{content:""}.help-widget .fa-lira-sign::before{content:""}.help-widget .fa-satellite::before{content:""}.help-widget .fa-plane-lock::before{content:""}.help-widget .fa-tag::before{content:""}.help-widget .fa-comment::before{content:""}.help-widget .fa-cake-candles::before{content:""}.help-widget .fa-birthday-cake::before{content:""}.help-widget .fa-cake::before{content:""}.help-widget .fa-envelope::before{content:""}.help-widget .fa-angles-up::before{content:""}.help-widget .fa-angle-double-up::before{content:""}.help-widget .fa-paperclip::before{content:""}.help-widget .fa-arrow-right-to-city::before{content:""}.help-widget .fa-ribbon::before{content:""}.help-widget .fa-lungs::before{content:""}.help-widget .fa-arrow-up-9-1::before{content:""}.help-widget .fa-sort-numeric-up-alt::before{content:""}.help-widget .fa-litecoin-sign::before{content:""}.help-widget .fa-border-none::before{content:""}.help-widget .fa-circle-nodes::before{content:""}.help-widget .fa-parachute-box::before{content:""}.help-widget .fa-indent::before{content:""}.help-widget .fa-truck-field-un::before{content:""}.help-widget .fa-hourglass::before{content:""}.help-widget .fa-hourglass-empty::before{content:""}.help-widget .fa-mountain::before{content:""}.help-widget .fa-user-doctor::before{content:""}.help-widget .fa-user-md::before{content:""}.help-widget .fa-circle-info::before{content:""}.help-widget .fa-info-circle::before{content:""}.help-widget .fa-cloud-meatball::before{content:""}.help-widget .fa-camera::before{content:""}.help-widget .fa-camera-alt::before{content:""}.help-widget .fa-square-virus::before{content:""}.help-widget .fa-meteor::before{content:""}.help-widget .fa-car-on::before{content:""}.help-widget .fa-sleigh::before{content:""}.help-widget .fa-arrow-down-1-9::before{content:""}.help-widget .fa-sort-numeric-asc::before{content:""}.help-widget .fa-sort-numeric-down::before{content:""}.help-widget .fa-hand-holding-droplet::before{content:""}.help-widget .fa-hand-holding-water::before{content:""}.help-widget .fa-water::before{content:""}.help-widget .fa-calendar-check::before{content:""}.help-widget .fa-braille::before{content:""}.help-widget .fa-prescription-bottle-medical::before{content:""}.help-widget .fa-prescription-bottle-alt::before{content:""}.help-widget .fa-landmark::before{content:""}.help-widget .fa-truck::before{content:""}.help-widget .fa-crosshairs::before{content:""}.help-widget .fa-person-cane::before{content:""}.help-widget .fa-tent::before{content:""}.help-widget .fa-vest-patches::before{content:""}.help-widget .fa-check-double::before{content:""}.help-widget .fa-arrow-down-a-z::before{content:""}.help-widget .fa-sort-alpha-asc::before{content:""}.help-widget .fa-sort-alpha-down::before{content:""}.help-widget .fa-money-bill-wheat::before{content:""}.help-widget .fa-cookie::before{content:""}.help-widget .fa-arrow-rotate-left::before{content:""}.help-widget .fa-arrow-left-rotate::before{content:""}.help-widget .fa-arrow-rotate-back::before{content:""}.help-widget .fa-arrow-rotate-backward::before{content:""}.help-widget .fa-undo::before{content:""}.help-widget .fa-hard-drive::before{content:""}.help-widget .fa-hdd::before{content:""}.help-widget .fa-face-grin-squint-tears::before{content:""}.help-widget .fa-grin-squint-tears::before{content:""}.help-widget .fa-dumbbell::before{content:""}.help-widget .fa-rectangle-list::before{content:""}.help-widget .fa-list-alt::before{content:""}.help-widget .fa-tarp-droplet::before{content:""}.help-widget .fa-house-medical-circle-check::before{content:""}.help-widget .fa-person-skiing-nordic::before{content:""}.help-widget .fa-skiing-nordic::before{content:""}.help-widget .fa-calendar-plus::before{content:""}.help-widget .fa-plane-arrival::before{content:""}.help-widget .fa-circle-left::before{content:""}.help-widget .fa-arrow-alt-circle-left::before{content:""}.help-widget .fa-train-subway::before{content:""}.help-widget .fa-subway::before{content:""}.help-widget .fa-chart-gantt::before{content:""}.help-widget .fa-indian-rupee-sign::before{content:""}.help-widget .fa-indian-rupee::before{content:""}.help-widget .fa-inr::before{content:""}.help-widget .fa-crop-simple::before{content:""}.help-widget .fa-crop-alt::before{content:""}.help-widget .fa-money-bill-1::before{content:""}.help-widget .fa-money-bill-alt::before{content:""}.help-widget .fa-left-long::before{content:""}.help-widget .fa-long-arrow-alt-left::before{content:""}.help-widget .fa-dna::before{content:""}.help-widget .fa-virus-slash::before{content:""}.help-widget .fa-minus::before{content:""}.help-widget .fa-subtract::before{content:""}.help-widget .fa-chess::before{content:""}.help-widget .fa-arrow-left-long::before{content:""}.help-widget .fa-long-arrow-left::before{content:""}.help-widget .fa-plug-circle-check::before{content:""}.help-widget .fa-street-view::before{content:""}.help-widget .fa-franc-sign::before{content:""}.help-widget .fa-volume-off::before{content:""}.help-widget .fa-hands-asl-interpreting::before{content:""}.help-widget .fa-american-sign-language-interpreting::before{content:""}.help-widget .fa-asl-interpreting::before{content:""}.help-widget .fa-hands-american-sign-language-interpreting::before{content:""}.help-widget .fa-gear::before{content:""}.help-widget .fa-cog::before{content:""}.help-widget .fa-droplet-slash::before{content:""}.help-widget .fa-tint-slash::before{content:""}.help-widget .fa-mosque::before{content:""}.help-widget .fa-mosquito::before{content:""}.help-widget .fa-star-of-david::before{content:""}.help-widget .fa-person-military-rifle::before{content:""}.help-widget .fa-cart-shopping::before{content:""}.help-widget .fa-shopping-cart::before{content:""}.help-widget .fa-vials::before{content:""}.help-widget .fa-plug-circle-plus::before{content:""}.help-widget .fa-place-of-worship::before{content:""}.help-widget .fa-grip-vertical::before{content:""}.help-widget .fa-arrow-turn-up::before{content:""}.help-widget .fa-level-up::before{content:""}.help-widget .fa-u::before{content:"U"}.help-widget .fa-square-root-variable::before{content:""}.help-widget .fa-square-root-alt::before{content:""}.help-widget .fa-clock::before{content:""}.help-widget .fa-clock-four::before{content:""}.help-widget .fa-backward-step::before{content:""}.help-widget .fa-step-backward::before{content:""}.help-widget .fa-pallet::before{content:""}.help-widget .fa-faucet::before{content:""}.help-widget .fa-baseball-bat-ball::before{content:""}.help-widget .fa-s::before{content:"S"}.help-widget .fa-timeline::before{content:""}.help-widget .fa-keyboard::before{content:""}.help-widget .fa-caret-down::before{content:""}.help-widget .fa-house-chimney-medical::before{content:""}.help-widget .fa-clinic-medical::before{content:""}.help-widget .fa-temperature-three-quarters::before{content:""}.help-widget .fa-temperature-3::before{content:""}.help-widget .fa-thermometer-3::before{content:""}.help-widget .fa-thermometer-three-quarters::before{content:""}.help-widget .fa-mobile-screen::before{content:""}.help-widget .fa-mobile-android-alt::before{content:""}.help-widget .fa-plane-up::before{content:""}.help-widget .fa-piggy-bank::before{content:""}.help-widget .fa-battery-half::before{content:""}.help-widget .fa-battery-3::before{content:""}.help-widget .fa-mountain-city::before{content:""}.help-widget .fa-coins::before{content:""}.help-widget .fa-khanda::before{content:""}.help-widget .fa-sliders::before{content:""}.help-widget .fa-sliders-h::before{content:""}.help-widget .fa-folder-tree::before{content:""}.help-widget .fa-network-wired::before{content:""}.help-widget .fa-map-pin::before{content:""}.help-widget .fa-hamsa::before{content:""}.help-widget .fa-cent-sign::before{content:""}.help-widget .fa-flask::before{content:""}.help-widget .fa-person-pregnant::before{content:""}.help-widget .fa-wand-sparkles::before{content:""}.help-widget .fa-ellipsis-vertical::before{content:""}.help-widget .fa-ellipsis-v::before{content:""}.help-widget .fa-ticket::before{content:""}.help-widget .fa-power-off::before{content:""}.help-widget .fa-right-long::before{content:""}.help-widget .fa-long-arrow-alt-right::before{content:""}.help-widget .fa-flag-usa::before{content:""}.help-widget .fa-laptop-file::before{content:""}.help-widget .fa-tty::before{content:""}.help-widget .fa-teletype::before{content:""}.help-widget .fa-diagram-next::before{content:""}.help-widget .fa-person-rifle::before{content:""}.help-widget .fa-house-medical-circle-exclamation::before{content:""}.help-widget .fa-closed-captioning::before{content:""}.help-widget .fa-person-hiking::before{content:""}.help-widget .fa-hiking::before{content:""}.help-widget .fa-venus-double::before{content:""}.help-widget .fa-images::before{content:""}.help-widget .fa-calculator::before{content:""}.help-widget .fa-people-pulling::before{content:""}.help-widget .fa-n::before{content:"N"}.help-widget .fa-cable-car::before{content:""}.help-widget .fa-tram::before{content:""}.help-widget .fa-cloud-rain::before{content:""}.help-widget .fa-building-circle-xmark::before{content:""}.help-widget .fa-ship::before{content:""}.help-widget .fa-arrows-down-to-line::before{content:""}.help-widget .fa-download::before{content:""}.help-widget .fa-face-grin::before{content:""}.help-widget .fa-grin::before{content:""}.help-widget .fa-delete-left::before{content:""}.help-widget .fa-backspace::before{content:""}.help-widget .fa-eye-dropper::before{content:""}.help-widget .fa-eye-dropper-empty::before{content:""}.help-widget .fa-eyedropper::before{content:""}.help-widget .fa-file-circle-check::before{content:""}.help-widget .fa-forward::before{content:""}.help-widget .fa-mobile::before{content:""}.help-widget .fa-mobile-android::before{content:""}.help-widget .fa-mobile-phone::before{content:""}.help-widget .fa-face-meh::before{content:""}.help-widget .fa-meh::before{content:""}.help-widget .fa-align-center::before{content:""}.help-widget .fa-book-skull::before{content:""}.help-widget .fa-book-dead::before{content:""}.help-widget .fa-id-card::before{content:""}.help-widget .fa-drivers-license::before{content:""}.help-widget .fa-outdent::before{content:""}.help-widget .fa-dedent::before{content:""}.help-widget .fa-heart-circle-exclamation::before{content:""}.help-widget .fa-house::before{content:""}.help-widget .fa-home::before{content:""}.help-widget .fa-home-alt::before{content:""}.help-widget .fa-home-lg-alt::before{content:""}.help-widget .fa-calendar-week::before{content:""}.help-widget .fa-laptop-medical::before{content:""}.help-widget .fa-b::before{content:"B"}.help-widget .fa-file-medical::before{content:""}.help-widget .fa-dice-one::before{content:""}.help-widget .fa-kiwi-bird::before{content:""}.help-widget .fa-arrow-right-arrow-left::before{content:""}.help-widget .fa-exchange::before{content:""}.help-widget .fa-rotate-right::before{content:""}.help-widget .fa-redo-alt::before{content:""}.help-widget .fa-rotate-forward::before{content:""}.help-widget .fa-utensils::before{content:""}.help-widget .fa-cutlery::before{content:""}.help-widget .fa-arrow-up-wide-short::before{content:""}.help-widget .fa-sort-amount-up::before{content:""}.help-widget .fa-mill-sign::before{content:""}.help-widget .fa-bowl-rice::before{content:""}.help-widget .fa-skull::before{content:""}.help-widget .fa-tower-broadcast::before{content:""}.help-widget .fa-broadcast-tower::before{content:""}.help-widget .fa-truck-pickup::before{content:""}.help-widget .fa-up-long::before{content:""}.help-widget .fa-long-arrow-alt-up::before{content:""}.help-widget .fa-stop::before{content:""}.help-widget .fa-code-merge::before{content:""}.help-widget .fa-upload::before{content:""}.help-widget .fa-hurricane::before{content:""}.help-widget .fa-mound::before{content:""}.help-widget .fa-toilet-portable::before{content:""}.help-widget .fa-compact-disc::before{content:""}.help-widget .fa-file-arrow-down::before{content:""}.help-widget .fa-file-download::before{content:""}.help-widget .fa-caravan::before{content:""}.help-widget .fa-shield-cat::before{content:""}.help-widget .fa-bolt::before{content:""}.help-widget .fa-zap::before{content:""}.help-widget .fa-glass-water::before{content:""}.help-widget .fa-oil-well::before{content:""}.help-widget .fa-vault::before{content:""}.help-widget .fa-mars::before{content:""}.help-widget .fa-toilet::before{content:""}.help-widget .fa-plane-circle-xmark::before{content:""}.help-widget .fa-yen-sign::before{content:""}.help-widget .fa-cny::before{content:""}.help-widget .fa-jpy::before{content:""}.help-widget .fa-rmb::before{content:""}.help-widget .fa-yen::before{content:""}.help-widget .fa-ruble-sign::before{content:""}.help-widget .fa-rouble::before{content:""}.help-widget .fa-rub::before{content:""}.help-widget .fa-ruble::before{content:""}.help-widget .fa-sun::before{content:""}.help-widget .fa-guitar::before{content:""}.help-widget .fa-face-laugh-wink::before{content:""}.help-widget .fa-laugh-wink::before{content:""}.help-widget .fa-horse-head::before{content:""}.help-widget .fa-bore-hole::before{content:""}.help-widget .fa-industry::before{content:""}.help-widget .fa-circle-down::before{content:""}.help-widget .fa-arrow-alt-circle-down::before{content:""}.help-widget .fa-arrows-turn-to-dots::before{content:""}.help-widget .fa-florin-sign::before{content:""}.help-widget .fa-arrow-down-short-wide::before{content:""}.help-widget .fa-sort-amount-desc::before{content:""}.help-widget .fa-sort-amount-down-alt::before{content:""}.help-widget .fa-less-than::before{content:"\<"}.help-widget .fa-angle-down::before{content:""}.help-widget .fa-car-tunnel::before{content:""}.help-widget .fa-head-side-cough::before{content:""}.help-widget .fa-grip-lines::before{content:""}.help-widget .fa-thumbs-down::before{content:""}.help-widget .fa-user-lock::before{content:""}.help-widget .fa-arrow-right-long::before{content:""}.help-widget .fa-long-arrow-right::before{content:""}.help-widget .fa-anchor-circle-xmark::before{content:""}.help-widget .fa-ellipsis::before{content:""}.help-widget .fa-ellipsis-h::before{content:""}.help-widget .fa-chess-pawn::before{content:""}.help-widget .fa-kit-medical::before{content:""}.help-widget .fa-first-aid::before{content:""}.help-widget .fa-person-through-window::before{content:""}.help-widget .fa-toolbox::before{content:""}.help-widget .fa-hands-holding-circle::before{content:""}.help-widget .fa-bug::before{content:""}.help-widget .fa-credit-card::before{content:""}.help-widget .fa-credit-card-alt::before{content:""}.help-widget .fa-car::before{content:""}.help-widget .fa-automobile::before{content:""}.help-widget .fa-hand-holding-hand::before{content:""}.help-widget .fa-book-open-reader::before{content:""}.help-widget .fa-book-reader::before{content:""}.help-widget .fa-mountain-sun::before{content:""}.help-widget .fa-arrows-left-right-to-line::before{content:""}.help-widget .fa-dice-d20::before{content:""}.help-widget .fa-truck-droplet::before{content:""}.help-widget .fa-file-circle-xmark::before{content:""}.help-widget .fa-temperature-arrow-up::before{content:""}.help-widget .fa-temperature-up::before{content:""}.help-widget .fa-medal::before{content:""}.help-widget .fa-bed::before{content:""}.help-widget .fa-square-h::before{content:""}.help-widget .fa-h-square::before{content:""}.help-widget .fa-podcast::before{content:""}.help-widget .fa-temperature-full::before{content:""}.help-widget .fa-temperature-4::before{content:""}.help-widget .fa-thermometer-4::before{content:""}.help-widget .fa-thermometer-full::before{content:""}.help-widget .fa-bell::before{content:""}.help-widget .fa-superscript::before{content:""}.help-widget .fa-plug-circle-xmark::before{content:""}.help-widget .fa-star-of-life::before{content:""}.help-widget .fa-phone-slash::before{content:""}.help-widget .fa-paint-roller::before{content:""}.help-widget .fa-handshake-angle::before{content:""}.help-widget .fa-hands-helping::before{content:""}.help-widget .fa-location-dot::before{content:""}.help-widget .fa-map-marker-alt::before{content:""}.help-widget .fa-file::before{content:""}.help-widget .fa-greater-than::before{content:"\>"}.help-widget .fa-person-swimming::before{content:""}.help-widget .fa-swimmer::before{content:""}.help-widget .fa-arrow-down::before{content:""}.help-widget .fa-droplet::before{content:""}.help-widget .fa-tint::before{content:""}.help-widget .fa-eraser::before{content:""}.help-widget .fa-earth-americas::before{content:""}.help-widget .fa-earth::before{content:""}.help-widget .fa-earth-america::before{content:""}.help-widget .fa-globe-americas::before{content:""}.help-widget .fa-person-burst::before{content:""}.help-widget .fa-dove::before{content:""}.help-widget .fa-battery-empty::before{content:""}.help-widget .fa-battery-0::before{content:""}.help-widget .fa-socks::before{content:""}.help-widget .fa-inbox::before{content:""}.help-widget .fa-section::before{content:""}.help-widget .fa-gauge-high::before{content:""}.help-widget .fa-tachometer-alt::before{content:""}.help-widget .fa-tachometer-alt-fast::before{content:""}.help-widget .fa-envelope-open-text::before{content:""}.help-widget .fa-hospital::before{content:""}.help-widget .fa-hospital-alt::before{content:""}.help-widget .fa-hospital-wide::before{content:""}.help-widget .fa-wine-bottle::before{content:""}.help-widget .fa-chess-rook::before{content:""}.help-widget .fa-bars-staggered::before{content:""}.help-widget .fa-reorder::before{content:""}.help-widget .fa-stream::before{content:""}.help-widget .fa-dharmachakra::before{content:""}.help-widget .fa-hotdog::before{content:""}.help-widget .fa-person-walking-with-cane::before{content:""}.help-widget .fa-blind::before{content:""}.help-widget .fa-drum::before{content:""}.help-widget .fa-ice-cream::before{content:""}.help-widget .fa-heart-circle-bolt::before{content:""}.help-widget .fa-fax::before{content:""}.help-widget .fa-paragraph::before{content:""}.help-widget .fa-check-to-slot::before{content:""}.help-widget .fa-vote-yea::before{content:""}.help-widget .fa-star-half::before{content:""}.help-widget .fa-boxes-stacked::before{content:""}.help-widget .fa-boxes::before{content:""}.help-widget .fa-boxes-alt::before{content:""}.help-widget .fa-link::before{content:""}.help-widget .fa-chain::before{content:""}.help-widget .fa-ear-listen::before{content:""}.help-widget .fa-assistive-listening-systems::before{content:""}.help-widget .fa-tree-city::before{content:""}.help-widget .fa-play::before{content:""}.help-widget .fa-font::before{content:""}.help-widget .fa-rupiah-sign::before{content:""}.help-widget .fa-magnifying-glass::before{content:""}.help-widget .fa-search::before{content:""}.help-widget .fa-table-tennis-paddle-ball::before{content:""}.help-widget .fa-ping-pong-paddle-ball::before{content:""}.help-widget .fa-table-tennis::before{content:""}.help-widget .fa-person-dots-from-line::before{content:""}.help-widget .fa-diagnoses::before{content:""}.help-widget .fa-trash-can-arrow-up::before{content:""}.help-widget .fa-trash-restore-alt::before{content:""}.help-widget .fa-naira-sign::before{content:""}.help-widget .fa-cart-arrow-down::before{content:""}.help-widget .fa-walkie-talkie::before{content:""}.help-widget .fa-file-pen::before{content:""}.help-widget .fa-file-edit::before{content:""}.help-widget .fa-receipt::before{content:""}.help-widget .fa-square-pen::before{content:""}.help-widget .fa-pen-square::before{content:""}.help-widget .fa-pencil-square::before{content:""}.help-widget .fa-suitcase-rolling::before{content:""}.help-widget .fa-person-circle-exclamation::before{content:""}.help-widget .fa-chevron-down::before{content:""}.help-widget .fa-battery-full::before{content:""}.help-widget .fa-battery::before{content:""}.help-widget .fa-battery-5::before{content:""}.help-widget .fa-skull-crossbones::before{content:""}.help-widget .fa-code-compare::before{content:""}.help-widget .fa-list-ul::before{content:""}.help-widget .fa-list-dots::before{content:""}.help-widget .fa-school-lock::before{content:""}.help-widget .fa-tower-cell::before{content:""}.help-widget .fa-down-long::before{content:""}.help-widget .fa-long-arrow-alt-down::before{content:""}.help-widget .fa-ranking-star::before{content:""}.help-widget .fa-chess-king::before{content:""}.help-widget .fa-person-harassing::before{content:""}.help-widget .fa-brazilian-real-sign::before{content:""}.help-widget .fa-landmark-dome::before{content:""}.help-widget .fa-landmark-alt::before{content:""}.help-widget .fa-arrow-up::before{content:""}.help-widget .fa-tv::before{content:""}.help-widget .fa-television::before{content:""}.help-widget .fa-tv-alt::before{content:""}.help-widget .fa-shrimp::before{content:""}.help-widget .fa-list-check::before{content:""}.help-widget .fa-tasks::before{content:""}.help-widget .fa-jug-detergent::before{content:""}.help-widget .fa-circle-user::before{content:""}.help-widget .fa-user-circle::before{content:""}.help-widget .fa-user-shield::before{content:""}.help-widget .fa-wind::before{content:""}.help-widget .fa-car-burst::before{content:""}.help-widget .fa-car-crash::before{content:""}.help-widget .fa-y::before{content:"Y"}.help-widget .fa-person-snowboarding::before{content:""}.help-widget .fa-snowboarding::before{content:""}.help-widget .fa-truck-fast::before{content:""}.help-widget .fa-shipping-fast::before{content:""}.help-widget .fa-fish::before{content:""}.help-widget .fa-user-graduate::before{content:""}.help-widget .fa-circle-half-stroke::before{content:""}.help-widget .fa-adjust::before{content:""}.help-widget .fa-clapperboard::before{content:""}.help-widget .fa-circle-radiation::before{content:""}.help-widget .fa-radiation-alt::before{content:""}.help-widget .fa-baseball::before{content:""}.help-widget .fa-baseball-ball::before{content:""}.help-widget .fa-jet-fighter-up::before{content:""}.help-widget .fa-diagram-project::before{content:""}.help-widget .fa-project-diagram::before{content:""}.help-widget .fa-copy::before{content:""}.help-widget .fa-volume-xmark::before{content:""}.help-widget .fa-volume-mute::before{content:""}.help-widget .fa-volume-times::before{content:""}.help-widget .fa-hand-sparkles::before{content:""}.help-widget .fa-grip::before{content:""}.help-widget .fa-grip-horizontal::before{content:""}.help-widget .fa-share-from-square::before{content:""}.help-widget .fa-share-square::before{content:""}.help-widget .fa-child-combatant::before{content:""}.help-widget .fa-child-rifle::before{content:""}.help-widget .fa-gun::before{content:""}.help-widget .fa-square-phone::before{content:""}.help-widget .fa-phone-square::before{content:""}.help-widget .fa-plus::before{content:"\+"}.help-widget .fa-add::before{content:"\+"}.help-widget .fa-expand::before{content:""}.help-widget .fa-computer::before{content:""}.help-widget .fa-xmark::before{content:""}.help-widget .fa-close::before{content:""}.help-widget .fa-multiply::before{content:""}.help-widget .fa-remove::before{content:""}.help-widget .fa-times::before{content:""}.help-widget .fa-arrows-up-down-left-right::before{content:""}.help-widget .fa-arrows::before{content:""}.help-widget .fa-chalkboard-user::before{content:""}.help-widget .fa-chalkboard-teacher::before{content:""}.help-widget .fa-peso-sign::before{content:""}.help-widget .fa-building-shield::before{content:""}.help-widget .fa-baby::before{content:""}.help-widget .fa-users-line::before{content:""}.help-widget .fa-quote-left::before{content:""}.help-widget .fa-quote-left-alt::before{content:""}.help-widget .fa-tractor::before{content:""}.help-widget .fa-trash-arrow-up::before{content:""}.help-widget .fa-trash-restore::before{content:""}.help-widget .fa-arrow-down-up-lock::before{content:""}.help-widget .fa-lines-leaning::before{content:""}.help-widget .fa-ruler-combined::before{content:""}.help-widget .fa-copyright::before{content:""}.help-widget .fa-equals::before{content:"\="}.help-widget .fa-blender::before{content:""}.help-widget .fa-teeth::before{content:""}.help-widget .fa-shekel-sign::before{content:""}.help-widget .fa-ils::before{content:""}.help-widget .fa-shekel::before{content:""}.help-widget .fa-sheqel::before{content:""}.help-widget .fa-sheqel-sign::before{content:""}.help-widget .fa-map::before{content:""}.help-widget .fa-rocket::before{content:""}.help-widget .fa-photo-film::before{content:""}.help-widget .fa-photo-video::before{content:""}.help-widget .fa-folder-minus::before{content:""}.help-widget .fa-store::before{content:""}.help-widget .fa-arrow-trend-up::before{content:""}.help-widget .fa-plug-circle-minus::before{content:""}.help-widget .fa-sign-hanging::before{content:""}.help-widget .fa-sign::before{content:""}.help-widget .fa-bezier-curve::before{content:""}.help-widget .fa-bell-slash::before{content:""}.help-widget .fa-tablet::before{content:""}.help-widget .fa-tablet-android::before{content:""}.help-widget .fa-school-flag::before{content:""}.help-widget .fa-fill::before{content:""}.help-widget .fa-angle-up::before{content:""}.help-widget .fa-drumstick-bite::before{content:""}.help-widget .fa-holly-berry::before{content:""}.help-widget .fa-chevron-left::before{content:""}.help-widget .fa-bacteria::before{content:""}.help-widget .fa-hand-lizard::before{content:""}.help-widget .fa-notdef::before{content:""}.help-widget .fa-disease::before{content:""}.help-widget .fa-briefcase-medical::before{content:""}.help-widget .fa-genderless::before{content:""}.help-widget .fa-chevron-right::before{content:""}.help-widget .fa-retweet::before{content:""}.help-widget .fa-car-rear::before{content:""}.help-widget .fa-car-alt::before{content:""}.help-widget .fa-pump-soap::before{content:""}.help-widget .fa-video-slash::before{content:""}.help-widget .fa-battery-quarter::before{content:""}.help-widget .fa-battery-2::before{content:""}.help-widget .fa-radio::before{content:""}.help-widget .fa-baby-carriage::before{content:""}.help-widget .fa-carriage-baby::before{content:""}.help-widget .fa-traffic-light::before{content:""}.help-widget .fa-thermometer::before{content:""}.help-widget .fa-vr-cardboard::before{content:""}.help-widget .fa-hand-middle-finger::before{content:""}.help-widget .fa-percent::before{content:"\%"}.help-widget .fa-percentage::before{content:"\%"}.help-widget .fa-truck-moving::before{content:""}.help-widget .fa-glass-water-droplet::before{content:""}.help-widget .fa-display::before{content:""}.help-widget .fa-face-smile::before{content:""}.help-widget .fa-smile::before{content:""}.help-widget .fa-thumbtack::before{content:""}.help-widget .fa-thumb-tack::before{content:""}.help-widget .fa-trophy::before{content:""}.help-widget .fa-person-praying::before{content:""}.help-widget .fa-pray::before{content:""}.help-widget .fa-hammer::before{content:""}.help-widget .fa-hand-peace::before{content:""}.help-widget .fa-rotate::before{content:""}.help-widget .fa-sync-alt::before{content:""}.help-widget .fa-spinner::before{content:""}.help-widget .fa-robot::before{content:""}.help-widget .fa-peace::before{content:""}.help-widget .fa-gears::before{content:""}.help-widget .fa-cogs::before{content:""}.help-widget .fa-warehouse::before{content:""}.help-widget .fa-arrow-up-right-dots::before{content:""}.help-widget .fa-splotch::before{content:""}.help-widget .fa-face-grin-hearts::before{content:""}.help-widget .fa-grin-hearts::before{content:""}.help-widget .fa-dice-four::before{content:""}.help-widget .fa-sim-card::before{content:""}.help-widget .fa-transgender::before{content:""}.help-widget .fa-transgender-alt::before{content:""}.help-widget .fa-mercury::before{content:""}.help-widget .fa-arrow-turn-down::before{content:""}.help-widget .fa-level-down::before{content:""}.help-widget .fa-person-falling-burst::before{content:""}.help-widget .fa-award::before{content:""}.help-widget .fa-ticket-simple::before{content:""}.help-widget .fa-ticket-alt::before{content:""}.help-widget .fa-building::before{content:""}.help-widget .fa-angles-left::before{content:""}.help-widget .fa-angle-double-left::before{content:""}.help-widget .fa-qrcode::before{content:""}.help-widget .fa-clock-rotate-left::before{content:""}.help-widget .fa-history::before{content:""}.help-widget .fa-face-grin-beam-sweat::before{content:""}.help-widget .fa-grin-beam-sweat::before{content:""}.help-widget .fa-file-export::before{content:""}.help-widget .fa-arrow-right-from-file::before{content:""}.help-widget .fa-shield::before{content:""}.help-widget .fa-shield-blank::before{content:""}.help-widget .fa-arrow-up-short-wide::before{content:""}.help-widget .fa-sort-amount-up-alt::before{content:""}.help-widget .fa-house-medical::before{content:""}.help-widget .fa-golf-ball-tee::before{content:""}.help-widget .fa-golf-ball::before{content:""}.help-widget .fa-circle-chevron-left::before{content:""}.help-widget .fa-chevron-circle-left::before{content:""}.help-widget .fa-house-chimney-window::before{content:""}.help-widget .fa-pen-nib::before{content:""}.help-widget .fa-tent-arrow-turn-left::before{content:""}.help-widget .fa-tents::before{content:""}.help-widget .fa-wand-magic::before{content:""}.help-widget .fa-magic::before{content:""}.help-widget .fa-dog::before{content:""}.help-widget .fa-carrot::before{content:""}.help-widget .fa-moon::before{content:""}.help-widget .fa-wine-glass-empty::before{content:""}.help-widget .fa-wine-glass-alt::before{content:""}.help-widget .fa-cheese::before{content:""}.help-widget .fa-yin-yang::before{content:""}.help-widget .fa-music::before{content:""}.help-widget .fa-code-commit::before{content:""}.help-widget .fa-temperature-low::before{content:""}.help-widget .fa-person-biking::before{content:""}.help-widget .fa-biking::before{content:""}.help-widget .fa-broom::before{content:""}.help-widget .fa-shield-heart::before{content:""}.help-widget .fa-gopuram::before{content:""}.help-widget .fa-earth-oceania::before{content:""}.help-widget .fa-globe-oceania::before{content:""}.help-widget .fa-square-xmark::before{content:""}.help-widget .fa-times-square::before{content:""}.help-widget .fa-xmark-square::before{content:""}.help-widget .fa-hashtag::before{content:"\#"}.help-widget .fa-up-right-and-down-left-from-center::before{content:""}.help-widget .fa-expand-alt::before{content:""}.help-widget .fa-oil-can::before{content:""}.help-widget .fa-t::before{content:"T"}.help-widget .fa-hippo::before{content:""}.help-widget .fa-chart-column::before{content:""}.help-widget .fa-infinity::before{content:""}.help-widget .fa-vial-circle-check::before{content:""}.help-widget .fa-person-arrow-down-to-line::before{content:""}.help-widget .fa-voicemail::before{content:""}.help-widget .fa-fan::before{content:""}.help-widget .fa-person-walking-luggage::before{content:""}.help-widget .fa-up-down::before{content:""}.help-widget .fa-arrows-alt-v::before{content:""}.help-widget .fa-cloud-moon-rain::before{content:""}.help-widget .fa-calendar::before{content:""}.help-widget .fa-trailer::before{content:""}.help-widget .fa-bahai::before{content:""}.help-widget .fa-haykal::before{content:""}.help-widget .fa-sd-card::before{content:""}.help-widget .fa-dragon::before{content:""}.help-widget .fa-shoe-prints::before{content:""}.help-widget .fa-circle-plus::before{content:""}.help-widget .fa-plus-circle::before{content:""}.help-widget .fa-face-grin-tongue-wink::before{content:""}.help-widget .fa-grin-tongue-wink::before{content:""}.help-widget .fa-hand-holding::before{content:""}.help-widget .fa-plug-circle-exclamation::before{content:""}.help-widget .fa-link-slash::before{content:""}.help-widget .fa-chain-broken::before{content:""}.help-widget .fa-chain-slash::before{content:""}.help-widget .fa-unlink::before{content:""}.help-widget .fa-clone::before{content:""}.help-widget .fa-person-walking-arrow-loop-left::before{content:""}.help-widget .fa-arrow-up-z-a::before{content:""}.help-widget .fa-sort-alpha-up-alt::before{content:""}.help-widget .fa-fire-flame-curved::before{content:""}.help-widget .fa-fire-alt::before{content:""}.help-widget .fa-tornado::before{content:""}.help-widget .fa-file-circle-plus::before{content:""}.help-widget .fa-book-quran::before{content:""}.help-widget .fa-quran::before{content:""}.help-widget .fa-anchor::before{content:""}.help-widget .fa-border-all::before{content:""}.help-widget .fa-face-angry::before{content:""}.help-widget .fa-angry::before{content:""}.help-widget .fa-cookie-bite::before{content:""}.help-widget .fa-arrow-trend-down::before{content:""}.help-widget .fa-rss::before{content:""}.help-widget .fa-feed::before{content:""}.help-widget .fa-draw-polygon::before{content:""}.help-widget .fa-scale-balanced::before{content:""}.help-widget .fa-balance-scale::before{content:""}.help-widget .fa-gauge-simple-high::before{content:""}.help-widget .fa-tachometer::before{content:""}.help-widget .fa-tachometer-fast::before{content:""}.help-widget .fa-shower::before{content:""}.help-widget .fa-desktop::before{content:""}.help-widget .fa-desktop-alt::before{content:""}.help-widget .fa-m::before{content:"M"}.help-widget .fa-table-list::before{content:""}.help-widget .fa-th-list::before{content:""}.help-widget .fa-comment-sms::before{content:""}.help-widget .fa-sms::before{content:""}.help-widget .fa-book::before{content:""}.help-widget .fa-user-plus::before{content:""}.help-widget .fa-check::before{content:""}.help-widget .fa-battery-three-quarters::before{content:""}.help-widget .fa-battery-4::before{content:""}.help-widget .fa-house-circle-check::before{content:""}.help-widget .fa-angle-left::before{content:""}.help-widget .fa-diagram-successor::before{content:""}.help-widget .fa-truck-arrow-right::before{content:""}.help-widget .fa-arrows-split-up-and-left::before{content:""}.help-widget .fa-hand-fist::before{content:""}.help-widget .fa-fist-raised::before{content:""}.help-widget .fa-cloud-moon::before{content:""}.help-widget .fa-briefcase::before{content:""}.help-widget .fa-person-falling::before{content:""}.help-widget .fa-image-portrait::before{content:""}.help-widget .fa-portrait::before{content:""}.help-widget .fa-user-tag::before{content:""}.help-widget .fa-rug::before{content:""}.help-widget .fa-earth-europe::before{content:""}.help-widget .fa-globe-europe::before{content:""}.help-widget .fa-cart-flatbed-suitcase::before{content:""}.help-widget .fa-luggage-cart::before{content:""}.help-widget .fa-rectangle-xmark::before{content:""}.help-widget .fa-rectangle-times::before{content:""}.help-widget .fa-times-rectangle::before{content:""}.help-widget .fa-window-close::before{content:""}.help-widget .fa-baht-sign::before{content:""}.help-widget .fa-book-open::before{content:""}.help-widget .fa-book-journal-whills::before{content:""}.help-widget .fa-journal-whills::before{content:""}.help-widget .fa-handcuffs::before{content:""}.help-widget .fa-triangle-exclamation::before{content:""}.help-widget .fa-exclamation-triangle::before{content:""}.help-widget .fa-warning::before{content:""}.help-widget .fa-database::before{content:""}.help-widget .fa-share::before{content:""}.help-widget .fa-arrow-turn-right::before{content:""}.help-widget .fa-mail-forward::before{content:""}.help-widget .fa-bottle-droplet::before{content:""}.help-widget .fa-mask-face::before{content:""}.help-widget .fa-hill-rockslide::before{content:""}.help-widget .fa-right-left::before{content:""}.help-widget .fa-exchange-alt::before{content:""}.help-widget .fa-paper-plane::before{content:""}.help-widget .fa-road-circle-exclamation::before{content:""}.help-widget .fa-dungeon::before{content:""}.help-widget .fa-align-right::before{content:""}.help-widget .fa-money-bill-1-wave::before{content:""}.help-widget .fa-money-bill-wave-alt::before{content:""}.help-widget .fa-life-ring::before{content:""}.help-widget .fa-hands::before{content:""}.help-widget .fa-sign-language::before{content:""}.help-widget .fa-signing::before{content:""}.help-widget .fa-calendar-day::before{content:""}.help-widget .fa-water-ladder::before{content:""}.help-widget .fa-ladder-water::before{content:""}.help-widget .fa-swimming-pool::before{content:""}.help-widget .fa-arrows-up-down::before{content:""}.help-widget .fa-arrows-v::before{content:""}.help-widget .fa-face-grimace::before{content:""}.help-widget .fa-grimace::before{content:""}.help-widget .fa-wheelchair-move::before{content:""}.help-widget .fa-wheelchair-alt::before{content:""}.help-widget .fa-turn-down::before{content:""}.help-widget .fa-level-down-alt::before{content:""}.help-widget .fa-person-walking-arrow-right::before{content:""}.help-widget .fa-square-envelope::before{content:""}.help-widget .fa-envelope-square::before{content:""}.help-widget .fa-dice::before{content:""}.help-widget .fa-bowling-ball::before{content:""}.help-widget .fa-brain::before{content:""}.help-widget .fa-bandage::before{content:""}.help-widget .fa-band-aid::before{content:""}.help-widget .fa-calendar-minus::before{content:""}.help-widget .fa-circle-xmark::before{content:""}.help-widget .fa-times-circle::before{content:""}.help-widget .fa-xmark-circle::before{content:""}.help-widget .fa-gifts::before{content:""}.help-widget .fa-hotel::before{content:""}.help-widget .fa-earth-asia::before{content:""}.help-widget .fa-globe-asia::before{content:""}.help-widget .fa-id-card-clip::before{content:""}.help-widget .fa-id-card-alt::before{content:""}.help-widget .fa-magnifying-glass-plus::before{content:""}.help-widget .fa-search-plus::before{content:""}.help-widget .fa-thumbs-up::before{content:""}.help-widget .fa-user-clock::before{content:""}.help-widget .fa-hand-dots::before{content:""}.help-widget .fa-allergies::before{content:""}.help-widget .fa-file-invoice::before{content:""}.help-widget .fa-window-minimize::before{content:""}.help-widget .fa-mug-saucer::before{content:""}.help-widget .fa-coffee::before{content:""}.help-widget .fa-brush::before{content:""}.help-widget .fa-mask::before{content:""}.help-widget .fa-magnifying-glass-minus::before{content:""}.help-widget .fa-search-minus::before{content:""}.help-widget .fa-ruler-vertical::before{content:""}.help-widget .fa-user-large::before{content:""}.help-widget .fa-user-alt::before{content:""}.help-widget .fa-train-tram::before{content:""}.help-widget .fa-user-nurse::before{content:""}.help-widget .fa-syringe::before{content:""}.help-widget .fa-cloud-sun::before{content:""}.help-widget .fa-stopwatch-20::before{content:""}.help-widget .fa-square-full::before{content:""}.help-widget .fa-magnet::before{content:""}.help-widget .fa-jar::before{content:""}.help-widget .fa-note-sticky::before{content:""}.help-widget .fa-sticky-note::before{content:""}.help-widget .fa-bug-slash::before{content:""}.help-widget .fa-arrow-up-from-water-pump::before{content:""}.help-widget .fa-bone::before{content:""}.help-widget .fa-user-injured::before{content:""}.help-widget .fa-face-sad-tear::before{content:""}.help-widget .fa-sad-tear::before{content:""}.help-widget .fa-plane::before{content:""}.help-widget .fa-tent-arrows-down::before{content:""}.help-widget .fa-exclamation::before{content:"\!"}.help-widget .fa-arrows-spin::before{content:""}.help-widget .fa-print::before{content:""}.help-widget .fa-turkish-lira-sign::before{content:""}.help-widget .fa-try::before{content:""}.help-widget .fa-turkish-lira::before{content:""}.help-widget .fa-dollar-sign::before{content:"\$"}.help-widget .fa-dollar::before{content:"\$"}.help-widget .fa-usd::before{content:"\$"}.help-widget .fa-x::before{content:"X"}.help-widget .fa-magnifying-glass-dollar::before{content:""}.help-widget .fa-search-dollar::before{content:""}.help-widget .fa-users-gear::before{content:""}.help-widget .fa-users-cog::before{content:""}.help-widget .fa-person-military-pointing::before{content:""}.help-widget .fa-building-columns::before{content:""}.help-widget .fa-bank::before{content:""}.help-widget .fa-institution::before{content:""}.help-widget .fa-museum::before{content:""}.help-widget .fa-university::before{content:""}.help-widget .fa-umbrella::before{content:""}.help-widget .fa-trowel::before{content:""}.help-widget .fa-d::before{content:"D"}.help-widget .fa-stapler::before{content:""}.help-widget .fa-masks-theater::before{content:""}.help-widget .fa-theater-masks::before{content:""}.help-widget .fa-kip-sign::before{content:""}.help-widget .fa-hand-point-left::before{content:""}.help-widget .fa-handshake-simple::before{content:""}.help-widget .fa-handshake-alt::before{content:""}.help-widget .fa-jet-fighter::before{content:""}.help-widget .fa-fighter-jet::before{content:""}.help-widget .fa-square-share-nodes::before{content:""}.help-widget .fa-share-alt-square::before{content:""}.help-widget .fa-barcode::before{content:""}.help-widget .fa-plus-minus::before{content:""}.help-widget .fa-video::before{content:""}.help-widget .fa-video-camera::before{content:""}.help-widget .fa-graduation-cap::before{content:""}.help-widget .fa-mortar-board::before{content:""}.help-widget .fa-hand-holding-medical::before{content:""}.help-widget .fa-person-circle-check::before{content:""}.help-widget .fa-turn-up::before{content:""}.help-widget .fa-level-up-alt::before{content:""}.help-widget .sr-only,.help-widget .fa-sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border-width:0}.help-widget .sr-only-focusable:not(:focus),.help-widget .fa-sr-only-focusable:not(:focus){position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border-width:0}.help-widget{font-family:"Inter","Arial",sans-serif}.help-widget *,.help-widget ::after,.help-widget ::before{box-sizing:border-box}.help-widget a{color:inherit;text-decoration:underline;color:#1383eb}.help-widget-logo{cursor:pointer;width:60px;height:60px;position:fixed;bottom:26px;right:30px;z-index:1060;border-radius:50%;align-items:center;justify-content:center;display:flex;background-color:#e92123;border-color:#e92123;border:none}.help-widget-logo img{width:37px}.help-widget-logo:hover,.help-widget-logo.active{background-color:#db1618;border-color:#e92123;color:#fff}.intercom-lightweight-app,.intercom-launcher-frame,.intercom-lightweight-app-launcher{visibility:hidden;background:none}.help-widget-overlay{max-width:100%;position:fixed;bottom:105px;right:30px;left:auto;z-index:1060;background-color:#fff;border-radius:.5rem}.help-widget-overlay.is-active .help-widget-container.is-small{display:none}.help-widget-overlay.is-active.is-small{margin:0 auto;right:0;left:0}.help-widget-overlay .help-widget-container{padding:1.5rem;width:380px}.help-widget-overlay .help-widget-container.is-active{position:absolute;z-index:-1}.help-widget-overlay .help-widget-content{box-shadow:0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);width:300px;border-radius:.5rem}.help-widget-overlay .help-widget-content.is-active{width:1000px;height:calc(100vh - 125px)}.help-widget-overlay .help-widget-content.is-active.is-small{width:647px}.help-widget-overlay .help-widget-content.is-active.is-small .is-docActive .widget-frame{width:100%}.help-widget-overlay .help-widget-content .help-widget-bot{height:50px;display:none}.help-widget-overlay .help-widget-content .help-widget-bot img{margin-right:-6px}.help-widget-overlay .help-widget-content .widget-frame{width:92.5%;border-right:0;height:calc(100vh - 185px)}.help-widget-overlay .help-widget-content .widget-frame iframe{border:none}.help-widget-overlay .help-widget-content .help-widget-flyout{justify-content:space-between;display:flex}.help-widget-overlay .help-widget-content .help-widget-header{background-color:#f7f7f7;height:60px;border-top-left-radius:.5rem;border-top-right-radius:.5rem;border-bottom:inset;align-items:center;justify-content:flex-end;display:flex}.help-widget-overlay .help-widget-content .help-widget-search{position:relative}.help-widget-overlay .help-widget-content .help-widget-search .help-widget-search-btn{cursor:pointer;margin-right:.5rem;border:0;position:absolute;bottom:20px}.help-widget-overlay .help-widget-content .help-widget-name{padding-left:.5rem;margin-top:.5rem}.help-widget-overlay .help-widget-content h2{font-size:1.25rem;font-weight:bold}.help-widget-details{padding:.5rem;padding-right:1rem;display:flex}.help-widget-details span{padding-right:1rem}.help-widget-details p{margin:-5px}.modal .help-widget-content.is-active{width:440px}.modal .help-widget-content.is-active .widget-frame{width:100%;z-index:1;position:absolute}.help-widget-content button:focus,.help-widget-content button:focus-visible,.help-widget-content button:focus-within{outline:0}.help-widget-logo:focus,.help-widget-logo:focus-visible,.help-widget-logo:focus-within{outline:0}.help-widget-logo .active-close{font-size:1.65rem;color:#fff}.help-widget-close-btn{cursor:pointer;position:absolute;left:10px;background-color:rgba(0,0,0,0);border-color:rgba(0,0,0,0);color:#616161;top:17px;font-size:1.45rem;filter:invert(1)}.help-widget-btn-group{flex-direction:column;display:flex;margin-top:1rem}.help-widget-btn-group button,.help-widget-btn-group a{font-weight:bold;font-size:1rem;border:1px solid #616161;color:#616161;background-color:#fff;border-radius:8px;margin-bottom:.5rem;text-align:center;line-height:28px;text-decoration:none;padding:8px 30px 8px 8px;text-transform:initial}.help-widget-btn-group button:hover,.help-widget-btn-group button:focus,.help-widget-btn-group button:focus-visible,.help-widget-btn-group button:focus-within,.help-widget-btn-group a:hover,.help-widget-btn-group a:focus,.help-widget-btn-group a:focus-visible,.help-widget-btn-group a:focus-within{background-color:#1383eb;border-color:#1383eb;color:#fff}.help-widget-btn-group button:hover img,.help-widget-btn-group button:focus img,.help-widget-btn-group button:focus-visible img,.help-widget-btn-group button:focus-within img,.help-widget-btn-group a:hover img,.help-widget-btn-group a:focus img,.help-widget-btn-group a:focus-visible img,.help-widget-btn-group a:focus-within img{filter:invert(1)}.help-widget-btn-group button:active,.help-widget-btn-group a:active{box-shadow:inset 5px 5px 10px 0 #0f69bc,inset 0 0 100px 0 #0f69bc}.help-widget-btn-group button img,.help-widget-btn-group a img{position:relative;float:left;height:23px;bottom:-2px;filter:invert(42%) sepia(0%) saturate(1604%) hue-rotate(200deg) brightness(92%) contrast(104%)}.help-widget-chat-btn{cursor:pointer;background-color:#e92123;border-color:#e92123;color:#fff;position:fixed;height:26px;top:104px;right:20px}.help-widget-overlay form button{right:-4px;top:17px;opacity:.4}.help-widget-overlay form input{display:block;width:100%;padding:.375rem 35px .375rem 1rem;font-size:1rem;font-weight:400;line-height:1.5;height:45px;background-color:#fff;background-clip:padding-box;border:1px solid #ced4da;appearance:none;border-radius:.375rem;transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out}.help-widget-overlay form input:focus-visible{outline:none}.help-widget-overlay form input[type=search]::-ms-clear,.help-widget-overlay form input[type=search]::-ms-reveal{display:none;width:0;height:0}.help-widget-overlay form input[type=search]::-webkit-search-decoration,.help-widget-overlay form input[type=search]::-webkit-search-cancel-button,.help-widget-overlay form input[type=search]::-webkit-search-results-button,.help-widget-overlay form input[type=search]::-webkit-search-results-decoration{display:none}</style><meta http-equiv="origin-trial" content="A41wt2Lsq30A9Ox/WehogvJckPI4aY9RoSxhb8FMtVnqaUle1AtI6Yf7Wk+7+Wm0AfDDOkMX+Wn6wnDpBWYgWwYAAAB8eyJvcmlnaW4iOiJodHRwczovL2Fkcm9sbC5jb206NDQzIiwiZmVhdHVyZSI6IkludGVyZXN0Q29ob3J0QVBJIiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><script type="text/javascript" async="" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/w9bapbgh"></script><script async="" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/main.39c29e42.js.download" crossorigin="anonymous"></script><script src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/324969464377916" async=""></script><script async="" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/fbevents.js.download"></script><script src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/rules-p-WxfSuuBK1Tnn5.js.download" async=""></script><script id="adroll_scr_exp" onerror="window.adroll_exp_list = [];" type="text/javascript" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/index.js.download"></script><script type="text/javascript" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/LLGFZQR7H5BBFGEJ3U4WGX"></script><script async="" type="text/javascript" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/onsiteloader.js.download"></script><div style="width: 1px; height: 1px; display: inline; position: absolute;"><img height="1" width="1" style="border-style:none;" alt="" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/out"><img height="1" width="1" style="border-style:none;" alt="" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/out(1)"><img height="1" width="1" style="border-style:none;" alt="" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/out(2)"><img height="1" width="1" style="border-style:none;" alt="" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/out(3)"><img height="1" width="1" style="border-style:none;" alt="" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/out(4)"><img height="1" width="1" style="border-style:none;" alt="" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/out(5)"><img height="1" width="1" style="border-style:none;" alt="" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/out(6)"><img height="1" width="1" style="border-style:none;" alt="" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/out(7)"><img height="1" width="1" style="border-style:none;" alt="" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/out(8)"><img height="1" width="1" style="border-style:none;" alt="" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/out(9)"><img height="1" width="1" style="border-style:none;" alt="" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/out(10)"><img height="1" width="1" style="border-style:none;" alt="" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/out(11)"></div><script type="text/javascript" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/sendrolling.js.download"></script><img src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/saved_resource" width="1" height="1" border="0" alt=""><div style="width: 1px; height: 1px; display: inline; position: absolute;"></div><link rel="stylesheet" type="text/css" href="./Craft a Beautiful Web Design for your Portfolio Showcase_files/new_embed-2552d8d62d9c60f59b3b11a5d083d1ebd090c72de809fc7c76fb339825302241.css"><style type="text/css">.st-install-hei4GeobUQWcSyxQGMeE .st-ui-result .st-ui-type-heading { color:#363636 !important }
+.st-install-hei4GeobUQWcSyxQGMeE .st-ui-result em {font-style:normal; font-weight:bold; background-color:#f6fcfe !important}</style><link href="./Craft a Beautiful Web Design for your Portfolio Showcase_files/main.2a90a3dd.css" type="text/css" rel="stylesheet" media="screen,print"></head>
+<body role="document" class="black-nav">
+  <script async="" id="cio-tracker" data-site-id="08c6b307674af75c7cb9" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/track.js.download"></script><script async="" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/st.js.download"></script><script src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/aquant.js.download" async="" type="text/javascript"></script><script type="text/javascript" async="" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/analytics.js.download"></script><script type="text/javascript" async="" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/js"></script><script async="" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/roundtrip.js.download"></script><script type="text/javascript" async="" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/recaptcha__en.js.download" crossorigin="anonymous" integrity="sha384-LzEnReQQed5ol5AFwl71PUw/lqyIcw22944Y6TAegcKGwBmgeJYXjB2CbgaSwp8z"></script><script async="" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/gtm.js.download"></script><script src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/app.js.download"></script>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MBTNVD"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MBTNVD');</script>
+<!-- End Google Tag Manager -->
+
+<div role="main">
+
+  <a href="https://www.solodev.com/blog/web-design/craft-a-beautiful-web-design-for-your-portfolio-showcase.stml#main-content" class="skip-to-content-link bg-pacific-blue text-white">Skip to Content</a>
+
+  <div class="dynamicDiv" id="dd.0.0"><nav class="bg-white fixed-top shadow-sm scrolling is-visible" data-nav-status="toggle" data-swiftype-index="false">
+  <div class="container d-flex align-items-center justify-content-between h-navbar">
+    <div class="navbar-header mw-xs-60p mw-lg-80p">
+      <a href="https://www.solodev.com/" class="d-block" aria-label="Solodev home"><img alt="Solodev Logo" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/Solodev-Logo-Icon-Red-Square.svg" class="float-start w-100 py-md-0 py-2"></a>
+    </div>
+    <div class="d-xl-none d-md-flex d-none align-items-center justify-content-md-center justify-content-end px-lg-5 w-auto px-md-4 pr-4">
+      <div aria-label="Menu Toggle" class="hamburger-menu pointer"><span class="fas fa-bars text-gray"></span></div>
+    </div>
+    <div class="d-xl-block d-none ps-3">
+      <ul class="navbar-nav d-none d-lg-flex flex-lg-row align-items-center">
+        <li class="dropdown">
+          <a href="https://www.solodev.com/cloud/" aria-label="Go to Platform" id="platform-dropdown" data-bs-toggle="dropdown" aria-expanded="false" class="dropdown-toggle" data-url="/cloud/">Platform</a>
+          <!-- Start of Platform Menu -->
+          <div class="dropdown-menu dropdown-menu-left w-lg-380p bg-white position-absolute p-3" aria-labelledby="platform-dropdown">
+  <div class="d-flex justify-content-between flex-column">
+    <div class="main-dropdown-item p-2">
+      <a class="d-block px-1" aria-label="Navbar Cloud" href="https://www.solodev.com/cloud/">
+        <div class="d-flex">
+          <div>
+            <img class="w-xs-50p" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/Solodev-Main-Icons-Cloud.svg" alt="Cloud icon">
+          </div>
+          <div class="ps-3">
+            <p class="title fs-p mb-0 fw-600">Cloud</p>
+            <p class="fs-15p mb-0 fw-normal text-nobel">Scale on AWS with Container, Serverless, AI, and IoT</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="main-dropdown-item p-2">
+      <a class="d-block px-1" aria-label="Navbar Marketing" href="https://www.solodev.com/marketing/">
+        <div class="d-flex">
+          <div>
+            <img class="w-xs-50p" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/Solodev-Main-Icons-Marketing.svg" alt="Circle with arrows icon">
+          </div>
+          <div class="ps-3">
+            <p class="title fs-p mb-0 fw-600">Marketing</p>
+            <p class="fs-15p mb-0 fw-normal text-nobel">Build a stack with Ad Tech, CRM, eCommerce &amp; more</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="main-dropdown-item p-2">
+      <a class="d-block px-1" aria-label="Navbar Metaverse" href="https://www.solodev.com/metaverse">
+        <div class="d-flex">
+          <div>
+            <img class="w-xs-50p" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/Solodev-Main-Icons-Metaverse.svg" alt="Metaverse icon">
+          </div>
+          <div class="ps-3">
+            <p class="title fs-p mb-0 fw-600">Metaverse</p>
+            <p class="fs-15p mb-0 fw-normal text-nobel">Create worlds with VR/AR, blockchain, and web3</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+          <!-- End of Platform Menu -->
+        </li>
+        <li class="dropdown">
+          <a href="https://www.solodev.com/explore/" aria-label="Go to Explore" id="explore-dropdown" data-bs-toggle="dropdown" aria-expanded="false" class="dropdown-toggle" data-url="/explore/">Explore</a>
+          <!-- Start of Explore Menu -->
+          <div class="dropdown-menu bg-white position-absolute w-xs-180p" aria-labelledby="explore-dropdown">
+  <ul class="my-2 list-unstyled">
+    <li class="py-2">
+      <a aria-label="Navbar Careers" href="https://www.solodev.com/careers/" class="px-0">
+        <p class="mb-0 px-4">Careers</p>
+      </a>
+    </li>
+    <li class="py-2">
+      <a aria-label="Navbar Blog" href="https://www.solodev.com/blog/" class="px-0">
+        <p class="mb-0 px-4">Blog</p>
+      </a>
+    </li>
+    <li class="py-2">
+      <a aria-label="Navbar eBooks" href="https://www.solodev.com/explore/ebooks/" class="px-0">
+        <p class="mb-0 px-4">eBooks</p>
+      </a>
+    </li>
+  </ul>
+</div>          <!-- End of Explore Menu -->
+        </li>
+        <li class="navbar-item">
+          <a aria-label="Navbar Marketplace" class="text-capitalize" href="https://www.solodev.com/marketplace/">Marketplace</a>
+        </li>
+      </ul>
+    </div>
+    <div class="search search-main d-none d-md-flex justify-content-end mx-xxl-5 mx-xl-4 mx-md-0 mx-4">
+      <form id="search-form" action="https://www.solodev.com/search.stml" class="w-100 position-relative">
+        <button type="submit" aria-label="Submit Search" class="btn position-absolute" fdprocessedid="dsfsb"><span class="fas fa-search text-nobel"></span></button>
+        <label for="search" class="sr-only">Search</label>
+        <input id="search" type="text" aria-label="Search Solodev" class="st-default-search-input bg-white-smoke form-control ps-5 w-100" placeholder="Search services, containers, and deployments" fdprocessedid="6g2o78" autocomplete="off" autocorrect="off" autocapitalize="off">
+      </form>
+    </div>
+    <div class="d-flex">
+      <div id="user-avatar-container" class="pointer d-none dropdown"></div>
+
+      <div id="sign-in-group" class="list-unstyled d-flex align-items-center text-center text-md-end pointer">
+        <a href="https://www.solodev.com/dashboard" class="me-4 fs-base-p text-vulcan fw-600">SIGN IN</a>
+        <a href="https://www.solodev.com/join" class="btn btn-lg fs-p btn-rounded btn-pacific-blue text-white">SIGN UP</a>
+      </div>
+
+      <div class="d-md-none d-flex align-items-center justify-content-end w-auto ps-4">
+        <div aria-label="Menu Toggle" class="hamburger-menu pointer"><span class="fas fa-bars text-gray"></span></div>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="mobile-overlay">
+  <!-- Start of Mobile Navigation -->
+  <div class="mobile-nav position-absolute bg-white p-3">
+  <div class="d-flex align-items-center justify-content-between">
+    <div>
+      <a href="https://www.solodev.com/" class="d-block" aria-label="Solodev home"><img alt="Solodev Logo" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/Solodev-Logo-Icon-Red-Square.svg" class="w-xs-60p"></a>
+    </div>
+    <div class="close-mobile-nav p-2">
+      <img class="pointer" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/cross.png" alt="Close Icon">
+    </div>
+  </div>
+  <div class="search py-3">
+    <form id="search-form-mobile" action="https://www.solodev.com/search.stml" class="w-100 position-relative">
+      <button type="submit" aria-label="Submit Search" class="btn position-absolute"><span class="fas fa-search text-nobel"></span></button>
+      <label for="search" class="sr-only">Search</label>
+      <input id="search-mobile" name="q" type="text" placeholder="Search Solodev" aria-label="Search Solodev" class="bg-white-smoke form-control ps-5 w-100">
+    </form>
+  </div>
+  <div class="sidenav position-relative">
+    <ul class="list-unstyled">
+      <li class="py-2 collapsible">
+        <a class="d-flex align-items-center justify-content-between py-1 text-vulcan fw-600" aria-label="Platform Sidenavigation" data-bs-toggle="collapse" href="https://www.solodev.com/blog/web-design/craft-a-beautiful-web-design-for-your-portfolio-showcase.stml#collapsePlatform" role="button" aria-expanded="false" aria-controls="collapsePlatform">Platform</a>
+        <ul class="collapse" id="collapsePlatform">
+          <li class="py-2">
+            <a href="https://www.solodev.com/cloud" class="d-block py-1 text-vulcan fw-600" aria-label="Cloud Sidenavigation">Cloud</a>
+          </li>
+          <li class="py-2">
+            <a href="https://www.solodev.com/marketing" class="d-block py-1 text-vulcan fw-600" aria-label="Marketing Sidenavigation">Marketing</a>
+          </li>
+          <li class="py-2">
+            <a href="https://www.solodev.com/metaverse" class="d-block py-1 text-vulcan fw-600" aria-label="Metaverse Sidenavigation">Metaverse</a>
+          </li>
+        </ul>
+      </li>
+      <li class="py-2">
+        <a href="https://www.solodev.com/explore" class="d-block py-1 text-vulcan fw-600" aria-label="Explore Sidenavigation">Explore</a>
+      </li>
+      <li class="py-2">
+        <a href="https://www.solodev.com/marketplace" class="d-block py-1 text-vulcan fw-600" aria-label="Marketplace Sidenavigation">Marketplace</a>
+      </li>
+      <li class="py-2">
+        <a href="https://www.solodev.com/company" class="d-block py-1 text-vulcan fw-600" aria-label="Company Sidenavigation">Company</a>
+      </li>
+      <li class="py-2">
+        <a href="https://www.solodev.com/contact/" class="d-block py-1 text-vulcan fw-600" aria-label="Contact Sidenavigation">Contact</a>
+      </li>
+    </ul>
+    <div class="d-flex flex-column align-items-center mt-3">
+      <a href="https://www.solodev.com/join" class="btn btn-lg fs-base-p btn-rounded btn-pacific-blue text-white w-100">SIGN UP</a>
+      <a href="https://www.solodev.com/dashboard" class="btn btn-lg fs-base-p btn-rounded btn-outline-vulcan fw-600 mt-3 w-100">SIGN IN</a>
+    </div>
+  </div>
+</div>  <!-- End of Mobile Navigation -->
+</div></div>
+
+  <div class="dynamicDiv" id="dd.0.1"><div class="container py-5">
+  <div class="row">
+    <div class="col-md-8 col-xl-9">  
+      <div class="dynamicDiv" id="dd.0.1.0">
+
+
+<article data-item-id="374">
+  
+
+  
+    <h1>Craft a Beautiful Web Design for your Portfolio Showcase</h1>
+  
+
+  <div class="mt-4">
+    <p></p>
+  </div>
+  <div class="d-flex">
+    <a aria-label="Share Blog Post on Facebook" class="d-flex justify-content-center align-items-center border rounded-circle me-2 h-xs-35p w-xs-35p text-decoration-none" href="https://www.facebook.com/share.php?u=https://www.solodev.com/blog/web-design/craft-a-beautiful-web-design-for-your-portfolio-showcase.stml" target="_blank"><span class="fab fa-facebook-f fa-lg text-space-gray" aria-hidden="true"></span></a> 
+    <a class="d-flex justify-content-center align-items-center border rounded-circle me-2 h-xs-35p w-xs-35p text-decoration-none" href="https://www.twitter.com/intent/tweet?text=Craft%20a%20Beautiful%20Web%20Design%20for%20your%20Portfolio%20Showcase&amp;url=https://www.solodev.com/blog/web-design/craft-a-beautiful-web-design-for-your-portfolio-showcase.stml" target="_blank" aria-label="Share on Twitter"><span class="fab fa-twitter fa-lg text-space-gray" aria-hidden="true"></span></a> 
+    <a class="d-flex justify-content-center align-items-center border rounded-circle me-2 h-xs-35p w-xs-35p text-decoration-none" href="https://www.linkedin.com/shareArticle?&amp;url=https://www.solodev.com/blog/web-design/craft-a-beautiful-web-design-for-your-portfolio-showcase.stml" target="_blank" aria-label="Share on Linkedin"><span class="fab fa-linkedin fa-lg text-space-gray" aria-hidden="true"></span></a> 
+    <a class="d-flex justify-content-center align-items-center border rounded-circle me-2 h-xs-35p w-xs-35p text-decoration-none" href="mailto:?subject=Link%20on%20solodev.com/blog&amp;body=https://www.solodev.com/blog/web-design/craft-a-beautiful-web-design-for-your-portfolio-showcase.stml" aria-label="Email"><span class="far fa-envelope fa-lg text-space-gray" aria-hidden="true"></span></a>
+  </div>
+  <hr>
+
+  <!-- <section class="blog-signup padding-right-s hidden-md-up mb-3"> -->
+    <!-- <p class="mt-3 lead">Subscribe to our blog newsletter.</p> -->
+      <!-- </section> -->
+
+  <p class="pb-3"><em><strong>In this tutorial Solodev will show you how to create an amazing portfolio to showcase your work in a way that allows for total design freedom and lazy loads your images to increase page speed</strong></em></p>
+
+  <div class="text-center">
+    
+      <img src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/craft-beautiful-webdesign-image-1.jpg" alt="Craft a Beautiful Web Design for your Portfolio Showcase" class="img-fluid">
+    
+    
+    <div class="mt-3">
+      <a aria-label="Shop the Marketplace" href="https://www.solodev.com/marketplace/">
+        <img alt="Build the perfect cloud stack today. Shop the Marketplace." src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/Solodev-Cloud-Stack-Banner-728x90.svg" class="img-fluid w-md-730p">
+      </a>
+    </div>
+  </div>
+
+  <div class="blogArticle mt-4"><p>A majority of websites are places&nbsp;to showcase your work whether it is a personal portfolio, a client portfolio, or even an offering of products or services. Ultimately, whether you fit into any of those personas, you are all trying to do the same thing.</p>
+
+<p>You're all trying to showcase what you have to offer in a way that is aesthetically amazing so that others want to engage with you. Your website is the best place to do this but where your website is hosted and managed can have a massive effect on how much <a href="https://www.solodev.com/blog/" target="_blank">web design</a> control you have over your showcase design. &nbsp;In this tutorial we are utilizing <a href="https://github.com/toddmotto/echo" target="_blank">echo.js</a> to lazy load the images in your portfolio so you have a wonderfully designed portfolio without compromising on page speed or web design.</p>
+
+<p>Below is the HTML, CSS, and JavaScript required.</p>
+
+<h2>Step 1 - portfolio.html</h2>
+
+<p>Copy and paste the following code into portfolio.html</p>
+<textarea class="codemirror-monokai" style="display: none;">&lt;section class="paddingSection100 work-tiles workTiles"&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-md-8 col-md-offset-2"&gt;
+        &lt;h2&gt;Unlock your digital potential.&lt;/h2&gt;
+        &lt;p class="paddingBottom45"&gt;Craft this web design into your own by replacing images and styles with that consistent with your goals.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;ul class="row"&gt;
+      &lt;li class="col-xs-6 col-md-3 work-tiles-items"&gt;
+        &lt;div class="portfolioInner"&gt;
+          &lt;a href="#"&gt;&lt;img alt="Image Alt 1" class="img-responsive" src="https://www.solodev.com/assets/featured-portfolio/client-loader.gif" data-echo="https://www.solodev.com/assets/featured-portfolio/portfolio-item-1.jpg"&gt;&lt;/a&gt;
+          &lt;div class="textOverlay"&gt;
+            &lt;span&gt;Portfolio Item Title&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="col-xs-6 col-md-3 work-tiles-items"&gt;
+        &lt;div class="portfolioInner"&gt;
+          &lt;a href="#"&gt;&lt;img alt="Image Alt 2" class="img-responsive" src="https://www.solodev.com/assets/featured-portfolio/client-loader.gif" data-echo="https://www.solodev.com/assets/featured-portfolio/portfolio-item-2.jpg"&gt;&lt;/a&gt;
+          &lt;div class="textOverlay"&gt;
+            &lt;span&gt;Portfolio Item Title&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="col-xs-6 col-md-3 work-tiles-items"&gt;
+        &lt;div class="portfolioInner"&gt;
+          &lt;a href="#"&gt;&lt;img alt="Image Alt 3" class="img-responsive" src="https://www.solodev.com/assets/featured-portfolio/client-loader.gif" data-echo="https://www.solodev.com/assets/featured-portfolio/portfolio-item-3.jpg"&gt;&lt;/a&gt;
+          &lt;div class="textOverlay"&gt;
+            &lt;span&gt;Portfolio Item Title&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="col-xs-6 col-md-3 work-tiles-items"&gt;
+        &lt;div class="portfolioInner"&gt;
+          &lt;a href="#"&gt;&lt;img alt="Image Alt 4" class="img-responsive" src="https://www.solodev.com/assets/featured-portfolio/client-loader.gif" data-echo="https://www.solodev.com/assets/featured-portfolio/portfolio-item-4.jpg"&gt;&lt;/a&gt;
+          &lt;div class="textOverlay"&gt;
+            &lt;span&gt;Portfolio Item Title&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="col-xs-6 col-md-3 work-tiles-items"&gt;
+        &lt;div class="portfolioInner"&gt;
+          &lt;a href="#"&gt;&lt;img alt="Image Alt 5" class="img-responsive" src="https://www.solodev.com/assets/featured-portfolio/client-loader.gif" data-echo="https://www.solodev.com/assets/featured-portfolio/portfolio-item-5.jpg"&gt;&lt;/a&gt;
+          &lt;div class="textOverlay"&gt;
+            &lt;span&gt;Portfolio Item Title&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="col-xs-6 col-md-3 work-tiles-items"&gt;
+        &lt;div class="portfolioInner"&gt;
+          &lt;a href="#"&gt;&lt;img alt="Image Alt 6" class="img-responsive" src="https://www.solodev.com/assets/featured-portfolio/client-loader.gif" data-echo="https://www.solodev.com/assets/featured-portfolio/portfolio-item-6.jpg"&gt;&lt;/a&gt;
+          &lt;div class="textOverlay"&gt;
+            &lt;span&gt;Portfolio Item Title&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="col-xs-6 col-md-3 work-tiles-items"&gt;
+        &lt;div class="portfolioInner"&gt;
+          &lt;a href="#"&gt;&lt;img alt="Image Alt 7" class="img-responsive" src="https://www.solodev.com/assets/featured-portfolio/client-loader.gif" data-echo="https://www.solodev.com/assets/featured-portfolio/portfolio-item-7.jpg"&gt;&lt;/a&gt;
+          &lt;div class="textOverlay"&gt;
+            &lt;span&gt;Portfolio Item Title&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="col-xs-6 col-md-3 work-tiles-items"&gt;
+        &lt;div class="portfolioInner"&gt;
+          &lt;a href="#"&gt;&lt;img alt="Image Alt 8" class="img-responsive" src="https://www.solodev.com/assets/featured-portfolio/client-loader.gif" data-echo="https://www.solodev.com/assets/featured-portfolio/portfolio-item-8.jpg"&gt;&lt;/a&gt;
+          &lt;div class="textOverlay"&gt;
+            &lt;span&gt;Portfolio Item Title&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="col-xs-6 col-md-3 work-tiles-items"&gt;
+        &lt;div class="portfolioInner"&gt;
+          &lt;a href="#"&gt;&lt;img alt="Image Alt 9" class="img-responsive" src="https://www.solodev.com/assets/featured-portfolio/client-loader.gif" data-echo="https://www.solodev.com/assets/featured-portfolio/portfolio-item-9.jpg"&gt;&lt;/a&gt;
+          &lt;div class="textOverlay"&gt;
+            &lt;span&gt;Portfolio Item Title&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="col-xs-6 col-md-3 work-tiles-items"&gt;
+        &lt;div class="portfolioInner"&gt;
+          &lt;a href="#"&gt;&lt;img alt="Image Alt 10" class="img-responsive" src="https://www.solodev.com/assets/featured-portfolio/client-loader.gif" data-echo="https://www.solodev.com/assets/featured-portfolio/portfolio-item-10.jpg"&gt;&lt;/a&gt;
+          &lt;div class="textOverlay"&gt;
+            &lt;span&gt;Portfolio Item Title&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="col-xs-6 col-md-3 work-tiles-items"&gt;
+        &lt;div class="portfolioInner"&gt;
+          &lt;a href="#"&gt;&lt;img alt="Image Alt 11" class="img-responsive" src="https://www.solodev.com/assets/featured-portfolio/client-loader.gif" data-echo="https://www.solodev.com/assets/featured-portfolio/portfolio-item-11.jpg"&gt;&lt;/a&gt;
+          &lt;div class="textOverlay"&gt;
+            &lt;span&gt;Portfolio Item Title&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="col-xs-6 col-md-3 work-tiles-items"&gt;
+        &lt;div class="portfolioInner"&gt;
+          &lt;a href="#"&gt;&lt;img alt="Image Alt 12" class="img-responsive" src="https://www.solodev.com/assets/featured-portfolio/client-loader.gif" data-echo="https://www.solodev.com/assets/featured-portfolio/portfolio-item-12.jpg"&gt;&lt;/a&gt;
+          &lt;div class="textOverlay"&gt;
+            &lt;span&gt;Portfolio Item Title&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div class="text-center paddingTop40"&gt;
+      &lt;a href="#" class="btn btn-home"&gt;View Portfolio&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;script&gt;
+echo.init();
+&lt;/script&gt;
+</textarea><div class="CodeMirror cm-s-monokai CodeMirror-wrap" translate="no"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 41px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" readonly="" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; min-height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true" style="display: block; bottom: 0px;"><div style="min-width: 1px; height: 3771px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 37px; margin-bottom: -17px; border-right-width: 33px; min-height: 3771px; padding-right: 17px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 26.875px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -37px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 29px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">&lt;<span class="cm-tag">section</span> <span class="cm-tag">class</span>=<span class="cm-string">"paddingSection100 work-tiles workTiles"</span>&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -37px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 29px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  &lt;<span class="cm-tag">div</span> <span class="cm-tag">class</span>=<span class="cm-string">"container"</span>&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -37px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 29px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  &lt;<span class="cm-tag">div</span> <span class="cm-tag">class</span>=<span class="cm-string">"row"</span>&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -37px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 29px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;  &lt;<span class="cm-tag">div</span> <span class="cm-tag">class</span>=<span class="cm-string">"col-md-8 col-md-offset-2"</span>&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -37px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 29px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  &lt;<span class="cm-tag">h2</span>&gt;<span class="cm-tag">Unlock</span> <span class="cm-tag">your</span> <span class="cm-tag">digital</span> <span class="cm-tag">potential</span>.&lt;/<span class="cm-tag">h2</span>&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -37px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 29px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  &lt;<span class="cm-tag">p</span> <span class="cm-tag">class</span>=<span class="cm-string">"paddingBottom45"</span>&gt;<span class="cm-tag">Craft</span> <span class="cm-tag">this</span> <span class="cm-tag">web</span> <span class="cm-tag">design</span> <span class="cm-tag">into</span> <span class="cm-tag">your</span> <span class="cm-tag">own</span> <span class="cm-tag">by</span> <span class="cm-tag">replacing</span> <span class="cm-tag">images</span> <span class="cm-tag">and</span> <span class="cm-tag">styles</span> <span class="cm-tag">with</span> <span class="cm-tag">that</span> <span class="cm-tag">consistent</span> <span class="cm-tag">with</span> <span class="cm-tag">your</span> <span class="cm-tag">goals</span>.&lt;/<span class="cm-tag">p</span>&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -37px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 29px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;  &lt;/<span class="cm-tag">div</span>&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -37px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 29px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  &lt;/<span class="cm-tag">div</span>&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -37px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 29px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  &lt;<span class="cm-tag">ul</span> <span class="cm-tag">class</span>=<span class="cm-string">"row"</span>&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -37px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 29px;">10</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;  &lt;<span class="cm-tag">li</span> <span class="cm-tag">class</span>=<span class="cm-string">"col-xs-6 col-md-3 work-tiles-items"</span>&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -37px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 29px;">11</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  &lt;<span class="cm-tag">div</span> <span class="cm-tag">class</span>=<span class="cm-string">"portfolioInner"</span>&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -37px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 29px;">12</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;  &lt;<span class="cm-tag">a</span> <span class="cm-tag">href</span>=<span class="cm-string">"#"</span>&gt;&lt;<span class="cm-tag">img</span> <span class="cm-tag">alt</span>=<span class="cm-string">"Image Alt 1"</span> <span class="cm-tag">class</span>=<span class="cm-string">"img-responsive"</span> <span class="cm-tag">src</span>=<span class="cm-string">"https://www.solodev.com/assets/featured-portfolio/client-loader.gif"</span> <span class="cm-tag">data-echo</span>=<span class="cm-string">"https://www.solodev.com/assets/featured-portfolio/portfolio-item-1.jpg"</span>&gt;&lt;/<span class="cm-tag">a</span>&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -37px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 29px;">13</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;  &lt;<span class="cm-tag">div</span> <span class="cm-tag">class</span>=<span class="cm-string">"textOverlay"</span>&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -37px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 29px;">14</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &lt;<span class="cm-tag">span</span>&gt;<span class="cm-tag">Portfolio</span> <span class="cm-tag">Item</span> <span class="cm-tag">Title</span>&lt;/<span class="cm-tag">span</span>&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -37px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 29px;">15</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;  &lt;/<span class="cm-tag">div</span>&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -37px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 29px;">16</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  &lt;/<span class="cm-tag">div</span>&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -37px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 29px;">17</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;  &lt;/<span class="cm-tag">li</span>&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -37px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 29px;">18</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;  &lt;<span class="cm-tag">li</span> <span class="cm-tag">class</span>=<span class="cm-string">"col-xs-6 col-md-3 work-tiles-items"</span>&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -37px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 29px;">19</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp;  &lt;<span class="cm-tag">div</span> <span class="cm-tag">class</span>=<span class="cm-string">"portfolioInner"</span>&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -37px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 29px;">20</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;  &lt;<span class="cm-tag">a</span> <span class="cm-tag">href</span>=<span class="cm-string">"#"</span>&gt;&lt;<span class="cm-tag">img</span> <span class="cm-tag">alt</span>=<span class="cm-string">"Image Alt 2"</span> <span class="cm-tag">class</span>=<span class="cm-string">"img-responsive"</span> <span class="cm-tag">src</span>=<span class="cm-string">"https://www.solodev.com/assets/featured-portfolio/client-loader.gif"</span> <span class="cm-tag">data-echo</span>=<span class="cm-string">"https://www.solodev.com/assets/featured-portfolio/portfolio-item-2.jpg"</span>&gt;&lt;/<span class="cm-tag">a</span>&gt;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 33px; width: 1px; border-bottom: 0px solid transparent; top: 3771px;"></div><div class="CodeMirror-gutters" style="height: 3804px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 37px;"></div></div></div></div>
+
+<hr>
+<h2>Step 2 - portfolio.css</h2>
+
+<p>Download the CSS below and include it in your web page</p>
+<i class="fa fa-file-code-o css-icon" aria-hidden="true"></i>&nbsp;<a class="css-download" href="https://www.solodev.com/core/fileparse.php/131/urlt/portfolio.css" target="_blank">portfolio.css</a>
+
+<hr>
+<h2>Step 3 - Add the following includes to your web page</h2>
+<textarea class="codemirror-monokai" style="display: none;">&lt;link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"&gt;
+&lt;link href="portfolio.css" rel="stylesheet"&gt;
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://rawgit.com/toddmotto/echo/master/dist/echo.js"&gt;&lt;/script&gt;
+&lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"&gt;&lt;/script&gt;
+</textarea><div class="CodeMirror cm-s-monokai CodeMirror-wrap" translate="no"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 33px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" readonly="" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; min-height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 29px; margin-bottom: -17px; border-right-width: 33px; min-height: 223px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like"><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>5</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 26.2374px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">&lt;<span class="cm-tag">link</span> <span class="cm-tag">href</span>=<span class="cm-string">"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"</span> <span class="cm-tag">rel</span>=<span class="cm-string">"stylesheet"</span>&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">&lt;<span class="cm-tag">link</span> <span class="cm-tag">href</span>=<span class="cm-string">"portfolio.css"</span> <span class="cm-tag">rel</span>=<span class="cm-string">"stylesheet"</span>&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">&lt;<span class="cm-tag">script</span> <span class="cm-tag">src</span>=<span class="cm-string">"https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"</span>&gt;&lt;/<span class="cm-tag">script</span>&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">&lt;<span class="cm-tag">script</span> <span class="cm-tag">src</span>=<span class="cm-string">"https://rawgit.com/toddmotto/echo/master/dist/echo.js"</span>&gt;&lt;/<span class="cm-tag">script</span>&gt;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">&lt;<span class="cm-tag">script</span> <span class="cm-tag">src</span>=<span class="cm-string">"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"</span>&gt;&lt;/<span class="cm-tag">script</span>&gt;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 33px; width: 1px; border-bottom: 0px solid transparent; top: 223px;"></div><div class="CodeMirror-gutters" style="height: 256px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div></div></div></div>
+
+<p>In this tutorial Solodev showed you how to craft a web design for your website's portfolio. Ideally, we recommend choosing&nbsp;a&nbsp;<a href="https://www.solodev.com/" target="_blank">content management system</a> (CMS) to host and manage your website that gives you total design freedom so you can truly express yourself with your portfolio showcase. Customize your web design to showcase what you love and make it your own! Enjoy!</p>
+</div>
+
+  
+
+  
+    <div class="text-center mt-4">
+      <a href="https://github.com/solodev/showcase-portolio" class="btn btn-lg ms-2" target="_blank" rel="noopener noreferrer">Download from Github</a>
+    </div>
+  
+
+  <hr class="mt-5">
+
+  <div class="mt-4">
+        <div class="text-end">
+      <a href="http://www.facebook.com/share.php?u=https%3A%2F%2Fwww.solodev.com%2Fblog%2Fweb-design%2Fcraft-a-beautiful-web-design-for-your-portfolio-showcase.stml" target="_blank" class="btn btn-fb-blue">Share on Facebook</a>
+      <a href="https://twitter.com/intent/tweet?text=Craft%20a%20Beautiful%20Web%20Design%20for%20your%20Portfolio%20Showcase&amp;url=https%3A%2F%2Fwww.solodev.com%2Fblog%2Fweb-design%2Fcraft-a-beautiful-web-design-for-your-portfolio-showcase.stml" target="_blank" class="btn btn-tw-blue">Tweet It</a>
+    </div>
+  </div>
+  <div class="author mt-4 position-relative">
+    
+    <div class="row">
+      <div class="col-2 mx-auto">
+
+              <div class="valign-middle">
+          <img alt="" class="img-fluid rounded-circle" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/matt.jpg">
+        </div>
+
+      </div>
+
+      <div class="col-8 mx-auto py-5">
+        
+        
+                  
+        <p class="margin-0"><span class="font-weight-bold">Matthieu McClintock</span> <br>Contributions Editor here at Solodev. Want to be featured on the Solodev Blog? Get in touch. <br><a href="https://twitter.com/mattrmclaren" target="_blank" class="text-underline">Follow me on Twitter</a></p>
+        
+      </div>
+        
+    </div>
+
+    <div class="comments mt-4">
+      <!-- <div id="disqus_thread"></div> -->
+    </div>
+  </div>
+</article>
+
+
+
+<script type="application/ld+json">
+{  
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.solodev.com/blog/web-design/craft-a-beautiful-web-design-for-your-portfolio-showcase.stml"
+  },
+  "headline": "Craft a Beautiful Web Design for your Portfolio Showcase",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.solodev.com/core/fileparse.php/131/urlt/craft-beautiful-webdesign-rss.jpg",
+    "width": "480",
+    "height": "285"
+  },
+  "datePublished": "May 01, 2017 8:00am",
+  "dateModified": "May 01, 2017 8:00am",
+  "author": {
+    "@type": "Organization",
+    "name": "Solodev CMS"
+  },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Solodev CMS",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.solodev.com/_/images/solodev-logo.png",
+      "width": "140",
+      "height": "31"
+    }
+  },
+  "description": "In this tutorial Solodev will show you how to create an amazing portfolio to showcase your work in a way that allows for total design freedom and lazy loads your images to increase page speed"
+}
+</script>
+
+<script>
+  (function() {
+    window.solodev = window.solodev || {};
+    window.solodev.hostname = window.solodev.hostname || 'dcx-ai.solodev.org';
+    window.solodev.mid = window.solodev.mid || '18_17';
+    window.solodev.tid = window.solodev.tid || 'f56a65a2-53c2-4def-bd31-f8120294f57f';
+
+    var s = document.createElement('script'); s.type = 'text/javascript'; s.src = 'https://dcx-ai.solodev.org/static/client.min.js';
+    var b = document.querySelector('body');
+    if (b) { b.appendChild(s); }
+  })();
+</script>
+<script src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/javascript.js.download"></script>
+<script src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/htmlmixed.js.download"></script>
+<script src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/css.js.download"></script>
+
+</div>
+    </div>
+    <div class="col-md-4 col-xl-3">
+      <div class="dynamicDiv" id="dd.0.1.1"><div class="dynamicDiv" id="dd.0.1.1.0"><div class="recent-posts mt-4 d-xs-none d-block">
+  <p class="mb-0"><strong>RELATED POSTS</strong></p>
+
+    
+
+      <article class="mt-3 pointer bg-hover-white-smoke py-1 px-2">
+      <div class="row align-items-center" data-url="/blog/web-design/how-to-make-your-hero-image-the-hero-of-your-webpage.stml">
+        <div class="col-lg-4">
+          <img alt="How to Make your Hero Image the Hero of your Webpage" class="img-fluid my-0" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/hero-hero.jpg">
+        </div>
+        <div class="col-lg-8 mt-3 mt-lg-0">
+          <p class="mb-0 fs-13p"><a class="text-graphite fw-600" href="https://www.solodev.com/blog/web-design/how-to-make-your-hero-image-the-hero-of-your-webpage.stml">How to Make your Hero Image the Hero of your Webpage</a></p>
+        </div>
+      </div>
+    </article>
+ 
+        <article class="mt-3 pointer bg-hover-white-smoke py-1 px-2">
+      <div class="row align-items-center" data-url="/blog/web-design/three-common-website-issues-and-how-to-survive-them.stml">
+        <div class="col-lg-4">
+          <img alt="Three Common Website Issues and How to Survive Them" class="img-fluid my-0" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/blog-image.jpg">
+        </div>
+        <div class="col-lg-8 mt-3 mt-lg-0">
+          <p class="mb-0 fs-13p"><a class="text-graphite fw-600" href="https://www.solodev.com/blog/web-design/three-common-website-issues-and-how-to-survive-them.stml">Three Common Website Issues and How to Survive Them</a></p>
+        </div>
+      </div>
+    </article>
+ 
+        <article class="mt-3 pointer bg-hover-white-smoke py-1 px-2">
+      <div class="row align-items-center" data-url="/blog/web-design/five-tips-to-building-landing-pages-that-convert.stml">
+        <div class="col-lg-4">
+          <img alt="Five Tips to Building Landing Pages that Convert" class="img-fluid my-0" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/landing_page-solodev_listing.jpg">
+        </div>
+        <div class="col-lg-8 mt-3 mt-lg-0">
+          <p class="mb-0 fs-13p"><a class="text-graphite fw-600" href="https://www.solodev.com/blog/web-design/five-tips-to-building-landing-pages-that-convert.stml">Five Tips to Building Landing Pages that Convert</a></p>
+        </div>
+      </div>
+    </article>
+ 
+        <article class="mt-3 pointer bg-hover-white-smoke py-1 px-2">
+      <div class="row align-items-center" data-url="/blog/digital-marketing/how-to-edit-meta-information-with-your-solodev-website.stml">
+        <div class="col-lg-4">
+          <img alt="How to Edit Meta Information with your Solodev Website" class="img-fluid my-0" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/metadata_blog_951x561.jpg">
+        </div>
+        <div class="col-lg-8 mt-3 mt-lg-0">
+          <p class="mb-0 fs-13p"><a class="text-graphite fw-600" href="https://www.solodev.com/blog/digital-marketing/how-to-edit-meta-information-with-your-solodev-website.stml">How to Edit Meta Information with your Solodev Website</a></p>
+        </div>
+      </div>
+    </article>
+ 
+          
+</div></div>
+
+<div class="dynamicDiv" id="dd.0.1.1.1"><nav class="right-nav mt-4 d-none d-md-block">
+  <ul class="list-unstyled">
+
+    <li class="mb-2"><a href="https://www.solodev.com/blog/web-design/" class="text-uppercase text-graphite"><strong>web design</strong></a><ul class="my-3 list-unstyled"><li class="d-inline-block mb-3 me-2"><a class="bg-white-smoke border py-1 px-2 text-graphite text-lowercase" href="https://www.solodev.com/blog/web-design/bootstrap/">Bootstrap</a></li><li class="d-inline-block mb-3 me-2"><a class="bg-white-smoke border py-1 px-2 text-graphite text-lowercase" href="https://www.solodev.com/blog/web-design/forms/">Form Tutorials</a></li><li class="d-inline-block mb-3 me-2"><a class="bg-white-smoke border py-1 px-2 text-graphite text-lowercase" href="https://www.solodev.com/blog/web-design/navigation/">Navigation</a></li><li class="d-inline-block mb-3 me-2"><a class="bg-white-smoke border py-1 px-2 text-graphite text-lowercase" href="https://www.solodev.com/blog/web-design/search/">Search</a></li><li class="d-inline-block mb-3 me-2"><a class="bg-white-smoke border py-1 px-2 text-graphite text-lowercase" href="https://www.solodev.com/blog/web-design/sliders/">Sliders</a></li><li class="d-inline-block mb-3 me-2"><a class="bg-white-smoke border py-1 px-2 text-graphite text-lowercase" href="https://www.solodev.com/blog/web-design/social/">Social</a></li></ul></li><li class="mb-2"><a href="https://www.solodev.com/blog/digital-marketing/" class="text-uppercase text-graphite"><strong>digital marketing</strong></a></li><li class="mb-2"><a href="https://www.solodev.com/blog/solodev/" class="text-uppercase text-graphite"><strong>solodev</strong></a><ul class="my-3 list-unstyled"><li class="d-inline-block mb-3 me-2"><a class="bg-white-smoke border py-1 px-2 text-graphite text-lowercase" href="https://www.solodev.com/blog/solodev/api/">API</a></li><li class="d-inline-block mb-3 me-2"><a class="bg-white-smoke border py-1 px-2 text-graphite text-lowercase" href="https://www.solodev.com/blog/solodev/user-permissions/">User Permissions</a></li></ul></li><li class="mb-2"><a href="https://www.solodev.com/blog/customer-experience/" class="text-uppercase text-graphite"><strong>customer experience</strong></a></li><li class="mb-2"><a href="https://www.solodev.com/blog/accessibility/" class="text-uppercase text-graphite"><strong>accessibility</strong></a></li><li class="mb-2"><a href="https://www.solodev.com/blog/seo/" class="text-uppercase text-graphite"><strong>seo</strong></a></li><li class="mb-2"><a href="https://www.solodev.com/blog/analytics/" class="text-uppercase text-graphite"><strong>analytics</strong></a></li><li class="mb-2"><a href="https://www.solodev.com/blog/sem/" class="text-uppercase text-graphite"><strong>sem</strong></a>  </li></ul>
+</nav></div>
+
+<div class="dynamicDiv" id="dd.0.1.1.2"></div>
+
+<div class="dynamicDiv" id="dd.0.1.1.3"></div>
+
+<div class="dynamicDiv" id="dd.0.1.1.4"></div>
+
+<div class="dynamicDiv" id="dd.0.1.1.5"></div>
+
+<div class="dynamicDiv" id="dd.0.1.1.6"></div>
+
+<div class="dynamicDiv" id="dd.0.1.1.7"></div>
+
+<div class="dynamicDiv" id="dd.0.1.1.8"></div></div>
+    </div>
+  </div>
+</div></div>
+
+  <div class="dynamicDiv" id="dd.0.2"><div class="bg-dark-blue text-center text-white py-sm-6 py-5">
+  <div class="container">
+    <h3 class="h2">Sign up to explore</h3>
+    <p class="my-4 lead fw-normal">Create an account in seconds and start building today.</p>
+    <a href="https://www.solodev.com/join" class="btn btn-lg btn-green text-white btn-rounded mt-1">Sign up for Solodev</a>
+  </div>
+</div></div>
+
+  <div class="dynamicDiv" id="dd.0.3"></div>
+
+  <div class="dynamicDiv" id="dd.0.4"><footer data-swiftype-index="false" class="mt-5">
+  <div class="container">
+    <div class="row justify-content-between pb-4 mb-xl-2">
+      <div class="col-xl-5 col-lg-6">
+        <h3>Join the list</h3>
+        <p>Get the latest updates on cloud, AI, and more.</p>
+        <form name="contentForm" enctype="multipart/form-data" data-id="form59" method="post" action="https://www.solodev.com/sys/form/59" role="form" data-toggle="validator" id="join-list-form" novalidate="novalidate">
+<input type="hidden" name="source" value="web">
+<input type="hidden" name="form_template_id" value="">
+<input type="hidden" name="samaccountname" value="">
+<input type="hidden" name="mdm_key" value="dd_0_4">
+<input type="hidden" name="sID" value="6479">
+<input type="hidden" name="timestamp" value="1697223676">
+<input type="hidden" name="location" value="/blog/web-design/craft-a-beautiful-web-design-for-your-portfolio-showcase.stml">
+
+
+<label for="email" class="sr-only">Email address</label>
+<div class="d-flex">
+  <div class="d-flex flex-column w-75 me-2">	
+    <input name="formfields[email]" class="form-control required input-lg h-xs-45p" id="email" placeholder="Email address" aria-label="Email address" type="email" value="" required="required" data-error="Please enter a valid email address" fdprocessedid="8mf06p">
+  </div>
+  <input type="hidden" name="formfields[campaign]" aria-label="Email address" value="Join the List">
+  <button class="btn btn-pacific-blue text-white px-3 h-xs-45p btn-rounded btn-lg" type="submit" fdprocessedid="lvmrm">Join</button>
+  <script src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/api.js.download"></script><script>if("undefined"==typeof grecaptcha)console.log("missing grec");else{var e=document.querySelector("[data-id=form59]"),t=function(t){t.preventDefault(),grecaptcha.ready(function(){grecaptcha.execute("6Lc4yNUUAAAAAN16DjHuBjNuBXdJ9sNnlrM9Q7Wa",{action:"Join_the_List"}).then(function(t){var n=document.createElement("input");n.setAttribute("type","hidden"),n.setAttribute("value",t),n.setAttribute("name","token");var i=document.createElement("input");i.setAttribute("type","hidden"),i.setAttribute("value","Join_the_List"),i.setAttribute("name","action"),e.prepend(i),e.prepend(n),e.submit()})})};e.addEventListener("submit",t,{once:!0})}</script>
+</div>
+
+<input type="hidden" name="datatable_mdid" value="093f65e080a295f8076b1c5722a46aa2">
+</form>
+      </div>
+      <div class="col-xl-5 col-lg-6 mt-lg-0 mt-4">
+        <h3>Community</h3>
+        <p>Connect with Solodevs across the social universe</p>
+        <ul class="social-icons list-unstyled d-flex mb-0">
+          <li class="mx-2 px-1 ps-lg-0 ms-lg-0"><a aria-label="Solodev Twitter" class="text-vulcan" href="https://twitter.com/solodev" target="_blank"><span class="fab fa-2x fa-twitter"></span></a></li>
+          <li class="mx-2 px-1"><a aria-label="Solodev Facebook" class="text-vulcan" href="https://www.facebook.com/Solodev" target="_blank"><span class="fab fa-2x fa-facebook-square"></span></a></li>
+          <li class="mx-2 px-1"><a aria-label="Solodev LinkedIn" class="text-vulcan" href="https://www.linkedin.com/company/solodev" target="_blank"><span class="fab fa-2x fa-linkedin-in"></span></a></li>
+          <li class="mx-2 px-1"><a aria-label="Solodev Medium" class="text-vulcan" href="https://medium.com/@solodev" target="_blank"><span class="fab fa-2x fa-medium"></span></a></li>
+          <li class="mx-2 px-1"><a aria-label="Solodev GitHub" class="text-vulcan" href="https://github.com/solodev" target="_blank"><span class="fab fa-2x fa-github"></span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-top py-xl-5 pt-4">
+      <div class="row justify-content-between">
+        <div class="col-xl-5 col-lg-6 pe-6">
+          <a href="https://www.solodev.com/" aria-label="Solodev homepage">
+            <img alt="Solodev Logo footer" class="w-xs-60p" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/Solodev-Logo-Icon-Red-Square.svg"></a>
+          
+          <p class="pt-3">Solodev is the internet's largest ecosystem of cloud and metaverse technologies, from AI to IoT, blockchain to VR. Build amazing virtual experiences, sell custom cloud apps, launch NFT marketplaces, and collaborate on digital transformation – all in one place.</p>
+        </div>
+        <div class="col-xl-5 col-lg-6 mt-4 mt-xl-0 d-sm-block d-none">
+          <div class="d-flex flex-sm-nowrap flex-wrap justify-content-between">
+            <div>
+              <h4 class="text-uppercase">Platform</h4>
+              <ul class="list-unstyled">
+                <li class="mt-2"><a class="text-graphite medium" href="https://www.solodev.com/cloud" aria-label="Cloud page">Cloud</a></li>
+                <li class="mt-2"><a class="text-graphite medium" href="https://www.solodev.com/marketing" aria-label="Marketing page">Marketing</a></li>
+                <li class="mt-2"><a class="text-graphite medium" href="https://www.solodev.com/metaverse" aria-label="Metaverse page">Metaverse</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-uppercase">Explore</h4>
+              <ul class="list-unstyled">
+                <li class="mt-2"><a aria-label="Careers - Footer" class="text-graphite medium" href="https://www.solodev.com/careers/">Careers</a></li>
+                <li class="mt-2"><a aria-label="Blog - Footer" class="text-graphite medium" href="https://www.solodev.com/blog">Blog</a></li>
+                <li class="mt-2"><a aria-label="eBooks - Footer" class="text-graphite medium" href="https://www.solodev.com/explore/ebooks/">eBooks</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-uppercase">Marketplace</h4>
+              <ul class="list-unstyled">
+                <li class="mt-2"><a aria-label="Solutions - Footer" class="text-graphite medium" href="https://www.solodev.com/solutions/">Solutions</a></li>
+                <li class="mt-2"><a aria-label="Enterprise - Footer" class="text-graphite medium" href="https://www.solodev.com/enterprise">Enterprise</a></li>
+                <li class="mt-2"><a aria-label="AWS - Footer" class="text-graphite medium" href="https://www.solodev.com/aws/">AWS</a></li>
+                <li class="mt-2"><a aria-label="Comparison Guide - Footer" class="text-graphite medium" href="https://www.solodev.com/comparison-guide">Comparison Guide</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-uppercase">Company</h4>
+              <ul class="list-unstyled">
+                <li class="mt-2"><a aria-label="About us - Footer" class="text-graphite medium" href="https://www.solodev.com/company/">About Us</a></li>
+                <li class="mt-2"><a aria-label="Media - Footer" class="text-graphite medium" href="https://www.solodev.com/media/">Media</a></li>
+                <li class="mt-2"><a aria-label="Solodev Help" class="text-graphite medium" href="https://intercom.help/solodev/en" target="_blank" rel="noopener noreferrer">Help</a></li>
+                <li class="mt-2"><a aria-label="Contact us" class="text-graphite medium" href="https://www.solodev.com/contact">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border-top py-3">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center flex-sm-row flex-column">
+        <p class="fs-14p mb-0">©2023 Solodev. All rights reserved worldwide.</p>
+        <div class="footer-contact d-flex align-items-center justify-content-center mt-3 mt-sm-0">
+          <a aria-label="Privacy Policy" href="https://www.solodev.com/terms/privacy-policy.stml" class="border-end border-nobel pe-2 text-vulcan">Privacy Policy</a>
+          <a aria-label="Terms and conditions" href="https://www.solodev.com/terms/" class="ps-2 text-vulcan">Terms</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer></div>
+  
+</div><script type="text/javascript" src="https://dcx-ai.solodev.org/static/client.min.js"></script>
+
+
+    <div class="privacy-banner" style="border-top: 2px solid rgb(255, 145, 14); display: inherit;">
+      <div>
+      <p>
+  We use cookies to provide and improve our services. By using our site, you consent to cookies.
+
+      <a class="banner-accept" href="https://www.solodev.com/blog/web-design/craft-a-beautiful-web-design-for-your-portfolio-showcase.stml#" style="background: #ff910e" aria-label="Accept this policy">Accept</a>
+      <a class="banner-learn" href="https://www.solodev.com/terms/privacy-policy.stml" aria-label="Learn more about this policy">Learn more</a>
+      </p></div>
+    </div>
+
+
+<script src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/help-widget.min.js.download" type="text/javascript"></script>
+<script type="text/javascript">
+  HelpWidget.init({
+    companyName: 'Solodev',
+    intercomId: 'w9bapbgh',
+    phoneNumber: '(800) 859-7656',
+    info: {
+      hours: 'M - F, 8:30AM - 5:30PM EDT',
+      email: 'help@solodev.com',
+      address: '800 N. Magnolia Ave. Orlando, FL 32803',
+    }
+  });
+</script><div id="solodev-help-widget"><div class="help-widget"><button class="help-widget-logo" fdprocessedid="ht1lao"><img src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/solodev-star.svg" alt="Solodev logo"></button></div></div>
+
+<script>
+  function initSegment(user) {
+  	if (user) {
+	  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.13.1";
+  }}();
+  
+      analytics.load('pBZApUCSsWhKoDScHcMirYoQlEbBmkTt');
+      analytics.identify(user.id, {
+        username: user.name,
+        email: user.email,
+        first_name: user.first_name,
+        last_name: user.last_name,
+        avatar_url: user.avatar_url,
+      });
+      analytics.page();
+	}
+  }
+</script>
+
+
+
+<div><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" width="256" height="60" role="presentation" name="a-saae2248ys3g" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/anchor.html"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/saved_resource(1).html"></iframe></div><div role="dialog" id="baguetteBox-overlay"><div id="baguetteBox-slider"></div><button type="button" id="previous-button" aria-label="Previous" class="baguetteBox-button"><svg width="44" height="60"><polyline points="30 10 10 30 30 50" stroke="rgba(255,255,255,0.5)" stroke-width="4" stroke-linecap="butt" fill="none" stroke-linejoin="round"></polyline></svg></button><button type="button" id="next-button" aria-label="Next" class="baguetteBox-button"><svg width="44" height="60"><polyline points="14 10 34 30 14 50" stroke="rgba(255,255,255,0.5)" stroke-width="4" stroke-linecap="butt" fill="none" stroke-linejoin="round"></polyline></svg></button><button type="button" id="close-button" aria-label="Close" class="baguetteBox-button"><svg width="30" height="30"><g stroke="rgb(160,160,160)" stroke-width="4"><line x1="5" y1="5" x2="25" y2="25"></line><line x1="5" y1="25" x2="25" y2="5"></line></g></svg></button></div><script type="text/javascript" id="">adroll_adv_id="LLGFZQR7H5BBFGEJ3U4WGX";adroll_pix_id="6WTZ2K5FKJHWNCEWCGHSKL";adroll_version="2.0";
+(function(a,e,c,d,b){a.__adroll_loaded=!0;a.adroll=a.adroll||[];a.adroll.f=["setProperties","identify","track"];var f="https://s.adroll.com/j/"+adroll_adv_id+"/roundtrip.js";for(b=0;b<a.adroll.f.length;b++)a.adroll[a.adroll.f[b]]=a.adroll[a.adroll.f[b]]||function(g){return function(){a.adroll.push([g,arguments])}}(a.adroll.f[b]);c=e.createElement("script");d=e.getElementsByTagName("script")[0];c.async=1;c.src=f;d.parentNode.insertBefore(c,d)})(window,document);adroll.track("pageView");</script>
+<script type="text/javascript" id="">var ezt=ezt||[];(function(){var a=document.createElement("script");a.src=("https:"==document.location.protocol?"https://secure":"http://pixel")+".quantserve.com/aquant.js?a\x3dp-WxfSuuBK1Tnn5";a.async=!0;a.type="text/javascript";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();ezt.push({qacct:"p-WxfSuuBK1Tnn5",orderid:"",revenue:""});</script>
+<noscript>
+  <img src="//pixel.quantserve.com/pixel/p-WxfSuuBK1Tnn5.gif?labels=_fp.event.Default" style="display: none;" border="0" height="1" width="1" alt="Quantcast">
+</noscript>
+<div style="display: none; visibility: hidden;"><script type="text/javascript">(function(a,e,f,g,b,c,d){a.SwiftypeObject=b;a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)};c=e.createElement(f);d=e.getElementsByTagName(f)[0];c.async=1;c.src=g;d.parentNode.insertBefore(c,d)})(window,document,"script","//s.swiftypecdn.com/install/v2/st.js","_st");_st("install","hei4GeobUQWcSyxQGMeE","2.0.0");</script></div><script type="text/javascript" id="">var _cio=_cio||[];(function(){var c;var a=function(d){return function(){_cio.push([d].concat(Array.prototype.slice.call(arguments,0)))}};var b=["load","identify","sidentify","track","page"];for(c=0;c<b.length;c++)_cio[b[c]]=a(b[c]);a=document.createElement("script");b=document.getElementsByTagName("script")[0];a.async=!0;a.id="cio-tracker";a.setAttribute("data-site-id","08c6b307674af75c7cb9");a.src="https://assets.customer.io/assets/track.js";b.parentNode.insertBefore(a,b)})();</script>  <div class="st-injected-content-generated st-install-hei4GeobUQWcSyxQGMeE" data-st-install-key="hei4GeobUQWcSyxQGMeE" id="st-injected-content"><div class="st-default-autocomplete" data-st-target-element=".st-default-search-input" style="display: none;">
+  <div class="st-autocomplete-results st-ui-autocomplete"><div class="st-query-present" style="display: none;"></div></div>
+</div>
+</div><div class="st-injected-content-generated st-install-hei4GeobUQWcSyxQGMeE __st-search-container" data-st-install-key="hei4GeobUQWcSyxQGMeE">
+<div class="st-ui-embed " style="">
+  
+  <!-- Swiftype input and results overlay -->
+  
+  <div class="st-ui-container st-ui-injected-container   st-ui-injected-on-page-container">
+    <!-- HEADER -->
+    <div class="st-ui-container-header_bar st-position-container">
+      
+    </div>
+
+    <!-- LEFT SIDEBAR -->
+    <div class="st-ui-container-left_sidebar st-position-container">
+      
+      <div class="st-ui-injected-search-controls">
+        
+          
+        
+      </div>
+    </div>
+
+    <!-- RIGHT SIDEBAR -->
+    <div class="st-ui-container-right_sidebar st-position-container">
+      
+      <div class="st-ui-injected-container-right_sidebar">
+        <div class="st-ui-injected-search-controls">
+          
+            
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- PRIMARY CONTENT -->
+    <div class="st-ui-container-primary_content st-position-container">
+      
+        <div class="st-ui-injected-search-summary st-search-summary" aria-live="polite"></div>
+        <div class="st-ui-injected-content st-search-results"><div class="st-query-present" style="display: none;"></div></div>
+      
+
+      <section class="st-ui-no-results st-search-suggestions"><div class="st-query-not-present">
+      </div></section>
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <div class="st-ui-container-footer_bar st-position-container">
+      <section class="st-ui-footer">
+        
+        <span class="st-ui-pagination st-search-pagination"></span>
+      </section>
+    </div>
+  </div>
+</div>
+</div><iframe id="intercom-frame" style="position: absolute !important; opacity: 0 !important; width: 1px !important; height: 1px !important; top: 0 !important; left: 0 !important; border: none !important; display: block !important; z-index: -1 !important; pointer-events: none;" aria-hidden="true" tabindex="-1" title="Intercom" src="./Craft a Beautiful Web Design for your Portfolio Showcase_files/saved_resource(2).html"></iframe><div class="intercom-lightweight-app"><style id="intercom-lightweight-app-style" type="text/css">
+  @keyframes intercom-lightweight-app-launcher {
+    from {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes intercom-lightweight-app-gradient {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes intercom-lightweight-app-messenger {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    40% {
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .intercom-lightweight-app {
+    position: fixed;
+    z-index: 2147483001;
+    width: 0;
+    height: 0;
+    font-family: intercom-font, "Helvetica Neue", "Apple Color Emoji", Helvetica, Arial, sans-serif;
+  }
+
+  .intercom-lightweight-app-gradient {
+    position: fixed;
+    z-index: 2147483002;
+    width: 500px;
+    height: 500px;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    background: radial-gradient(
+      ellipse at bottom right,
+      rgba(29, 39, 54, 0.16) 0%,
+      rgba(29, 39, 54, 0) 72%);
+    animation: intercom-lightweight-app-gradient 200ms ease-out;
+  }
+
+  .intercom-lightweight-app-launcher {
+    position: fixed;
+    z-index: 2147483003;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none;
+    bottom: 20px;
+    right: 20px;
+    max-width: 48px;
+    width: 48px;
+    max-height: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #fe0000;
+    cursor: pointer;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 32px 0 rgba(0, 0, 0, 0.16);
+    transition: transform 167ms cubic-bezier(0.33, 0.00, 0.00, 1.00);
+    box-sizing: content-box;
+  }
+
+
+  .intercom-lightweight-app-launcher:hover {
+    transition: transform 250ms cubic-bezier(0.33, 0.00, 0.00, 1.00);
+    transform: scale(1.1)
+  }
+
+  .intercom-lightweight-app-launcher:active {
+    transform: scale(0.85);
+    transition: transform 134ms cubic-bezier(0.45, 0, 0.2, 1);
+  }
+
+
+  .intercom-lightweight-app-launcher:focus {
+    outline: none;
+
+    
+  }
+
+  .intercom-lightweight-app-launcher-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    transition: transform 100ms linear, opacity 80ms linear;
+  }
+
+  .intercom-lightweight-app-launcher-icon-open {
+    
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+      
+  }
+
+  .intercom-lightweight-app-launcher-icon-open svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .intercom-lightweight-app-launcher-icon-open svg path {
+    fill: rgb(255, 255, 255);
+  }
+
+  .intercom-lightweight-app-launcher-icon-self-serve {
+    
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+      
+  }
+
+  .intercom-lightweight-app-launcher-icon-self-serve svg {
+    height: 44px;
+  }
+
+  .intercom-lightweight-app-launcher-icon-self-serve svg path {
+    fill: rgb(255, 255, 255);
+  }
+
+  .intercom-lightweight-app-launcher-custom-icon-open {
+    max-height: 24px;
+    max-width: 24px;
+
+    
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+      
+  }
+
+  .intercom-lightweight-app-launcher-icon-minimize {
+    
+        opacity: 0;
+        transform: rotate(-60deg) scale(0);
+      
+  }
+
+  .intercom-lightweight-app-launcher-icon-minimize svg path {
+    fill: rgb(255, 255, 255);
+  }
+
+  .intercom-lightweight-app-messenger {
+    position: fixed;
+    z-index: 2147483003;
+    overflow: hidden;
+    background-color: white;
+    animation: intercom-lightweight-app-messenger 250ms cubic-bezier(0, 1, 1, 1);
+    transform-origin: bottom right;
+    
+        width: 400px;
+        height: calc(100% - 40px);
+        max-height: 704px;
+        min-height: 250px;
+        right: 20px;
+        bottom: 20px;
+        box-shadow: 0 5px 40px rgba(0,0,0,0.16);
+      
+
+    border-radius: 16px;
+  }
+
+  .intercom-lightweight-app-messenger-header {
+    height: 64px;
+    border-bottom: none;
+    background: #FE0000
+
+    
+  }
+
+  .intercom-lightweight-app-messenger-footer{
+    position:absolute;
+    bottom:0;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    font-size: 14px;
+    line-height: 21px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+    
+  }
+
+  @media print {
+    .intercom-lightweight-app {
+      display: none;
+    }
+  }
+</style></div></body></html>

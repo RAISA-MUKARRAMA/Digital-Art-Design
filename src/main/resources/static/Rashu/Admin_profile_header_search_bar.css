@@ -1,0 +1,45 @@
+/*
+
+/* Add this CSS to style the search bar */
+#userList div {
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    padding: 8px;
+    width: 300px;
+}
+
+#searchButton, #resetButton {
+    padding: 8px 12px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Style the search and reset buttons */
+#searchButton {
+    background-color: #4CAF50;
+    max-width: fit-content;
+    color: white;
+    border: none;
+}
+/* Style for label */
+label {
+    display: block; /* Ensures each label appears on a new line */
+    margin-bottom: 8px; /* Adds some spacing between labels */
+    font-weight: bold; /* Makes the text bold (optional) */
+    color: #333; /* Sets the text color */
+}
+
+#resetButton {
+    background-color: #f44336;
+    max-width: fit-content;
+    color: white;
+    border: none;
+}
+
+/* Change button styles on hover */
+#searchButton:hover, #resetButton:hover {
+    opacity: 0.8;
+}

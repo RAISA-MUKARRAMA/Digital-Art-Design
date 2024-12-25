@@ -1,0 +1,313 @@
+<html lang="en">
+    <head>
+        <title>
+            User List
+        </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Admin_profile_body_background.css">
+        <link rel="stylesheet" href="Admin_profile_menu-bar.css">
+        <link rel="stylesheet" href="Admin_profile_main-content.css">
+        <link rel="stylesheet" href="Admin_profile_form.css">
+        <link rel="stylesheet" href="Pagination.css">
+        <link rel="stylesheet" href="Admin_profile_display_table.css">
+        <link rel="stylesheet" href="Admin_profile_footer.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        #userList div {
+            margin-bottom: 20px;
+        }
+
+
+        #searchInput {
+            padding: 8px;
+            width: 300px;
+        }
+
+        #searchButton, #resetButton {
+            padding: 8px 12px;
+            margin-left: 10px;
+            cursor: pointer;
+            font-size: 14px;
+            border: #7e6a05;
+        }
+
+
+        #searchButton {
+            background-color: transparent;
+            max-width: fit-content;
+            color: #000333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        #resetButton {
+            background-color: transparent;
+            max-width: fit-content;
+            color: #000333;
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <div class="backgrounding">
+                <div class="menubar">
+                    <img src="design_logo_02.jpg" class="logo">
+                    <ul style="color:white; padding: 5px;" >
+
+                        <li><i class="fas fa-user-circle" style="color: white;"></i><span style="color:white; padding: 5px" id="adminName"> </span></li>
+                    </ul>
+                </div>
+            </div>
+         </header>
+
+    <main class="content_main">
+        <div class="menu-bar">
+        <ul>
+            <li><a href="/home"><i class="fa fa-home "></i> Home</a></li>
+            <li><a href="Admin_profile_my_profile.html"><i class="fa fa-user "></i> My profile</a></li>
+            <li><a href="Admin_profile_Designs.html"><i class="fas fa-list-ul "></i> Designs</a>
+
+            </li>
+            
+            <li><a href="Admin_profile_Designers.html"><i class="fa fa-users"></i> Designers</a></li>
+            <li class="active"><a ><i class="fa fa-users"></i> Users</a></li>
+            <li><a href="Admin_profile_Admins.html"><i class="fa fa-users"></i> Admins</a></li>
+            <li><a href="#"><i class="fas fa-trophy contest-icon "></i> My contest</a>
+                <div class="sub-menu-2">
+                    <ul>
+                        <li><a href="Admin_profile_Mycontest_contest_request.html">Contest Requests</a></li>
+                        <li><a href="Admin_profile_Mycontest_previous_contest.html">Previous Contest</a></li>
+                        <li><a href="Admin_profile_Mycontest_Set_A_Contest.html">Set A Contest</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="Admin_profile_Inbox.html"><i class="fas fa-inbox inbox-icon"></i> Inbox</a></li>
+            <li ><a href="#"><i class="fas fa-bullhorn announcement-icon "></i> Announcements</a>
+                <div class="sub-menu-2">
+                    <ul>
+                        <li><a href="Admin_profile_Announcement_previous_announcement.html">Previous Announcement</a></li>
+                        <li><a href="Admin_profile_Announcement_Set_an__announcement.html">Set An Announcement</a></li>
+                    </ul>
+                </div>
+            </li>
+            
+            <li ><a href="#"><i class="fas fa-cog profile-settings-icon "></i> Profile Setting</a>
+                <div class="sub-menu-2">
+                    <ul>
+                        <li><a href="Admin_profile_Edit_Profile_update_details.html">Update Details</a></li>
+                        <li><a href="Admin_profile_Edit_Profile_Change_password.html">Change Password</a></li>
+
+                    </ul>
+                </div>
+            </li>
+            <li onclick="logout()"><a href=""><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+        </div>
+        <div class="main-content">
+
+            <div id="userList">
+                <h1>Users List</h1>
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Enter User ID or Name">
+                    <button id="searchButton"><i class="fas fa-search"></i></button>
+                    <button id="resetButton"><i class="fas fa-redo"></i></button>
+                </div>
+                <table>
+                    <tr>
+                        <th>User ID</th>
+                        <th>Name</th>
+                        <th>Action</th>
+                    </tr>
+
+                </table>
+                <div id="pagination">
+                    <button id="prevButton">Previous</button>
+                    <button id="nextButton">Next</button>
+                </div>
+            </div>
+        </div>
+    </main>
+        <footer class="footer">
+            <div class="container_ftr">
+                <div class="row">
+                    <div class="footer-col">
+                        <ul>
+                            <li>&copy; COPYRIGHT Reserved by</li>
+                            <li>Digital Art Design </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <ul>
+                        <div class="contact">
+                            <li>Contact Information:</li>
+                            <li>Address: Chittagong ,Bangladesh</li>
+                            <li>Phone: <a href="tel:+15551234567">(555) 123-4567</a></li>
+                            <li>Email: <a href="mailto:info@example.com">info@example.com</a></li>
+                        </div>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Help</h4>
+                        <ul>
+                        <li><a href="Admin_profile_About_Us.html">about us</a></li>
+                        <li><a href="Admin_profile_Our_Services.html">our services</a></li>
+                        <li><a href="Admin_profile_FAQ.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a ><i class="fab fa-facebook-f"></i></a>
+                            <a ><i class="fab fa-twitter"></i></a>
+                            <a ><i class="fab fa-instagram"></i></a>
+                            <a ><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </footer>
+        <script>
+            function logout() {
+                sessionStorage.removeItem("Admin_id"); // Remove the Admin_id from session storage
+                window.location.href = "/home";
+            }
+            function checkAdminId() {
+                let id = sessionStorage.getItem("Admin_id");
+                if (id === null) {
+                    window.location.href = "/home";
+                    return null; // Return null if Admin_id is null
+                }
+                return id; // Return Admin_id if it exists
+            }
+
+            window.addEventListener("beforeunload", function(event) {
+                const id = sessionStorage.getItem("Admin_id");
+                if (id === null) {
+                    sessionStorage.removeItem("Admin_id");
+                    window.location.href = "/home";
+                }
+            });
+            const admin_nameContainer = document.getElementById("adminName");
+
+            const Admin_Name = ' '+sessionStorage.getItem('Admin_Name');
+            console.log(Admin_Name);
+            admin_nameContainer.innerHTML=Admin_Name;
+            document.addEventListener("DOMContentLoaded", function () {
+                if(checkAdminId()===null)
+                    return;
+                if(checkAdminId()===null)
+                {window.location.href = "/home";}
+                // Constants for pagination
+                const itemsPerPage = 3;
+                let currentPage = 1;
+                let users;
+
+                const userList = document.getElementById("userList");
+                const table = userList.querySelector("table");
+
+                const searchInput = document.getElementById("searchInput");
+                const searchButton = document.getElementById("searchButton");
+                const resetButton = document.getElementById("resetButton");
+
+
+                searchButton.addEventListener("click", function () {
+                    const searchTerm = searchInput.value.trim().toLowerCase();
+                    const filteredUsers = filterUsers(users, searchTerm);
+                    displayUsers(filteredUsers, 1);
+                });
+
+
+                resetButton.addEventListener("click", function () {
+                    searchInput.value = "";
+                    displayUsers(users, currentPage);
+                });
+
+
+                function filterUsers(users, searchTerm) {
+                    if (!searchTerm) {
+                        return users;
+                    }
+
+                    return users.filter(user => {
+
+                        return user.id.toString().includes(searchTerm) ||
+                            user.name.toLowerCase().includes(searchTerm);
+                    });
+                }
+
+                function fetchUserData() {
+                    fetch('/Rashu_users/list')
+                        .then(response => response.json())
+                        .then(data => {
+                            users = data;
+                            displayUsers(data, currentPage);
+                        })
+                        .catch(error => console.error('Error fetching user data:', error));
+                }
+
+                function displayUsers(users, page) {
+                    // Clear the table
+                    while (table.rows.length > 1) {
+                        table.deleteRow(1);
+                    }
+                    if (users.length === 0) {
+                        const noDesignsRow = table.insertRow();
+                        const noDesignsCell = noDesignsRow.insertCell(0);
+                        noDesignsCell.colSpan = 3;
+                        noDesignsCell.innerHTML = 'No designs found for the specified category.';
+                        return;
+                    }
+                    const startIndex = (page - 1) * itemsPerPage;
+                    const endIndex = page * itemsPerPage;
+
+                    for (let i = startIndex; i < endIndex && i < users.length; i++) {
+                        const user = users[i];
+                        const row = table.insertRow();
+                        const cell1 = row.insertCell(0);
+                        const cell2 = row.insertCell(1);
+                        const cell3 = row.insertCell(2);
+
+                        cell1.innerHTML = user.id;
+                        cell2.innerHTML = user.name;
+
+                        const seeDetailsLink = document.createElement("a");
+                        seeDetailsLink.href = "Admin_profile_User_Details.html";
+                        seeDetailsLink.textContent = "See details";
+
+                        row.addEventListener("click", function () {
+                            sessionStorage.setItem("user_id", user.id);
+                            window.location.href = "Admin_profile_User_Details.html";
+                        });
+
+                        cell3.appendChild(seeDetailsLink);
+                    }
+                }
+
+
+                fetchUserData();
+
+
+                document.getElementById("nextButton").addEventListener("click", function () {
+                    if (users && currentPage < Math.ceil(users.length / itemsPerPage)) {
+                        currentPage++;
+                        displayUsers(users, currentPage);
+                    }
+                });
+
+
+                document.getElementById("prevButton").addEventListener("click", function () {
+                    if (users && currentPage > 1) {
+                        currentPage--;
+                        displayUsers(users, currentPage);
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

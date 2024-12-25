@@ -1,0 +1,122 @@
+
+.menu-bar
+{
+    background: #967d00;
+    text-align: center;
+
+}
+
+.menu-bar .fa{
+    margin-right: 8px;
+}
+.menu-bar ul
+{
+    display:inline-flex;
+    flex-wrap: wrap;
+    list-style: none;
+    color:#fff ;
+}
+.menu-bar ul li{
+    max-width:fit-content ;
+    min-width: 100px;
+    margin:5px;
+    padding: 5px;
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color:#fff;
+}
+.active, .menu-bar ul li:hover{
+    background: #665b25;
+    border-radius: 3px;
+}
+
+.sub-menu-1
+{
+    display:none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+    display:block;
+    position: absolute;
+    background: #967d00;
+    margin-top: 5px;
+    margin-left: -5px;
+    z-index: 2;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display:block;
+    margin:5px;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    max-width:max-content;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background:#967d00;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+   
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: black;
+}
+
+.sub-menu-2
+{
+    display:none;
+}
+
+.menu-bar ul li:hover .sub-menu-2 {
+    display:block;
+    position: absolute;
+    background: #967d00;
+    margin-top: 5px;
+    margin-left: -5px;
+    z-index: 2;
+}
+.menu-bar ul li:hover .sub-menu-2 ul{
+    display:block;
+    margin:5px;
+
+}
+.menu-bar ul li:hover .sub-menu-2 ul li{
+    max-width:fit-content;
+    min-width: fit-content;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-2 ul li:last-child{
+    border-bottom: none;
+   
+}
+.menu-bar ul li:hover .sub-menu-2 ul li a:hover{
+    color: black;
+}
+
+.sub-menu-3
+{
+    display:none;
+}
+
+.hover-me:hover .sub-menu-3{
+    position:absolute;
+    display:block;
+    margin-top: -40px;
+    margin-left: 140;
+    background: #967d00;
+    z-index: 2;   
+}
+
+.category-icon {
+    font-size: 24px; /* Adjust the size as needed */
+}

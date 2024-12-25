@@ -1,0 +1,231 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Homepage</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="/Arupa/homepage.css">
+    </head>
+    <body>
+        <div class="backgroundimg">
+            <div class="menubar">
+                <img src="/Rashu/design_logo_02.jpg" class="logo">
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/Rashu/homepage_Designs.html">Designs</a></li>
+                    <li th:unless="${user}"><a href="/Rashu/Sign_in.html">Sign in</a></li>
+                    <li th:unless="${user}"><a href="/Rashu/Sign_Up.html">Sign up</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Get your design,</h1>
+            <h1>Grow your business</h1>
+            <p>We provide all categories of graphics design along with <br>empoweing designers with freelancing opportunity.</p>
+            <h2>Explore your desired category</h2>
+            <form action="#" class="search-bar">
+              <input type="text" placeholder="Logo, Website, Flyer..." name="q">
+              <button type="submit"><img src="/Arupa/search.jpg"></button>
+            </form>
+            <div>
+                <a href="/Rashu/Sign_in.html">
+                    <button type="button">Place an order</button>
+                </a>
+            </div>
+        </div>
+        <!--image slider start-->
+      <div class="slider">
+        <div class="slides">
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide first">
+            <img src="/Arupa/ad_brochure.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="/Arupa/4.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="/Arupa/bookcover1.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="/Arupa/website2.webp" alt="">
+          </div>
+          <!--slide images end-->
+          <!--automatic navigation start-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+      </div>
+      <!--image slider end-->
+  
+      <script type="text/javascript">
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+          counter = 1;
+        }
+      }, 5000);
+      </script>
+      <div class="ad_logo">
+      </div>
+      <div class="ad_text1">
+        <h1>Start your business<br>with great logo design</h1>
+        <p>Our skillful designers have helped grow many<br>successful businesses by designing their<br>custom and professional logos.</p>
+        <div class="l1">
+          <img src="/Arupa/ad_logo2.png">
+        <a href="/Rashu/homepage_Designs.html"><button class="btn">
+          <span class="circle">
+              <span class="arrow"></span>
+          </span>
+          <span class="text">View more</span>
+        </button>
+        </a>
+        </div>
+      </div>
+      <div class="ad_text2">
+        <h1>Printing your custom<br>design is easier than ever</h1>
+        <p>Get your own custom Business card, Book cover, Magazine,<br>Brocure, Flyer, Poster by our qualified designers.</p>
+      
+      <div class="photo-gallery1">
+
+          <div class="pic-brochure">
+            <img src="/Arupa/brochure.png">
+          </div>
+          <div class="pic-card">
+            <img src="/Arupa/business_card.jpeg">
+          </div>
+          <div class="pic-flyer">
+            <img src="/Arupa/flyer.jpg">
+          </div>
+          <div class="pic-bookcover">
+            <img src="/Arupa/ad_bookcover.jpeg">
+          </div>
+      </div>
+      </div>
+      <div class="ad_text3">
+        <h1>Your product deserves<br>great packaging</h1>
+        <p>Good packaging design is essential for creating<br>a positive impression on customers and increasing sales.<br>Give your product the best packaging by connecting<br>with our creative designers.</p>
+      </div>
+      <div class="ad_package">
+        <img src="/Arupa/package3.png">
+        <img src="/Arupa/package.jpeg">
+      </div>
+      <div class="ad_text4">
+          <h1>Get connected with our trusted designers<br>to have a professional-looking website</h1>
+          <img src="/Arupa/ad_web.gif">
+      </div>
+      <div class="ad_clothing">
+        <img src="/Arupa/clothing3.jpeg">
+        <img src="/Arupa/clothing1.jpeg">
+        <div class="ad_text5">
+          <h1>Get designs on jersey,<br>t-shirt and many more</h1>
+        </div>
+      </div>
+      <div class="ad_text6">
+        <h1>One stop solution for all your<br>concept art, character design,<br>digital art and animation design.</h1>
+        <div class="photo-gallery2">
+          <div class="character">
+            <img src="/Arupa/character1.jpeg">
+          </div>
+          <div class="concept">
+            <img src="/Arupa/concept1.jpg">
+          </div>
+          <div class="digital">
+            <img src="/Arupa/digital_art1.jpg">
+          </div>
+          <div class="animation">
+            <img src="/Arupa/animation2.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="ad_designer"></div>
+      <div class="ad_designer_text">
+        <h1>Work with creative<br>designers you can trust</h1>
+        <p>All our designers are creative experts who<br>have worked with hundreds of businesses<br>to bring their designs to life.</p>
+          <a href="/Rashu/Sign_in.html">
+              <button class="btn5">
+          <span class="circle5">
+              <span class="arrow5"></span>
+          </span>
+                  <span class="text5">Hire your designer</span>
+              </button>
+          </a>
+      </div>
+      <div class="pc">
+        <div class="project">
+          <h1>Start a project on<br>your desired category<br>and get connected with<br>our designers.</h1>
+          <div class="btn6">
+              <a href="/Rashu/Sign_in.html">
+                  <button type="button">Place an order</button>
+              </a>
+          </div>
+        </div>
+        <div class="contest">
+          <h1>Request for a contest<br>to an admin and get<br>hundreds of designs on<br>your desired category.</h1>
+          <div class="btn7">
+              <a href="/Rashu/Sign_in.html">
+                  <button type="button">Request for a contest</button>
+              </a>
+          </div>
+        </div>
+      </div>
+        <footer class="footer">
+            <div class="container_ftr">
+                <div class="row">
+                    <div class="footer-col">
+                        <ul>
+                            <li>&copy; COPYRIGHT Reserved by</li>
+                            <li>Digital Art Design </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <ul>
+                        <div class="contact">
+                            <li>Contact Information:</li>
+                            <li>Address: Chittagong ,Bangladesh</li>
+                            <li>Phone: <a href="tel:+15551234567">(555) 123-4567</a></li>
+                            <li>Email: <a href="mailto:info@example.com">info@example.com</a></li>
+                        </div>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Help</h4>
+                        <ul>
+                            <li><a href="/Rashu/Admin_profile_About_Us.html">about us</a></li>
+                            <li><a href="/Rashu/Admin_profile_Our_Services.html">our services</a></li>
+                            <li><a href="/Rashu/Admin_profile_FAQ.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </footer>
+    </body>
+</html>

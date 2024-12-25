@@ -1,0 +1,174 @@
+<!Doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viwport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/Arupa/user_start_project_style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+<div class="class1">
+    <div class="backgroundimg">
+        <div class="menubar">
+            <img src="/Rashu/design_logo_02.jpg" class="logo">
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a th:href="@{'/designer_list/' + ${user.id}}">Designers</a></li>
+                <li><a href="/home">Log out</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="sidebar">
+        <h2 th:text="${user.name != null ? user.name : ''}"></h2>
+        <h4 th:text="'ID: ' + ${user.id}" style="color: #484747; text-align: center; margin-bottom: 10px"></h4>
+        <ul>
+            <li><a th:href="@{'/UserProfile/' + ${user.id}}">My profile</a></li>
+            <li><a th:href="@{'/completedOrders/' + ${user.id}}">My orders</a></li>
+            <li><a th:href="@{'/runningContest/' + ${user.id}}">My contests</a></li>
+            <li><a th:href="@{'/requestdetails/' + ${user.id}}">My requests</a></li>
+            <li class="active"><a th:href="@{'/placeOrder/' + ${user.id}}">Place a new order</a></li>
+            <li><a th:href="@{'/contest/' + ${user.id}}">Request for a contest</a></li>
+            <li><a th:href="@{'/password/' + ${user.id}}">Password settings</a></li>
+        </ul>
+    </div>
+    <div class="text">
+        <h2>Place an order</h2>
+    </div>
+    <form th:action="@{'/searchDesigner/' + ${user.id}}" method="POST">
+        <div class="container">
+            <h3>Choose project category</h3>
+            <div class="search-input">
+                <a href="" target="_blank" hidden></a>
+                <input type="text" id="category" name="category" placeholder="Type to search..">
+                <div class="autocom-box">
+                    <!-- here list are inserted from javascript -->
+                </div>
+                <div class="icon"><i class="fas fa-search"></i></div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="main-user-info">
+                <div class="user-input-box">
+                    <label for="title">Enter order title</label>
+                    <input type="text"
+                           id="title"
+                           name="title"/>
+                </div>
+                <div class="user-input-box2">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" placeholder="E.g. I need a logo designed for my clothing business. It should feature a retro and vibrant design style. My company designs t-shirt and jersey."></textarea>
+                </div>
+            </div>
+            <div class="form-submit-btn">
+                <button type="submit">Next</button>
+            </div>
+        </div>
+    </form>
+</div>
+<footer class="footer">
+    <div class="container_ftr">
+        <div class="row">
+            <div class="footer-col">
+                <ul>
+                    <li>&copy; COPYRIGHT Reserved by</li>
+                    <li>Digital Art Design </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <div class="contact">
+                        <li>Contact Information:</li>
+                        <li>Address: Chittagong ,Bangladesh</li>
+                        <li>Phone: <a href="tel:+15551234567">(555) 123-4567</a></li>
+                        <li>Email: <a href="mailto:info@example.com">info@example.com</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    // getting all required elements
+const searchWrapper = document.querySelector(".search-input");
+const inputBox = searchWrapper.querySelector("input");
+const suggBox = searchWrapper.querySelector(".autocom-box");
+const icon = searchWrapper.querySelector(".icon");
+let linkTag = searchWrapper.querySelector("a");
+let webLink;
+
+// if user press any key and release
+inputBox.onkeyup = (e)=>{
+    let userData = e.target.value; //user enetered data
+    let emptyArray = [];
+    if(userData){
+        icon.onclick = ()=>{
+            webLink = `https://www.google.com/search?q=${userData}`;
+            linkTag.setAttribute("href", webLink);
+            linkTag.click();
+        }
+        emptyArray = suggestions.filter((data)=>{
+            //filtering array value and user characters to lowercase and return only those words which are start with user enetered chars
+            return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
+        });
+        emptyArray = emptyArray.map((data)=>{
+            // passing return data inside li tag
+            return data = `<li>${data}</li>`;
+        });
+        searchWrapper.classList.add("active"); //show autocomplete box
+        showSuggestions(emptyArray);
+        let allList = suggBox.querySelectorAll("li");
+        for (let i = 0; i < allList.length; i++) {
+            //adding onclick attribute in all li tag
+            allList[i].setAttribute("onclick", "select(this)");
+        }
+    }else{
+        searchWrapper.classList.remove("active"); //hide autocomplete box
+    }
+}
+
+function select(element){
+    let selectData = element.textContent;
+    inputBox.value = selectData;
+    icon.onclick = ()=>{
+        webLink = `https://www.google.com/search?q=${selectData}`;
+        linkTag.setAttribute("href", webLink);
+        linkTag.click();
+    }
+    searchWrapper.classList.remove("active");
+}
+
+function showSuggestions(list){
+    let listData;
+    if(!list.length){
+        userValue = inputBox.value;
+        listData = `<li>${userValue}</li>`;
+    }else{
+      listData = list.join('');
+    }
+    suggBox.innerHTML = listData;
+}
+
+</script>
+<script>
+    let suggestions = ["Logo Design", "Business Card Design", "Website Design", "App Design", "Book Cover , Magazine & Brochure", "Flyer & Poster", "Packaging & Label", "Clothing", "Concept Art", "Character Design", "Digital Art", "Animation"];
+</script>
+</body>
+</html>

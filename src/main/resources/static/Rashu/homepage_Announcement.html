@@ -1,0 +1,164 @@
+<html>
+    <head>
+        <title>Announcements</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Admin_profile_body_background.css">
+        <link rel="stylesheet" href="Admin_profile_menu-bar.css">
+        <link rel="stylesheet" href="Admin_profile_main-content.css">
+        <link rel="stylesheet" href="Admin_profile_form.css">
+        <link rel="stylesheet" href="Pagination.css">
+        <link rel="stylesheet" href="Admin_profile_display_table.css">
+        <link rel="stylesheet" href="Admin_profile_footer.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="backgrounding">
+                <div class="menubar">
+                    <img src="design_logo_02.jpg" class="logo">
+                    <ul>
+                        <li><a href="/home">Home</a></li>
+                        <li><a href ="homepage_Announcement.html">Announcements</a></li>
+                        <li><a href="homepage_Contest.html">Contests</a></li>
+                        <li><a href="homepage_Designs.html">Designs</a></li>
+                        <li><a href="Sign_in.html">Sign in</a></li>
+                        <li><a href="Sign_Up.html">Sign up</a></li>
+                    </ul>
+                </div>
+            </div>
+         </header>
+        <div class="main-content">
+            <div id="announcementList">
+                <h1>Announcements</h1>
+                <table>
+                    <tr>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Date</th>
+<!--                        <th>Admin name </th>-->
+                    </tr>
+
+                </table>
+
+                <div id="pagination">
+                    <button id="prevButton">Previous</button>
+                    <button id="nextButton">Next</button>
+                </div>
+            </div>
+        </div>
+
+
+
+    <footer class="footer">
+        <div class="container_ftr">
+            <div class="row">
+                <div class="footer-col">
+                    <ul>
+                        <li>&copy; COPYRIGHT Reserved by</li>
+                        <li>Digital Art Design </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                    <div class="contact">
+                        <li>Contact Information:</li>
+                        <li>Address: Chittagong ,Bangladesh</li>
+                        <li>Phone: <a href="tel:+15551234567">(555) 123-4567</a></li>
+                        <li>Email: <a href="mailto:info@example.com">info@example.com</a></li>
+                    </div>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="Admin_profile_About_Us.html">about us</a></li>
+                        <li><a href="Admin_profile_Our_Services.html">our services</a></li>
+                        <li><a href="Admin_profile_FAQ.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a ><i class="fab fa-facebook-f"></i></a>
+                        <a ><i class="fab fa-twitter"></i></a>
+                        <a ><i class="fab fa-instagram"></i></a>
+                        <a ><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+        <script>
+
+            document.addEventListener("DOMContentLoaded", function () {
+
+                const itemsPerPage = 7;
+                let currentPage = 1;
+                let announcements;
+
+                const announcementList = document.getElementById("announcementList");
+                const table = announcementList.querySelector("table");
+
+
+
+                function fetchAnnouncementData() {
+
+                    fetch(`/Rashu_announcement/list/all`)
+                        .then(response => response.json())
+                        .then(data => {
+                            announcements = data;
+                            displayAnnouncements(data, currentPage);
+                        })
+                        .catch(error => console.error('Error fetching announcement data:', error));
+                }
+
+
+                function displayAnnouncements(announcements, page) {
+                    // Clear the table
+                    while (table.rows.length > 1) {
+                        table.deleteRow(1);
+                    }
+
+                    const startIndex = (page - 1) * itemsPerPage;
+                    const endIndex = page * itemsPerPage;
+
+                    for (let i = startIndex; i < endIndex && i < announcements.length; i++) {
+                        const announcement = announcements[i];
+                        const row = table.insertRow();
+                        const cell1 = row.insertCell(0);
+                        cell1.style.width = "125px";
+                        const cell2 = row.insertCell(1);
+                        cell2.style.width = "400px";
+                        const cell3 = row.insertCell(2);
+                        cell3.style.width = "125px";
+
+
+                        cell1.innerHTML = announcement.annc.anc_Title;
+                        cell2.innerHTML = announcement.annc.description;
+                        cell3.innerHTML = announcement.formattedDate;
+                        // cell4.innerHTML = announcement.annc.admin.name;
+                    }
+                }
+
+
+                fetchAnnouncementData();
+
+
+                document.getElementById("nextButton").addEventListener("click", function () {
+                    if (announcements && currentPage < Math.ceil(announcements.length / itemsPerPage)) {
+                        currentPage++;
+                        displayAnnouncements(announcements, currentPage);
+                    }
+                });
+
+                document.getElementById("prevButton").addEventListener("click", function () {
+                    if (announcements && currentPage > 1) {
+                        currentPage--;
+                        displayAnnouncements(announcements, currentPage);
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

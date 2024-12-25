@@ -1,0 +1,241 @@
+<html lang="en">
+<head>
+    <title>
+        Admin Details
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Admin_profile_body_background.css">
+    <link rel="stylesheet" href="Admin_profile_menu-bar.css">
+    <link rel="stylesheet" href="Admin_profile_main-content.css">
+    <link rel="stylesheet" href="Admin_profile_form.css">
+    <link rel="stylesheet" href="Admin_profile_display_table.css">
+    <link rel="stylesheet" href="Admin_profile_header_search_bar.css">
+    <link rel="stylesheet" href="Admin_profile_footer.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <style>
+        .profile {
+            text-align: left;
+            padding: 20px;
+            padding-left: 15%;
+            padding-right: 15%;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: fit-content;
+            max-width: 550px;
+            margin: 5px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: #f9f9f9;
+            color:#333;
+        }
+
+        .profile p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .ID{
+            color:#967d00;
+            font-style:italic;
+        }
+        .profile p:first-child {
+            font-weight: bold;
+            color: #333;
+        }
+        .profile p:not(:first-child) {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="backgrounding">
+        <div class="menubar">
+            <img src="design_logo_02.jpg" class="logo">
+            <ul style="color:white; padding: 5px;" >
+
+                <li><i class="fas fa-user-circle" style="color: white;"></i><span style="color:white; padding: 5px" id="adminName"> </span></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<main class="content_main">
+    <div class="menu-bar">
+        <ul>
+            <li><a href="/home"><i class="fa fa-home "></i> Home</a></li>
+            <li><a href="Admin_profile_my_profile.html"><i class="fa fa-user "></i> My profile</a></li>
+            <li><a href="Admin_profile_Designs.html"><i class="fas fa-list-ul "></i> Designs</a></li>
+
+
+            <li><a href="Admin_profile_Designers.html"><i class="fa fa-users"></i> Designers</a></li>
+            <li ><a href="Admin_profile_Users.html"><i class="fa fa-users"></i> Users</a></li>
+            <li class="active"><a><i class="fa fa-users"></i> Admins</a></li>
+            <li><a href="#"><i class="fas fa-trophy contest-icon "></i> My contest</a>
+                <div class="sub-menu-2">
+                    <ul>
+                        <li><a href="Admin_profile_Mycontest_contest_request.html">Contest Requests</a></li>
+                        <li><a href="Admin_profile_Mycontest_previous_contest.html">Previous Contest</a></li>
+                        <li><a href="Admin_profile_Mycontest_Set_A_Contest.html">Set A Contest</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="Admin_profile_Inbox.html"><i class="fas fa-inbox inbox-icon"></i> Inbox</a></li>
+            <li ><a href="#"><i class="fas fa-bullhorn announcement-icon "></i> Announcements</a>
+                <div class="sub-menu-2">
+                    <ul>
+                        <li><a href="Admin_profile_Announcement_previous_announcement.html">Previous Announcement</a></li>
+                        <li><a href="Admin_profile_Announcement_Set_an__announcement.html">Set An Announcement</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li><a href="#"><i class="fas fa-cog profile-settings-icon "></i> Profile Setting</a>
+                <div class="sub-menu-2">
+                    <ul>
+                        <li><a href="Admin_profile_Edit_Profile_update_details.html">Update Details</a></li>
+                        <li><a href="Admin_profile_Edit_Profile_Change_password.html">Change Password</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li onclick="logout()"><a href=""><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+    </div>
+    <div class="main-container">
+        <h3>Admin Information</h3>
+        <div class="profile" id="adminProfile">
+
+        </div>
+
+    </div>
+
+</main>
+
+<footer class="footer">
+    <div class="container_ftr">
+        <div class="row">
+            <div class="footer-col">
+                <ul>
+                    <li>&copy; COPYRIGHT Reserved by</li>
+                    <li>Digital Art Design </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <div class="contact">
+                        <li>Contact Information:</li>
+                        <li>Address: Chittagong ,Bangladesh</li>
+                        <li>Phone: <a href="tel:+15551234567">(555) 123-4567</a></li>
+                        <li>Email: <a href="mailto:info@example.com">info@example.com</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="Admin_profile_About_Us.html">about us</a></li>
+                    <li><a href="Admin_profile_Our_Services.html">our services</a></li>
+                    <li><a href="Admin_profile_FAQ.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a ><i class="fab fa-facebook-f"></i></a>
+                    <a ><i class="fab fa-twitter"></i></a>
+                    <a ><i class="fab fa-instagram"></i></a>
+                    <a ><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    // Check if Admin_id is null on page load
+    function logout() {
+        sessionStorage.removeItem("Admin_id"); // Remove the Admin_id from session storage
+        window.location.href = "/home";
+    }
+    function checkAdminId() {
+        let id = sessionStorage.getItem("Admin_id");
+        if (id === null) {
+            window.location.href = "/home";
+            return null; // Return null if Admin_id is null
+        }
+        return id; // Return Admin_id if it exists
+    }
+
+    window.addEventListener("beforeunload", function(event) {
+        const id = sessionStorage.getItem("Admin_id");
+        if (id === null) {
+            sessionStorage.removeItem("Admin_id");
+        }
+    });
+    // Check if Admin_id is null on page load
+    document.addEventListener("DOMContentLoaded", function () {
+        if(checkAdminId()===null)
+            return;
+
+        const admin_nameContainer = document.getElementById("adminName");
+
+        const Admin_Name = sessionStorage.getItem('Admin_Name');
+        console.log(Admin_Name);
+        admin_nameContainer.innerHTML=Admin_Name;
+        let id = sessionStorage.getItem("Admin_id");
+        sessionStorage.setItem("Admin_id", id);
+
+        var admin_id = sessionStorage.getItem("admin_id");
+
+        const adminProfileContainer = document.getElementById("adminProfile");
+
+
+        const url = `/Rashu_other/profile?admin_id=${admin_id}`;
+
+        fetch(url, {
+            method: 'GET',
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+            .then((response) => {
+                if (response.status === 200) {
+                    return response.json();
+                } else {
+
+                    console.error(`Error: Response status ${response.status}`);
+                    return Promise.reject('Request failed');
+                }
+            })
+            .then((adminData) => {
+                let Name = adminData.name || "";
+                let Admin_Id = adminData.id || "";
+                let Email = adminData.email || "";
+                let Contact = adminData.contact || "";
+                let Address = adminData.adds || "";
+                let Bio = adminData.bio || "";
+                let Dob = adminData.dob || "";
+
+
+                adminProfileContainer.innerHTML = `
+    <p><i class="fas fa-user"></i> Name: ${Name}</p>
+    <p  style="text-align: left;color:#967d00;
+            font-style:italic;"><i class="fas fa-id-card"></i> ID: ${Admin_Id}</>
+    <p><i class="fas fa-envelope"></i> Email: ${Email}</p>
+    <p><i class="fas fa-phone"></i> Contact: ${Contact}</p>
+    <p><i class="fas fa-map-marker-alt"></i> Address: ${Address}</p>
+    <p><i class="fas fa-info-circle"></i> Bio: ${Bio}</p>
+    <p><i class="fas fa-calendar-alt"></i> Date of birth: ${Dob}</p>
+`;
+
+            })
+            .catch((error) => {
+
+                console.error("Error: " + error);
+                adminProfileContainer.innerHTML = '<p>Failed to load admin profile.</p>';
+            });
+    });
+</script>
+
+
+</body>
+</html>

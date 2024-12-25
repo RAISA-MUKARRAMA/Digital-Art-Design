@@ -1,0 +1,148 @@
+
+.container {
+    top:125px;
+    background-color: #fff;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+h1 {
+    text-align: center;
+}
+h2.container{
+    text-align: center;
+    color: #967d00;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+textarea,
+input[type="number"],
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button{
+	width:350px;
+	height:40px;
+	font-size:20px;
+	border-radius: 15px;
+	border:none;
+	margin-top: 30px;
+}
+textarea {
+    resize: vertical; /* Allow vertical resizing of the textarea */
+}
+
+.form-group button[type="submit"] {
+    background-color: #967d00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.form-group button[type="submit"]:hover {
+    background-color: #655502;
+}
+.btn{
+    background: #967d00;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight:500 ;
+    border-radius: 30px;
+    padding-bottom: 20px;
+    color:#fff;
+}
+.tick-icon {
+    color: green; /* Change the color to your preference */
+    font-size: 24px; /* Adjust the size as needed */
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.popup,.error-popup {
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position:absolute;
+    left:50%;
+    mso-border-shadow: yes;
+    transform: translate(-50%,-50%) scale(.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color:#333;
+    visibility: hidden;
+    z-index: 5;
+    transition:transform .4s ,top .4s;
+    box-shadow: 0 0 10px rgba(0, 0, 0.5, 0.5);
+}
+.open-popup{
+    visibility: visible;
+    top:50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+.popup img,.error-popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.popup h2,.error-popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin:30px 0 10px;
+    color:#333;
+}
+.popup p ,.error-popup p{
+    color:#333;
+}
+.popup button, .error-popup button {
+    width:20%;
+    margin-top: 50px;
+    padding:10px 0;
+    background-color: #967d00;
+    color:#fff;
+    border:0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.popup button :hover, .error-popup button :hover{
+    width:20%;
+    margin-top: 50px;
+    padding:10px 0;
+    background-color: #967000;
+    color:#fff;
+    border:0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
